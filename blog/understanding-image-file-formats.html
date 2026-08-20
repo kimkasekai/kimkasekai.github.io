@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>Understanding Image File Formats: PNG vs JPG vs GIF vs WebP - miniphotoshop</title>
+	<meta name="description" content="Learn the differences between PNG, JPG, GIF, and WebP image formats, including compression types, transparency support, and which format to choose for your projects." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="icon" sizes="192x192" href="../images/favicon.png">
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font-family: Arial, Helvetica, sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.8; }
+		.page-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+		.page-header { text-align: center; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+		.page-header h1 { font-size: 28px; color: #fff; margin-top: 10px; }
+		.page-header .logo-text { font-size: 36px; font-weight: bold; color: #4fc3f7; text-decoration: none; }
+		.page-header .logo-text:hover { color: #81d4fa; }
+		.content { padding: 20px 0; }
+		.content h2 { font-size: 22px; color: #4fc3f7; margin: 25px 0 12px 0; }
+		.content p { font-size: 16px; margin-bottom: 15px; color: #ccc; }
+		.content ul, .content ol { margin: 10px 0 15px 25px; }
+		.content li { margin-bottom: 8px; color: #ccc; }
+		.content strong { color: #fff; }
+		.content code { background: #16213e; padding: 2px 6px; border-radius: 4px; color: #4fc3f7; font-size: 14px; }
+		.date { color: #888; font-size: 14px; margin-bottom: 20px; }
+		.back-link { display: inline-block; margin-bottom: 20px; color: #4fc3f7; text-decoration: none; }
+		.back-link:hover { text-decoration: underline; }
+		.page-footer { text-align: center; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
+		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
+		.page-footer a:hover { text-decoration: underline; }
+	</style>
+</head>
+<body>
+	<div class="page-container">
+		<div class="page-header">
+			<a href="../index.html" class="logo-text">miniphotoshop</a>
+			<h1>Understanding Image File Formats: PNG vs JPG vs GIF vs WebP</h1>
+			<p class="date">Published: August 3, 2026</p>
+		</div>
+
+		<div class="content">
+			<a href="../blog.html" class="back-link">&larr; Back to Blog</a>
+			
+			<p>Saving an image sounds simple until you face the export dialog with its long list of formats. Picking the wrong one can mean blurry photos, huge file sizes, or lost transparency. Here is a clear breakdown of the four formats you will encounter most often.</p>
+
+			<h2>JPG (JPEG): The Photo Workhorse</h2>
+			<p>JPG uses <strong>lossy compression</strong>, meaning it permanently discards visual data your eye barely notices to shrink files dramatically. A 10 MB raw photo can easily become a 500 KB JPG with almost no visible difference. The trade-off: quality degrades slightly every time you re-save a JPG, and there is no transparency support. Use JPG for photographs and complex images with smooth gradients where small file size matters more than pixel-perfect accuracy.</p>
+
+			<h2>PNG: Precision and Transparency</h2>
+			<p>PNG relies on <strong>lossless compression</strong>. Every pixel you save is exactly what comes back when the file opens later. It also supports full alpha transparency, so logos, icons, and graphics can sit on any background without an ugly white box around them. The downside is size: a detailed photograph saved as PNG can be five to ten times larger than the same image as JPG. Choose PNG for screenshots, logos, text-heavy graphics, and anything that needs a transparent background.</p>
+
+			<h2>GIF: Animation's Old Guard</h2>
+			<p>GIF is limited to just <strong>256 colors</strong>, which makes it a poor choice for modern photos but perfect for simple animations and flat graphics. Its animation support keeps it alive in memes and short looping clips, even though newer options exist. For static images, GIF has essentially been replaced by PNG, which beats it on both quality and compression.</p>
+
+			<h2>WebP: The Modern All-Rounder</h2>
+			<p>Developed by Google, WebP typically produces files <strong>25-35% smaller</strong> than equivalent JPGs or PNGs while matching their quality. It supports lossy and lossless modes, alpha transparency, and animation all in one format. Every major browser now supports it, making it the smart default for web images. The only caution is compatibility with older desktop software.</p>
+
+			<h2>Quick Comparison</h2>
+			<ul>
+				<li><strong>Photos for web:</strong> WebP first, JPG as fallback</li>
+				<li><strong>Logos and icons:</strong> PNG (or WebP with transparency)</li>
+				<li><strong>Animated clips:</strong> WebP or GIF</li>
+				<li><strong>Editing masters:</strong> PNG or lossless formats to avoid repeated quality loss</li>
+			</ul>
+
+			<p>A practical rule of thumb: if the image contains people, nature, or thousands of colors, lean toward JPG or WebP. If it contains sharp edges, text, or needs see-through areas, go with PNG. When in doubt and your audience is online, WebP covers nearly every case.</p>
+
+			<p>With miniphotoshop you can export your edited images in any of these formats directly from your browser, so experimenting costs nothing. Try saving the same picture in two formats and compare the results yourself.</p>
+		</div>
+
+		<div class="page-footer">
+			<a href="../blog.html">Blog</a>
+			<a href="../about.html">About Us</a>
+			<a href="../contact.html">Contact Us</a>
+			<a href="../privacy.html">Privacy Policy</a>
+		</div>
+	</div>
+</body>
+</html>

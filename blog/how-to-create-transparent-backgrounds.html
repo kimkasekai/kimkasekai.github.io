@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>How to Create Transparent Backgrounds for Logos and Product Images - miniphotoshop</title>
+	<meta name="description" content="Learn how to create transparent PNG backgrounds for logos and product photos. Step-by-step tutorial covering selection tools, export settings, and common mistakes." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="icon" sizes="192x192" href="../images/favicon.png">
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font-family: Arial, Helvetica, sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.8; }
+		.page-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+		.page-header { text-align: center; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+		.page-header h1 { font-size: 28px; color: #fff; margin-top: 10px; }
+		.page-header .logo-text { font-size: 36px; font-weight: bold; color: #4fc3f7; text-decoration: none; }
+		.page-header .logo-text:hover { color: #81d4fa; }
+		.content { padding: 20px 0; }
+		.content h2 { font-size: 22px; color: #4fc3f7; margin: 25px 0 12px 0; }
+		.content p { font-size: 16px; margin-bottom: 15px; color: #ccc; }
+		.content ul, .content ol { margin: 10px 0 15px 25px; }
+		.content li { margin-bottom: 8px; color: #ccc; }
+		.content strong { color: #fff; }
+		.content code { background: #16213e; padding: 2px 6px; border-radius: 4px; color: #4fc3f7; font-size: 14px; }
+		.date { color: #888; font-size: 14px; margin-bottom: 20px; }
+		.back-link { display: inline-block; margin-bottom: 20px; color: #4fc3f7; text-decoration: none; }
+		.back-link:hover { text-decoration: underline; }
+		.page-footer { text-align: center; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
+		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
+		.page-footer a:hover { text-decoration: underline; }
+	</style>
+</head>
+<body>
+	<div class="page-container">
+		<div class="page-header">
+			<a href="../index.html" class="logo-text">miniphotoshop</a>
+			<h1>How to Create Transparent Backgrounds for Logos and Product Images</h1>
+			<p class="date">Published: July 2, 2026</p>
+		</div>
+
+		<div class="content">
+			<a href="../blog.html" class="back-link">&larr; Back to Blog</a>
+
+			<p>A logo trapped inside a white rectangle looks amateurish the moment it lands on a colored website header or a branded email template. Removing that box and replacing it with true transparency lets your graphics sit cleanly on any surface. Here is the complete workflow.</p>
+
+			<h2>Why Transparency Matters</h2>
+			<ul>
+				<li><strong>E-commerce listings:</strong> Marketplaces often require product shots on pure white, but your own store may use colored sections where a transparent PNG blends perfectly.</li>
+				<li><strong>Logos:</strong> One transparent master file works on business cards, dark-mode websites, video watermarks, and merchandise without three separate versions.</li>
+				<li><strong>Overlays and stickers:</strong> Watermarks, badges, and decorative elements need transparency to layer over other content.</li>
+			</ul>
+
+			<h2>Step-by-Step: Cutting Out Your Subject</h2>
+			<ol>
+				<li><strong>Open your file</strong> in the editor. If the background layer is locked, double-click it to unlock.</li>
+				<li><strong>Select the background.</strong> For solid or evenly lit backgrounds, click once with the Magic Wand and raise the Tolerance value if patches remain unselected.</li>
+				<li><strong>Refine tricky edges.</strong> Hair, fur, and glass need the Lasso or a soft eraser at reduced opacity rather than a hard one-click selection.</li>
+				<li><strong>Delete the background.</strong> Press <code>Delete</code> with the selection active. The removed area should now display as a checkerboard pattern.</li>
+				<li><strong>Zoom to 100%</strong> and inspect the edges. Stray halo pixels can be erased individually with a small brush.</li>
+				<li><strong>Export as PNG.</strong> This step is critical: JPEG does not support transparency and will fill empty areas with white. Always choose <code>PNG</code> or another alpha-capable format.</li>
+			</ol>
+
+			<h2>What the Checkerboard Pattern Means</h2>
+			<p>New editors often panic when they see gray-and-white squares appear. That checkerboard is not part of your image; it is the universal visual shorthand editors use to say "nothing exists here." When exported, those squares vanish completely, leaving genuine see-through pixels that adopt whatever color sits behind them on a webpage or document.</p>
+
+			<h2>Common Mistakes to Avoid</h2>
+			<ul>
+				<li><strong>Saving as JPG:</strong> The number one error. Transparency silently becomes solid white.</li>
+				<li><strong>Ragged edges:</strong> A one-pixel fringe of the old background color betrays a rushed cutout. Zoom in and clean it up.</li>
+				<li><strong>Deleting shadows:</strong> A subtle drop shadow preserved on its own layer makes products look grounded instead of floating.</li>
+				<li><strong>Working at low resolution:</strong> Cut out from the largest file you have; scaling up afterward magnifies every edge flaw.</li>
+			</ul>
+
+			<p>With one clean transparent master saved, you can resize, recolor, and repurpose it across every platform your brand touches.</p>
+		</div>
+
+		<div class="page-footer">
+			<a href="../blog.html">Blog</a>
+			<a href="../about.html">About Us</a>
+			<a href="../contact.html">Contact Us</a>
+			<a href="../privacy.html">Privacy Policy</a>
+		</div>
+	</div>
+</body>
+</html>

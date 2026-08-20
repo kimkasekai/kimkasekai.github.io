@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>Photo Layer Editing Explained: A Beginner-Friendly Guide - miniphotoshop</title>
+	<meta name="description" content="A beginner's guide to layers in photo editing: what layers are, blend modes, opacity, layer masks, and practical examples like text overlays and double exposures." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="icon" sizes="192x192" href="../images/favicon.png">
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font-family: Arial, Helvetica, sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.8; }
+		.page-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+		.page-header { text-align: center; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+		.page-header h1 { font-size: 28px; color: #fff; margin-top: 10px; }
+		.page-header .logo-text { font-size: 36px; font-weight: bold; color: #4fc3f7; text-decoration: none; }
+		.page-header .logo-text:hover { color: #81d4fa; }
+		.content { padding: 20px 0; }
+		.content h2 { font-size: 22px; color: #4fc3f7; margin: 25px 0 12px 0; }
+		.content p { font-size: 16px; margin-bottom: 15px; color: #ccc; }
+		.content ul, .content ol { margin: 10px 0 15px 25px; }
+		.content li { margin-bottom: 8px; color: #ccc; }
+		.content strong { color: #fff; }
+		.content code { background: #16213e; padding: 2px 6px; border-radius: 4px; color: #4fc3f7; font-size: 14px; }
+		.date { color: #888; font-size: 14px; margin-bottom: 20px; }
+		.back-link { display: inline-block; margin-bottom: 20px; color: #4fc3f7; text-decoration: none; }
+		.back-link:hover { text-decoration: underline; }
+		.page-footer { text-align: center; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
+		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
+		.page-footer a:hover { text-decoration: underline; }
+	</style>
+</head>
+<body>
+	<div class="page-container">
+		<div class="page-header">
+			<a href="../index.html" class="logo-text">miniphotoshop</a>
+			<h1>Photo Layer Editing Explained: A Beginner-Friendly Guide</h1>
+			<p class="date">Published: July 23, 2026</p>
+		</div>
+
+		<div class="content">
+			<a href="../blog.html" class="back-link">&larr; Back to Blog</a>
+			
+			<p>If photo editing had one concept worth mastering above all others, it would be layers. Once layers click, everything else in an editor starts making sense. This guide explains the idea from zero and shows you two classic projects that prove how powerful it is.</p>
+
+			<h2>What Exactly Is a Layer?</h2>
+			<p>Think of a stack of transparent sheets of glass. Paint on the top sheet and it hides whatever is beneath; leave a sheet empty and you see straight through to the ones below. Digital layers work identically. Your base photograph sits at the bottom of the stack, and every addition, such as text, shapes, adjustments, or pasted images, lives on its own separate sheet above it.</p>
+
+			<h2>Why Layers Matter</h2>
+			<p>Without layers, every edit permanently alters your photo. With layers, each change stays independent:</p>
+			<ul>
+				<li><strong>Non-destructive editing:</strong> delete or hide any layer and the original is untouched</li>
+				<li><strong>Reordering:</strong> drag a layer up or down the stack to change what appears in front</li>
+				<li><strong>Isolated changes:</strong> adjust one element without disturbing anything else</li>
+				<li><strong>Experimentation:</strong> try five different headlines as five text layers and toggle them on and off</li>
+			</ul>
+
+			<h2>Opacity: The Transparency Dial</h2>
+			<p>Every layer has an opacity setting from 0 to 100%. At 100% the layer fully covers what is below; at 50% it blends halfway with whatever sits underneath. Dropping a dark overlay layer to around 40% opacity is the standard trick for making white text readable over a busy photo while keeping the image visible.</p>
+
+			<h2>Blend Modes: How Layers Interact</h2>
+			<p>Blend modes control the math between a layer and the one below it. A few worth learning first:</p>
+			<ul>
+				<li><code>Multiply</code>: darkens; great for dropping logos onto light backgrounds so white areas vanish</li>
+				<li><code>Screen</code>: lightens; perfect for adding glows, light leaks, and bokeh textures</li>
+				<li><code>Overlay</code>: boosts contrast; ideal for texture layers like grunge or paper grain</li>
+				<li><code>Soft Light</code>: a gentler overlay for subtle toning</li>
+			</ul>
+			<p>The fastest way to learn these is to duplicate a photo, fill the copy with gray, then cycle through every blend mode and watch what happens.</p>
+
+			<h2>Layer Masks in One Paragraph</h2>
+			<p>A mask controls which parts of a layer are visible using black, white, and shades of gray. Paint white where you want the layer to show and black where you want it hidden. Unlike erasing, masking is reversible at any time, which makes it the professional way to combine images.</p>
+
+			<h2>Project 1: Text on a Photo</h2>
+			<ol>
+				<li>Open your photo; it becomes the background layer</li>
+				<li>Add a new text layer with your headline</li>
+				<li>Create a rectangle layer filled with black beneath the text and set its opacity to 40%</li>
+				<li>Nudge, recolor, or retype anything independently; nothing else moves</li>
+			</ol>
+
+			<h2>Project 2: Double Exposure Effect</h2>
+			<ol>
+				<li>Place a portrait as the bottom layer</li>
+				<li>Add a tree or cityscape layer above it</li>
+				<li>Set the top layer's blend mode to <code>Screen</code> or <code>Lighten</code></li>
+				<li>Lower opacity to taste and add a mask to fade the edges</li>
+			</ol>
+
+			<p>Both projects take under five minutes in miniphotoshop's layer panel. Open two images, experiment with stacking and blend modes, and you will quickly understand why every serious editor is built around layers.</p>
+		</div>
+
+		<div class="page-footer">
+			<a href="../blog.html">Blog</a>
+			<a href="../about.html">About Us</a>
+			<a href="../contact.html">Contact Us</a>
+			<a href="../privacy.html">Privacy Policy</a>
+		</div>
+	</div>
+</body>
+</html>

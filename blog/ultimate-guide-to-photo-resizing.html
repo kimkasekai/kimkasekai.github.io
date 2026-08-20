@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>The Ultimate Guide to Resizing Photos Without Losing Quality - miniphotoshop</title>
+	<meta name="description" content="Understand resolution, DPI, and resampling methods (nearest neighbor, bilinear, bicubic) so you can resize photos for web and print without quality loss." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="icon" sizes="192x192" href="../images/favicon.png">
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font-family: Arial, Helvetica, sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.8; }
+		.page-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+		.page-header { text-align: center; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+		.page-header h1 { font-size: 28px; color: #fff; margin-top: 10px; }
+		.page-header .logo-text { font-size: 36px; font-weight: bold; color: #4fc3f7; text-decoration: none; }
+		.page-header .logo-text:hover { color: #81d4fa; }
+		.content { padding: 20px 0; }
+		.content h2 { font-size: 22px; color: #4fc3f7; margin: 25px 0 12px 0; }
+		.content p { font-size: 16px; margin-bottom: 15px; color: #ccc; }
+		.content ul, .content ol { margin: 10px 0 15px 25px; }
+		.content li { margin-bottom: 8px; color: #ccc; }
+		.content strong { color: #fff; }
+		.content code { background: #16213e; padding: 2px 6px; border-radius: 4px; color: #4fc3f7; font-size: 14px; }
+		.date { color: #888; font-size: 14px; margin-bottom: 20px; }
+		.back-link { display: inline-block; margin-bottom: 20px; color: #4fc3f7; text-decoration: none; }
+		.back-link:hover { text-decoration: underline; }
+		.page-footer { text-align: center; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
+		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
+		.page-footer a:hover { text-decoration: underline; }
+	</style>
+</head>
+<body>
+	<div class="page-container">
+		<div class="page-header">
+			<a href="../index.html" class="logo-text">miniphotoshop</a>
+			<h1>The Ultimate Guide to Resizing Photos Without Losing Quality</h1>
+			<p class="date">Published: August 10, 2026</p>
+		</div>
+
+		<div class="content">
+			<a href="../blog.html" class="back-link">&larr; Back to Blog</a>
+
+			<p>Resizing sounds simple&mdash;type in new numbers, click OK. But if you've ever ended up with a blurry, pixelated mess, you know there's more to it. This guide explains what actually happens when you resize an image and how to get clean results every time.</p>
+
+			<h2>Resolution vs. DPI: Two Different Things</h2>
+			<p><strong>Resolution</strong> is the pixel count of your image&mdash;say, 4000 &times; 3000 pixels. <strong>DPI (dots per inch)</strong> only describes how densely those pixels get printed on paper. A 1200 &times; 1800 pixel image is a crisp 4&times;6 inch print at 300 DPI, but the same file displayed full-screen is just... 1200 pixels wide. Changing DPI alone never changes image quality; changing pixel dimensions does.</p>
+
+			<h2>Downscaling: The Safe Direction</h2>
+			<p>Making images smaller is nearly lossless. The editor discards pixels and blends the remaining ones smoothly. Even so, method matters:</p>
+			<ul>
+				<li><strong>Bicubic resampling</strong> produces the smoothest results for photographs and is the default choice in most editors.</li>
+				<li><strong>Bilinear</strong> is faster and slightly softer&mdash;fine for web graphics.</li>
+				<li><strong>Nearest neighbor</strong> keeps original pixels untouched, which preserves razor-sharp edges but creates jagged artifacts on photos.</li>
+			</ul>
+			<p>After downscaling, apply light sharpening to restore crispness lost in the blend.</p>
+
+			<h2>Upscaling: Handle With Care</h2>
+			<p>Enlarging forces your editor to invent pixels that never existed. Results depend heavily on the algorithm:</p>
+			<ul>
+				<li><strong>Nearest neighbor:</strong> Duplicates pixels, producing visible blocks. Avoid for photos.</li>
+				<li><strong>Bilinear:</strong> Smooths transitions but can look soft or mushy.</li>
+				<li><strong>Bicubic:</strong> The best traditional option&mdash;better edge interpretation with fewer artifacts.</li>
+			</ul>
+			<p>Rules of thumb: enlarge in small steps (110&ndash;125% at a time) rather than one giant jump, never upscale beyond about 150% for print, and remember that modest enlargement plus sharpening usually beats any single huge interpolation.</p>
+
+			<h2>Practical Recipes</h2>
+			<ul>
+				<li><strong>Website hero image:</strong> Resize to 1920 px wide, bicubic, export as JPG at 80% quality.</li>
+				<li><strong>Blog thumbnails:</strong> 800 px wide is plenty; compress harder (60&ndash;70%) since small files load fast.</li>
+				<li><strong>Social media post:</strong> Match each platform's recommended size exactly&mdash;avoiding a second resize prevents extra softening.</li>
+				<li><strong>8&times;10 inch print:</strong> You need 2400 &times; 3000 pixels at 300 DPI. If your photo falls short, upscale gently with bicubic and inspect at 100% zoom before printing.</li>
+				<li><strong>Pixel art or icons:</strong> Use nearest neighbor at exact multiples (2x, 3x) to keep edges perfectly sharp.</li>
+			</ul>
+
+			<h2>Three Habits That Preserve Quality</h2>
+			<ol>
+				<li><strong>Always keep your original.</strong> Every resize rewrites pixels; work from the master copy.</li>
+				<li><strong>Resize once.</strong> Repeated small resizes compound blur. Go from original to final size in a single step.</li>
+				<li><strong>Sharpen after resizing,</strong> not before&mdash;resampling softens edges regardless of direction.</li>
+			</ol>
+
+			<h2>Try It Yourself</h2>
+			<p>Open any photo in miniphotoshop's Image Size dialog, switch between the resampling options, and zoom to 100% to compare. Once you've seen how each method treats edges, you'll never resize blindly again.</p>
+		</div>
+
+		<div class="page-footer">
+			<a href="../blog.html">Blog</a>
+			<a href="../about.html">About Us</a>
+			<a href="../contact.html">Contact Us</a>
+			<a href="../privacy.html">Privacy Policy</a>
+		</div>
+	</div>
+</body>
+</html>
