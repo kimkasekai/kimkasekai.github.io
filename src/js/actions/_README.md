@@ -2,4 +2,4 @@
 
 More information on wiki page:
 
-https://github.com/viliusle/minips/wiki/Undo-Redo-system
+https://github.com/kimkasekai/minips/wiki/Undo-Redo-system

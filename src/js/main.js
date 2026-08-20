@@ -1,5 +1,5 @@
 /**
- * minips - https://github.com/viliusle/minips
+ * minips - https://github.com/kimkasekai/minips
  * author: Vilius L.
  */
 

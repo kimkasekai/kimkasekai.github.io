@@ -1,7 +1,7 @@
 {
   "name": "minips",
   "version": "4.14.3",
-  "author": "Vilius L.",
+  "author": "kimkasekai",
   "description": "Online graphics editing tool lets create, edit images using HTML5 technologies.",
   "keywords": [
     "canvas",
@@ -17,9 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/viliusle/minips"
+    "url": "https://github.com/kimkasekai/kimkasekai.github.io"
   },
-  "homepage": "https://github.com/viliusle/minips",
+  "homepage": "https://kimkasekai.github.io/",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.14.5",

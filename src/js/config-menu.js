@@ -820,7 +820,7 @@ const menuDefinition = [
 			},
 			{
 				name: 'Report Issues',
-				href: 'https://github.com/viliusle/minips/issues'
+				href: 'https://github.com/kimkasekai/minips/issues'
 			},
 			{
 				divider: true

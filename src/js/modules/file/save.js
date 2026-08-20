@@ -667,7 +667,7 @@ class File_save_class {
 			width: config.WIDTH,
 			height: config.HEIGHT,
 			about: 'Image data with multi-layers. Can be opened using minips - '
-				+ 'https://github.com/viliusle/minips',
+				+ 'https://github.com/kimkasekai/minips',
 			date: today,
 			version: VERSION,
 			layer_active: config.layer.id,

@@ -5,13 +5,13 @@ Online image editor lets you create and edit images using HTML5 technologies. No
 minips operates directly in the browser. You can create images by pasting from the clipboard (ctrl+v) or uploading from the computer (_using menu or drag & drop_). Nothing will be sent to any server. Everything stays in your browser. 
 
 ## URL:
-**https://viliusle.github.io/minips/**
+**https://kimkasekai.github.io/minips/**
 
 ## Preview:
-![minips](https://raw.githubusercontent.com/viliusle/minips/master/images/preview.gif)
+![minips](https://raw.githubusercontent.com/kimkasekai/minips/master/images/preview.gif)
 (generated using minips)
 
-**Change log:** [/minips/releases](https://github.com/viliusle/minips/releases)
+**Change log:** [/minips/releases](https://github.com/kimkasekai/minips/releases)
 
 ## Browser Support
 - Chrome
@@ -40,17 +40,17 @@ minips operates directly in the browser. You can create images by pasting from t
 ## Embed
 To embed this app on another page, use the following HTML code:
 
-    <iframe style="box-sizing:border-box; width:100%; height:100vh;" id="minips" src="https://viliusle.github.io/minips/" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe style="box-sizing:border-box; width:100%; height:100vh;" id="minips" src="https://kimkasekai.github.io/minips/" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Build instructions
-See [Wiki > Build instructions](https://github.com/viliusle/minips/wiki/Build-instructions)
+See [Wiki > Build instructions](https://github.com/kimkasekai/minips/wiki/Build-instructions)
 
 ## Wiki
-See [Wiki](https://github.com/viliusle/minips/wiki)
+See [Wiki](https://github.com/kimkasekai/minips/wiki)
 
 ## Contributors
-<a align="center" href="https://github.com/viliusle/minips/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=viliusle/minips" />
+<a align="center" href="https://github.com/kimkasekai/minips/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kimkasekai/minips" />
 </a>
 
 ## License

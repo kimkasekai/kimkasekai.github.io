@@ -2,7 +2,7 @@
 	"info": {
 		"width": 1000,
 		"height": 750,
-		"about": "Image data with multi-layers. Can be opened using minips - https://github.com/viliusle/minips",
+		"about": "Image data with multi-layers. Can be opened using minips - https://github.com/kimkasekai/minips",
 		"date": "2021-06-16",
 		"version": "4.7.1",
 		"layer_active": 1,
