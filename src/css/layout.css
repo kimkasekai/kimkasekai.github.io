@@ -779,13 +779,46 @@ canvas{
 
 /* SEO content section */
 .seo-content {
-	display: none;
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 40px 20px;
+	padding: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #e0e0e0;
 	background: #1a1a2e;
+	border-top: 1px solid #333;
+}
+.seo-toggle {
+	display: block;
+	width: 100%;
+	padding: 12px 20px;
+	background: #16213e;
+	color: #4fc3f7;
+	border: 1px solid #333;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	margin: 10px 0;
+}
+.seo-toggle:hover {
+	background: #1a2744;
+}
+.seo-toggle:after {
+	content: '+';
+	float: right;
+	font-size: 20px;
+	color: #4fc3f7;
+}
+.seo-toggle.active:after {
+	content: '-';
+}
+.seo-body {
+	display: none;
+	padding: 10px 0;
+}
+.seo-body.visible {
+	display: block;
 }
 .seo-content h2 {
 	font-size: 24px;
