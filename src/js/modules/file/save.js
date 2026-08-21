@@ -666,8 +666,8 @@ class File_save_class {
 		export_data.info = {
 			width: config.WIDTH,
 			height: config.HEIGHT,
-			about: 'Image data with multi-layers. Can be opened using minips - '
-				+ 'https://github.com/kimkasekai/minips',
+			about: 'Image data with multi-layers. Can be opened using mini PS - '
+				+ 'https://github.com/kimkasekai/kimkasekai.github.io',
 			date: today,
 			version: VERSION,
 			layer_active: config.layer.id,

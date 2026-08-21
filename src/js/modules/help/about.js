@@ -15,7 +15,7 @@ class Help_about_class {
 			title: 'About',
 			params: [
 				{title: "", html: '<img style="width:64px;" class="about-logo" alt="" src="images/logo-colors.png" />'},
-				{title: "Name:", html: '<span class="about-name">minips</span>'},
+				{title: "Name:", html: '<span class="about-name">mini PS</span>'},
 				{title: "Version:", value: VERSION},
 				{title: "Description:", value: "Online image editor."},
 				{title: "Author:", value: 'kimkasekai'},

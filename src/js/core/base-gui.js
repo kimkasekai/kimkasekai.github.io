@@ -1,5 +1,5 @@
 /*
- * minips - https://github.com/kimkasekai/minips
+ * mini PS - https://github.com/kimkasekai/mini PS
  * author: Vilius L.
  */
 
