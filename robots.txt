@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /node_modules/
-Disallow: /dist/
 
 Sitemap: https://kimkasekai.github.io/sitemap.xml

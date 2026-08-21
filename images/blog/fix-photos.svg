@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#16213e"/>
+  <rect x="50" y="80" width="320" height="240" rx="12" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="2"/>
+  <rect x="70" y="100" width="280" height="180" rx="4" fill="#0d1b2a"/>
+  <rect x="70" y="100" width="280" height="180" rx="4" fill="#ff6b6b" opacity="0.15"/>
+  <text x="210" y="200" text-anchor="middle" font-family="Arial" font-size="32" fill="#ff6b6b" opacity="0.6">Overexposed</text>
+  <rect x="430" y="80" width="320" height="240" rx="12" fill="#1a1a2e" stroke="#4ecdc4" stroke-width="2"/>
+  <rect x="450" y="100" width="280" height="180" rx="4" fill="#0d1b2a"/>
+  <rect x="450" y="100" width="280" height="180" rx="4" fill="#4ecdc4" opacity="0.15"/>
+  <text x="590" y="200" text-anchor="middle" font-family="Arial" font-size="32" fill="#4ecdc4" opacity="0.6">Fixed</text>
+  <path d="M385 200 L415 200" stroke="#fff" stroke-width="3"/>
+  <polygon points="410,195 420,200 410,205" fill="#fff"/>
+</svg>

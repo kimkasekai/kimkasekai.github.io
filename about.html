@@ -6,7 +6,7 @@
 	<title>About Us - miniphotoshop | Free Online Image Editor</title>
 	<meta name="description" content="Learn about miniphotoshop - a free online image editor using HTML5. No installation, no downloads, 100% privacy. Edit photos directly in your browser." />
 	<meta name="keywords" content="about miniphotoshop, free image editor, html5 photo editor, online editing tool, browser based editor" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
 	<meta name="robots" content="index, follow" />
 	<meta name="author" content="kimkasekai" />
 	<link rel="canonical" href="https://kimkasekai.github.io/about.html" />
@@ -34,7 +34,13 @@
 			"@type": "WebApplication",
 			"name": "miniphotoshop",
 			"url": "https://kimkasekai.github.io/",
-			"description": "Free online image editor using HTML5"
+			"description": "Free online image editor using HTML5",
+			"author": {
+				"@type": "Person",
+				"name": "kimkasekai",
+				"url": "https://kimkasekai.github.io/",
+				"email": "kimkasekai@gmail.com"
+			}
 		}
 	}
 	</script>
@@ -64,6 +70,13 @@
 		.contact-info { background: #16213e; padding: 20px; border-radius: 8px; margin: 20px 0; }
 		.contact-info a { color: #4fc3f7; text-decoration: none; }
 		.contact-info a:hover { text-decoration: underline; }
+		.author-bio { background: #16213e; padding: 25px; border-radius: 8px; margin: 25px 0; display: flex; gap: 20px; align-items: flex-start; }
+		.author-avatar { width: 80px; height: 80px; border-radius: 50%; background: #4fc3f7; display: flex; align-items: center; justify-content: center; font-size: 32px; color: #1a1a2e; font-weight: bold; flex-shrink: 0; }
+		.author-info h3 { color: #fff; margin: 0 0 8px 0; font-size: 18px; }
+		.author-info p { color: #ccc; font-size: 15px; margin: 0 0 8px 0; }
+		.author-info a { color: #4fc3f7; text-decoration: none; }
+		.author-info a:hover { text-decoration: underline; }
+		.mission-box { background: #0d1b2a; border-left: 4px solid #4fc3f7; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
 		.page-footer { text-align: center; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
 		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
 		.page-footer a:hover { text-decoration: underline; }
@@ -87,29 +100,63 @@
 			<h2>What is miniphotoshop?</h2>
 			<p>
 				miniphotoshop is a free online image editor that lets you create and edit images directly in your browser
-				using HTML5 technologies. No installation required, no downloads needed.
+				using HTML5 technologies. No installation required, no downloads needed, and no account necessary.
+				Just open the editor and start working on your images immediately.
 			</p>
+
+			<div class="mission-box">
+				<h2>Our Mission</h2>
+				<p>
+					We believe everyone should have access to powerful image editing tools without paying for expensive software
+					or compromising their privacy. miniphotoshop was built to provide a fast, free, and private editing experience
+					that works on any device with a web browser.
+				</p>
+			</div>
+
+			<div class="author-bio">
+				<div class="author-avatar">K</div>
+				<div class="author-info">
+					<h3>kimkasekai</h3>
+					<p>
+						Developer and creator of miniphotoshop. Passionate about building free, privacy-focused web tools
+						that make image editing accessible to everyone. With a background in web development and a love for
+						open-source software, kimkasekai created miniphotoshop to fill the gap between expensive desktop
+						editors and limited online tools.
+					</p>
+					<p>Contact: <a href="mailto:kimkasekai@gmail.com">kimkasekai@gmail.com</a></p>
+				</div>
+			</div>
 
 			<h2>Features</h2>
 			<ul>
-				<li>Multi-layer editing system</li>
-				<li>Wide range of filters and effects (blur, sharpen, sepia, vintage, and more)</li>
-				<li>Professional tools (pencil, brush, magic wand, eraser, clone, crop, and more)</li>
-				<li>Color corrections (brightness, contrast, hue, saturation, luminance)</li>
-				<li>File support: PNG, JPG, BMP, WEBP, GIF, TIFF, and more</li>
-				<li>Works entirely in your browser - no data is sent to any server</li>
+				<li><strong>Multi-layer editing system</strong> - Work with multiple layers, adjust opacity, blend modes, and reorder layers for complex compositions.</li>
+				<li><strong>Filters and effects</strong> - Over 30 built-in effects including blur, sharpen, sepia, vintage, grayscale, vignette, emboss, and Instagram-style filters.</li>
+				<li><strong>Professional drawing tools</strong> - Brushes, pencils, gradients, shapes, text overlays, clone stamp, magic eraser, and color picker.</li>
+				<li><strong>Color corrections</strong> - Adjust brightness, contrast, hue, saturation, luminance, auto-fix, and white balance.</li>
+				<li><strong>Resize and crop</strong> - Resize to any dimension, crop with custom aspect ratios, rotate, flip, and trim transparent edges.</li>
+				<li><strong>File format support</strong> - Import and export PNG, JPG, BMP, WEBP, GIF, TIFF, and SVG files.</li>
+				<li><strong>100% private</strong> - All editing happens in your browser. No data is sent to any server.</li>
 			</ul>
+
+			<h2>Open Source</h2>
+			<p>
+				miniphotoshop is built on top of the open-source miniPaint project. We have customized and extended it
+				with additional features, improved the user interface, and optimized it for modern web browsers.
+				The original project is licensed under MIT, and we continue to contribute back to the community.
+			</p>
 
 			<h2>Privacy First</h2>
 			<p>
 				Your privacy matters. miniphotoshop operates entirely in your browser.
 				No images or data are uploaded or sent to any server. Everything stays on your device.
+				We do not collect personal information, and we do not require registration or login.
 			</p>
 
 			<h2>Contact</h2>
 			<div class="contact-info">
 				<p>Have questions, suggestions, or feedback? Feel free to reach out:</p>
 				<p>Email: <a href="mailto:kimkasekai@gmail.com">kimkasekai@gmail.com</a></p>
+				<p>We aim to respond within 2-3 business days.</p>
 			</div>
 		</div>
 

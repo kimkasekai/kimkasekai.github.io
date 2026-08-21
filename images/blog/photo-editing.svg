@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#16213e"/>
+  <rect x="50" y="80" width="300" height="240" rx="12" fill="#1a1a2e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="70" y="120" width="260" height="160" rx="4" fill="#0d1b2a"/>
+  <circle cx="200" cy="180" r="40" fill="#4fc3f7" opacity="0.3"/>
+  <path d="M140 280 L200 200 L260 250 L320 180 L380 280" stroke="#4fc3f7" stroke-width="3" fill="none"/>
+  <rect x="70" y="290" width="80" height="8" rx="4" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="160" y="290" width="60" height="8" rx="4" fill="#4fc3f7" opacity="0.3"/>
+  <rect x="450" y="80" width="300" height="240" rx="12" fill="#1a1a2e" stroke="#81d4fa" stroke-width="2"/>
+  <rect x="470" y="120" width="260" height="160" rx="4" fill="#0d1b2a"/>
+  <circle cx="600" cy="180" r="40" fill="#81d4fa" opacity="0.3"/>
+  <path d="M540 280 L600 200 L660 250 L720 180 L780 280" stroke="#81d4fa" stroke-width="3" fill="none"/>
+  <rect x="470" y="290" width="80" height="8" rx="4" fill="#81d4fa" opacity="0.5"/>
+  <rect x="560" y="290" width="60" height="8" rx="4" fill="#81d4fa" opacity="0.3"/>
+  <path d="M370 200 L430 200" stroke="#4fc3f7" stroke-width="3" stroke-dasharray="8,4"/>
+  <polygon points="425,195 435,200 425,205" fill="#4fc3f7"/>
+</svg>
