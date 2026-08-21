@@ -777,7 +777,16 @@ canvas{
 	text-decoration: underline;
 }
 
-/* SEO modal */
+/* SEO off-screen content (visible to crawlers, hidden from users) */
+.seo-hidden {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+/* SEO modal (shown on button click) */
 .seo-modal-overlay {
 	display: none;
 	position: fixed;
