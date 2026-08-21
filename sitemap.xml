@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://kimkasekai.github.io/</loc>
@@ -7,175 +7,181 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog.html</loc>
+		<loc>https://kimkasekai.github.io/blog</loc>
 		<lastmod>2026-08-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.9</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/about.html</loc>
+		<loc>https://kimkasekai.github.io/about</loc>
 		<lastmod>2026-08-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/contact.html</loc>
+		<loc>https://kimkasekai.github.io/contact</loc>
 		<lastmod>2026-08-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/privacy.html</loc>
+		<loc>https://kimkasekai.github.io/privacy</loc>
 		<lastmod>2026-08-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/10-stunning-photo-effects-you-can-create-online.html</loc>
+		<loc>https://kimkasekai.github.io/tos</loc>
+		<lastmod>2026-08-21</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://kimkasekai.github.io/blog/10-stunning-photo-effects-you-can-create-online</loc>
 		<lastmod>2026-08-15</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/how-to-remove-background-from-any-photo.html</loc>
+		<loc>https://kimkasekai.github.io/blog/how-to-remove-background-from-any-photo</loc>
 		<lastmod>2026-08-12</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/ultimate-guide-to-photo-resizing.html</loc>
+		<loc>https://kimkasekai.github.io/blog/ultimate-guide-to-photo-resizing</loc>
 		<lastmod>2026-08-10</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/best-free-online-photo-editors-compared.html</loc>
+		<loc>https://kimkasekai.github.io/blog/best-free-online-photo-editors-compared</loc>
 		<lastmod>2026-08-08</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/how-to-create-professional-id-photos-at-home.html</loc>
+		<loc>https://kimkasekai.github.io/blog/how-to-create-professional-id-photos-at-home</loc>
 		<lastmod>2026-08-05</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/understanding-image-file-formats.html</loc>
+		<loc>https://kimkasekai.github.io/blog/understanding-image-file-formats</loc>
 		<lastmod>2026-08-03</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/how-to-add-text-to-photos-like-a-pro.html</loc>
+		<loc>https://kimkasekai.github.io/blog/how-to-add-text-to-photos-like-a-pro</loc>
 		<lastmod>2026-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/fix-common-photo-problems-online.html</loc>
+		<loc>https://kimkasekai.github.io/blog/fix-common-photo-problems-online</loc>
 		<lastmod>2026-07-29</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/create-social-media-graphics-without-design-skills.html</loc>
+		<loc>https://kimkasekai.github.io/blog/create-social-media-graphics-without-design-skills</loc>
 		<lastmod>2026-07-26</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/photo-layer-editing-explained.html</loc>
+		<loc>https://kimkasekai.github.io/blog/photo-layer-editing-explained</loc>
 		<lastmod>2026-07-23</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/online-vs-desktop-photo-editors.html</loc>
+		<loc>https://kimkasekai.github.io/blog/online-vs-desktop-photo-editors</loc>
 		<lastmod>2026-07-20</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/how-to-remove-watermarks-from-photos.html</loc>
+		<loc>https://kimkasekai.github.io/blog/how-to-remove-watermarks-from-photos</loc>
 		<lastmod>2026-07-17</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/color-correction-tips-for-beginners.html</loc>
+		<loc>https://kimkasekai.github.io/blog/color-correction-tips-for-beginners</loc>
 		<lastmod>2026-07-14</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/how-to-make-collages-online.html</loc>
+		<loc>https://kimkasekai.github.io/blog/how-to-make-collages-online</loc>
 		<lastmod>2026-07-11</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/restore-damaged-old-photos-digitally.html</loc>
+		<loc>https://kimkasekai.github.io/blog/restore-damaged-old-photos-digitally</loc>
 		<lastmod>2026-07-08</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/essential-keyboard-shortcuts-for-photo-editing.html</loc>
+		<loc>https://kimkasekai.github.io/blog/essential-keyboard-shortcuts-for-photo-editing</loc>
 		<lastmod>2026-07-05</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/how-to-create-transparent-backgrounds.html</loc>
+		<loc>https://kimkasekai.github.io/blog/how-to-create-transparent-backgrounds</loc>
 		<lastmod>2026-07-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/photo-editing-for-ecommerce-sellers.html</loc>
+		<loc>https://kimkasekai.github.io/blog/photo-editing-for-ecommerce-sellers</loc>
 		<lastmod>2026-06-29</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/how-to-merge-multiple-photos-into-one.html</loc>
+		<loc>https://kimkasekai.github.io/blog/how-to-merge-multiple-photos-into-one</loc>
 		<lastmod>2026-06-26</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/digital-photography-color-theory-basics.html</loc>
+		<loc>https://kimkasekai.github.io/blog/digital-photography-color-theory-basics</loc>
 		<lastmod>2026-06-23</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/photography-editing-workflow-tips.html</loc>
+		<loc>https://kimkasekai.github.io/blog/photography-editing-workflow-tips</loc>
 		<lastmod>2026-06-20</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/how-to-remove-objects-from-photos.html</loc>
+		<loc>https://kimkasekai.github.io/blog/how-to-remove-objects-from-photos</loc>
 		<lastmod>2026-06-17</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/creating-custom-borders-and-frames.html</loc>
+		<loc>https://kimkasekai.github.io/blog/creating-custom-borders-and-frames</loc>
 		<lastmod>2026-06-14</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/optimize-images-for-web-loading-speed.html</loc>
+		<loc>https://kimkasekai.github.io/blog/optimize-images-for-web-loading-speed</loc>
 		<lastmod>2026-06-11</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://kimkasekai.github.io/blog/cropping-techniques-for-better-composition.html</loc>
+		<loc>https://kimkasekai.github.io/blog/cropping-techniques-for-better-composition</loc>
 		<lastmod>2026-06-08</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
