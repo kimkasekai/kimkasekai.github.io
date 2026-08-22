@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
 	entry: [
@@ -21,7 +22,7 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-					'style-loader',
+					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
 						options: {url: false}
@@ -43,6 +44,9 @@ module.exports = {
 		}),
 		new webpack.DefinePlugin({
 			VERSION: JSON.stringify(require("./package.json").version)
+		}),
+		new MiniCssExtractPlugin({
+			filename: 'bundle.css'
 		}),
 	],
 	devtool: "cheap-module-source-map",
