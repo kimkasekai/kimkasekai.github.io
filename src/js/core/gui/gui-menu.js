@@ -73,7 +73,7 @@ class GUI_menu_class {
 
 	generate_menu_bar_item_template(definition, index) {
 		return `
-			<li>
+			<li role="none">
 				<a id="main_menu_0_${index}" role="menuitem" tabindex="-1" aria-haspopup="true" aria-expanded="false"
 					href="javascript:void(0)" data-level="0" data-index="${ index }"><span class="name trn">${ definition.name }</span></a>
 			</li>
@@ -89,7 +89,7 @@ class GUI_menu_class {
 			`.trim();
 		} else {
 			return `
-				<li>
+				<li role="none">
 					<a id="main_menu_${ level }_${ index }" role="menuitem" tabindex="-1" aria-haspopup="${ (!!definition.children) + '' }"
 						href="${ definition.href ? definition.href : 'javascript:void(0)' }"
 						target="${ definition.href ? '_blank' : '_self' }"
