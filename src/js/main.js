@@ -1,5 +1,5 @@
 /**
- * mini PS - https://github.com/kimkasekai/kimkasekai.github.io
+ * mini PS - https://github.com/kimkasekai/miniphotoshop.site
  * author: Vilius L.
  */
 

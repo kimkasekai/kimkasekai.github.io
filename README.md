@@ -5,7 +5,7 @@ Online image editor lets you create and edit images using HTML5 technologies. No
 minips operates directly in the browser. You can create images by pasting from the clipboard (ctrl+v) or uploading from the computer (_using menu or drag & drop_). Nothing will be sent to any server. Everything stays in your browser. 
 
 ## URL:
-**https://kimkasekai.github.io/minips/**
+**https://miniphotoshop.site/minips/**
 
 ## Preview:
 ![minips](https://raw.githubusercontent.com/kimkasekai/minips/master/images/preview.gif)
@@ -40,7 +40,7 @@ minips operates directly in the browser. You can create images by pasting from t
 ## Embed
 To embed this app on another page, use the following HTML code:
 
-    <iframe style="box-sizing:border-box; width:100%; height:100vh;" id="minips" src="https://kimkasekai.github.io/minips/" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe style="box-sizing:border-box; width:100%; height:100vh;" id="minips" src="https://miniphotoshop.site/minips/" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Build instructions
 See [Wiki > Build instructions](https://github.com/kimkasekai/minips/wiki/Build-instructions)

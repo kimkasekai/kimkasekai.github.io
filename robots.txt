@@ -3,4 +3,4 @@ Allow: /
 Disallow: /node_modules/
 Disallow: /examples/
 
-Sitemap: https://kimkasekai.github.io/sitemap.xml
+Sitemap: https://miniphotoshop.site/sitemap.xml
