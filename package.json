@@ -21,6 +21,13 @@
   },
   "homepage": "https://miniphotoshop.site/",
   "license": "MIT",
+  "browserslist": [
+    "chrome >= 79",
+    "edge >= 79",
+    "firefox >= 75",
+    "safari >= 13.1",
+    "opera >= 66"
+  ],
   "devDependencies": {
     "@babel/core": "^7.14.5",
     "@babel/plugin-transform-runtime": "^7.14.5",
