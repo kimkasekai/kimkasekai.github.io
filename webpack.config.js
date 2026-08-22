@@ -46,7 +46,7 @@ module.exports = {
 			VERSION: JSON.stringify(require("./package.json").version)
 		}),
 		new MiniCssExtractPlugin({
-			filename: 'bundle.css'
+			filename: '../bundle.css'
 		}),
 	],
 	devtool: "cheap-module-source-map",
