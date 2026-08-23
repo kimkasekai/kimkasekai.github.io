@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>Compress PNG Online Free - Reduce PNG File Size | miniPhotoShop</title>
+	<meta name="description" content="Compress PNG images online for free. Smart 256-color optimization shrinks PNG files up to 70%, keeps transparency. Runs 100% in your browser." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
+	<meta name="robots" content="index, follow" />
+	<meta name="author" content="kimkasekai" />
+	<link rel="canonical" href="https://miniphotoshop.site/compress-png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://miniphotoshop.site/compress-png" />
+	<meta property="og:title" content="Compress PNG Online Free - Reduce PNG File Size" />
+	<meta property="og:description" content="Shrink PNG files up to 70% while keeping transparency. Free, private, no uploads." />
+	<meta property="og:image" content="https://miniphotoshop.site/images/preview.jpg" />
+	<meta property="og:site_name" content="miniPhotoShop" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@kimkasekai" />
+	<meta name="twitter:title" content="Compress PNG Online Free - Reduce PNG File Size" />
+	<meta name="twitter:description" content="Shrink PNG files up to 70% while keeping transparency. Free, private, no uploads." />
+	<meta name="twitter:image" content="https://miniphotoshop.site/images/preview.jpg" />
+	<meta name="theme-color" content="#1a1a2e" />
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/favicon.png">
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font-family: Arial, Helvetica, sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.8; }
+		.page-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+		.breadcrumb { padding: 10px 0; font-size: 14px; color: #888; }
+		.breadcrumb a { color: #4fc3f7; text-decoration: none; }
+		.breadcrumb a:hover { text-decoration: underline; }
+		.breadcrumb span { color: #ccc; }
+		.page-header { text-align: center; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+		.page-header h1 { font-size: 28px; color: #fff; margin-top: 10px; }
+		.page-header .logo-text { font-size: 36px; font-weight: bold; color: #4fc3f7; text-decoration: none; }
+		.page-header .logo-text:hover { color: #81d4fa; }
+		.page-header p.sub { color: #aaa; margin-top: 8px; font-size: 16px; }
+
+		.drop-zone {
+			border: 2px dashed #4fc3f7; border-radius: 12px; padding: 50px 20px;
+			text-align: center; cursor: pointer; transition: all 0.2s ease;
+			background: #16213e; margin-bottom: 20px;
+		}
+		.drop-zone:hover, .drop-zone.dragover { background: #1c2a4d; border-color: #81d4fa; }
+		.drop-zone .dz-icon { font-size: 42px; display: block; margin-bottom: 10px; }
+		.drop-zone .dz-main { font-size: 18px; color: #fff; font-weight: bold; }
+		.drop-zone .dz-hint { font-size: 14px; color: #888; margin-top: 6px; }
+		#file_input { display: none; }
+
+		.tool-panel { display: none; }
+		.tool-panel.visible { display: block; }
+		.controls-row {
+			display: flex; align-items: center; gap: 14px; flex-wrap: wrap; justify-content: center;
+			background: #16213e; border: 1px solid #333; border-radius: 12px; padding: 16px 20px; margin-bottom: 20px;
+		}
+		.controls-row label { color: #ccc; }
+		.controls-row select {
+			background: #0f1830; border: 1px solid #333; color: #fff;
+			border-radius: 6px; padding: 8px 10px; font-size: 15px;
+		}
+		.controls-row input[type="checkbox"] { accent-color: #4fc3f7; width: 17px; height: 17px; }
+		.controls-row .cb-label { cursor: pointer; }
+
+		.status { text-align: center; color: #4fc3f7; font-size: 14px; padding: 8px 0; display: none; }
+
+		.result-grid { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
+		.result-card {
+			flex: 1; min-width: 220px; background: #16213e; border: 1px solid #333;
+			border-radius: 12px; padding: 20px; text-align: center;
+		}
+		.result-card h3 { color: #888; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+		.result-card .size-value { font-size: 26px; font-weight: bold; color: #fff; }
+		.result-card .size-value.savings { color: #4caf50; }
+		.preview-box {
+			background: repeating-conic-gradient(#20264a 0% 25%, #16213e 0% 50%) 50% / 24px 24px;
+			border: 1px solid #333; border-radius: 12px; padding: 15px; margin-bottom: 18px; text-align: center;
+		}
+		.preview-box img { max-width: 100%; max-height: 320px; border-radius: 8px; }
+		.method-note { text-align: center; color: #888; font-size: 13px; margin-bottom: 18px; }
+
+		.btn {
+			display: inline-block; background: #4fc3f7; color: #1a1a2e; font-weight: bold;
+			padding: 12px 28px; border-radius: 8px; text-decoration: none; border: none;
+			cursor: pointer; font-size: 16px;
+		}
+		.btn:hover { background: #81d4fa; }
+		.btn.secondary { background: transparent; color: #4fc3f7; border: 1px solid #4fc3f7; }
+		.btn.secondary:hover { background: rgba(79,195,247,0.1); }
+		.actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 10px; }
+		.file-name { text-align: center; color: #888; font-size: 13px; margin-bottom: 20px; word-break: break-all; }
+
+		.content { padding: 20px 0; }
+		.content h2 { font-size: 22px; color: #4fc3f7; margin: 25px 0 12px 0; }
+		.content h3 { font-size: 17px; color: #fff; margin: 18px 0 8px 0; }
+		.content p { font-size: 16px; margin-bottom: 15px; color: #ccc; }
+		.content ul, .content ol { margin: 10px 0 15px 25px; }
+		.content li { margin-bottom: 8px; color: #ccc; }
+		.content strong { color: #fff; }
+		.content a { color: #4fc3f7; }
+		.faq-item { margin-bottom: 18px; }
+		.page-footer { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 20px; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
+		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
+		.page-footer a:hover { text-decoration: underline; }
+	</style>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-M4R4XJFQJE');
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebApplication",
+		"name": "PNG Compressor - miniPhotoShop",
+		"url": "https://miniphotoshop.site/compress-png",
+		"applicationCategory": "MultimediaApplication",
+		"operatingSystem": "Any (Web Browser)",
+		"description": "Free online PNG compressor with smart color optimization. Shrinks PNG files while keeping transparency - 100% private, browser-based.",
+		"offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+		"featureList": ["Smart color reduction (256/128/64/32 colors)", "Transparency preserved", "Optional dithering", "Optional resizing", "No uploads - runs in your browser"]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://miniphotoshop.site/"},
+			{"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://miniphotoshop.site/tools"},
+			{"@type": "ListItem", "position": 3, "name": "Compress PNG", "item": "https://miniphotoshop.site/compress-png"}
+		]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{"@type": "Question", "name": "How does this PNG compressor work?", "acceptedAnswer": {"@type": "Answer", "text": "It converts the image to an optimized 256-color (or fewer) palette, similar to how popular PNG optimizers work. Flat-color graphics and screenshots typically shrink by 30-70%."}},
+			{"@type": "Question", "name": "Is transparency kept?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Transparent areas remain transparent in the compressed PNG."}},
+			{"@type": "Question", "name": "When should I compress to JPEG instead?", "acceptedAnswer": {"@type": "Answer", "text": "JPEG is better for photographs without transparency. Use our JPG compressor for photos, and this tool for logos, screenshots, and graphics with sharp edges."}},
+			{"@type": "Question", "name": "Are my images uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything runs locally in your browser - images never leave your device."}}
+		]
+	}
+	</script>
+	<meta name="google-adsense-account" content="ca-pub-8401253039767399">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8401253039767399" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="page-container">
+		<nav class="breadcrumb" aria-label="Breadcrumb">
+			<a href="/">Home</a> &rsaquo; <a href="/tools">Tools</a> &rsaquo; <span>Compress PNG</span>
+		</nav>
+		<div class="page-header">
+			<a href="/" class="logo-link"><img src="images/logo-colors.png" alt="miniPhotoShop logo" width="40" height="40" /><span class="logo-text">miniPhotoShop</span></a>
+			<h1>Compress PNG Online</h1>
+			<p class="sub">Smart color optimization shrinks PNGs up to 70%. Transparency stays intact. No uploads.</p>
+		</div>
+
+		<div class="drop-zone" id="drop_zone" role="button" tabindex="0" aria-label="Choose or drop a PNG image">
+			<span class="dz-icon" aria-hidden="true">&#127912;</span>
+			<span class="dz-main">Drop your PNG here or click to browse</span>
+			<span class="dz-hint">Your file never leaves your device</span>
+		</div>
+		<input type="file" id="file_input" accept="image/png,image/*" />
+
+		<div class="tool-panel" id="tool_panel">
+			<div class="controls-row">
+				<label for="colors_select">Colors:</label>
+				<select id="colors_select">
+					<option value="0">Keep original</option>
+					<option value="256" selected>256 (best quality)</option>
+					<option value="128">128</option>
+					<option value="64">64</option>
+					<option value="32">32 (smallest)</option>
+				</select>
+				<input type="checkbox" id="dither_cb" checked />
+				<label class="cb-label" for="dither_cb">Dithering</label>
+				<label for="scale_select">Resize:</label>
+				<select id="scale_select">
+					<option value="1" selected>100%</option>
+					<option value="0.75">75%</option>
+					<option value="0.5">50%</option>
+				</select>
+			</div>
+
+			<div class="status" id="status">Optimizing&hellip;</div>
+
+			<div class="result-grid">
+				<div class="result-card">
+					<h3>Original</h3>
+					<div class="size-value" id="original_size">&ndash;</div>
+				</div>
+				<div class="result-card">
+					<h3>Optimized</h3>
+					<div class="size-value" id="result_size">&ndash;</div>
+				</div>
+				<div class="result-card">
+					<h3>Savings</h3>
+					<div class="size-value savings" id="savings">&ndash;</div>
+				</div>
+			</div>
+
+			<div class="preview-box">
+				<img id="preview_img" alt="Optimized PNG preview" />
+			</div>
+			<p class="method-note" id="method_note"></p>
+
+			<p class="file-name" id="file_name"></p>
+			<div class="actions">
+				<a href="#" class="btn" id="download_btn" download>Download Optimized PNG</a>
+				<button type="button" class="btn secondary" id="reset_btn">Choose Another Image</button>
+			</div>
+		</div>
+
+		<div class="content">
+			<h2>How to compress a PNG</h2>
+			<ol>
+				<li><strong>Drop your PNG</strong> into the box above.</li>
+				<li><strong>Pick the color count</strong> &mdash; 256 colors is usually invisible to the eye; try 64 for maximum savings.</li>
+				<li><strong>Download</strong> the optimized file.</li>
+			</ol>
+
+			<h2>Why are PNG files so large?</h2>
+			<p>A standard PNG stores up to 16 million colors per pixel. Most logos, icons, and screenshots actually use only a handful of shades. This tool analyzes your image, builds the smallest optimal palette, and re-encodes the file &mdash; the same core technique popular desktop optimizers use, running privately inside your browser.</p>
+
+			<h2>Frequently Asked Questions</h2>
+			<div class="faq-item">
+				<h3>Will 256 colors look worse?</h3>
+				<p>For flat graphics, UI screenshots, and clipart &mdash; virtually never. With dithering enabled, even gradients survive surprisingly well. Photographs may benefit more from <a href="/compress-jpg">JPG compression</a>.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Is transparency kept?</h3>
+				<p>Yes, transparent areas remain fully transparent.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Are my images uploaded?</h3>
+				<p>No. All processing happens locally in your browser using JavaScript.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Is it free?</h3>
+				<p>Completely free, unlimited, no sign-up, no watermarks.</p>
+			</div>
+
+			<h2>More free image tools</h2>
+			<p>Browse all tools on our <a href="/tools">tools page</a>: <a href="/compress-jpg">JPG compressor</a>, <a href="/compress-100kb">compress to exact KB</a>, <a href="/convert-webp">WebP converter</a>, and <a href="/remove-background">background remover</a>.</p>
+		</div>
+	</div>
+
+	<footer class="page-footer">
+		<a href="/">Editor</a>
+		<a href="/tools">Tools</a>
+		<a href="/blog">Blog</a>
+		<a href="/about">About Us</a>
+		<a href="/privacy">Privacy Policy</a>
+	</footer>
+
+	<script>
+	(function () {
+		var CRC_TABLE = (function () {
+			var table = [];
+			for (var n = 0; n < 256; n++) {
+				var c = n;
+				for (var k = 0; k < 8; k++) {
+					c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1);
+				}
+				table[n] = c >>> 0;
+			}
+			return table;
+		})();
+
+		function crc32(bytes) {
+			var c = 0xFFFFFFFF;
+			for (var i = 0; i < bytes.length; i++) {
+				c = CRC_TABLE[(c ^ bytes[i]) & 0xFF] ^ (c >>> 8);
+			}
+			return (c ^ 0xFFFFFFFF) >>> 0;
+		}
+
+		function u32be(v) {
+			return new Uint8Array([(v >>> 24) & 255, (v >>> 16) & 255, (v >>> 8) & 255, v & 255]);
+		}
+
+		function strBytes(s) {
+			var out = new Uint8Array(s.length);
+			for (var i = 0; i < s.length; i++) out[i] = s.charCodeAt(i);
+			return out;
+		}
+
+		function concatBytes(list) {
+			var total = 0;
+			list.forEach(function (b) { total += b.length; });
+			var out = new Uint8Array(total);
+			var offset = 0;
+			list.forEach(function (b) { out.set(b, offset); offset += b.length; });
+			return out;
+		}
+
+		function pngChunk(type, data) {
+			return concatBytes([u32be(data.length), type, data, u32be(crc32(concatBytes([type, data])))]);
+		}
+
+		function zlibDeflate(bytes) {
+			return new Blob([bytes]).stream().pipeThrough(new CompressionStream('deflate'));
+		}
+
+		async function encodeIndexedPng(width, height, palette, alphas, indices) {
+			var ihdr = concatBytes([u32be(width), u32be(height), new Uint8Array([8, 3, 0, 0, 0])]);
+			var plte = new Uint8Array(palette.length * 3);
+			for (var i = 0; i < palette.length; i++) {
+				plte[i * 3] = palette[i][0];
+				plte[i * 3 + 1] = palette[i][1];
+				plte[i * 3 + 2] = palette[i][2];
+			}
+			var trns = new Uint8Array(alphas);
+			var rowLength = width + 1;
+			var raw = new Uint8Array(rowLength * height);
+			for (var y = 0; y < height; y++) {
+				raw[y * rowLength] = 0;
+				for (var x = 0; x < width; x++) {
+					raw[y * rowLength + 1 + x] = indices[y * width + x];
+				}
+			}
+			var idat = new Uint8Array(await new Response(zlibDeflate(raw)).arrayBuffer());
+			return concatBytes([
+				new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]),
+				pngChunk(strBytes('IHDR'), ihdr),
+				pngChunk(strBytes('PLTE'), plte),
+				pngChunk(strBytes('tRNS'), trns),
+				pngChunk(strBytes('IDAT'), idat),
+				pngChunk(strBytes('IEND'), new Uint8Array(0))
+			]);
+		}
+
+		function gatherSamples(data, width, height, limit) {
+			var samples = [];
+			var total = width * height;
+			var step = Math.max(1, Math.floor(total / limit));
+			for (var i = 0; i < total; i += step) {
+				if (data[i * 4 + 3] >= 128) {
+					samples.push([data[i * 4], data[i * 4 + 1], data[i * 4 + 2]]);
+				}
+			}
+			return samples;
+		}
+
+		function bucketRange(bucket) {
+			var min = [255, 255, 255];
+			var max = [0, 0, 0];
+			for (var i = 0; i < bucket.length; i++) {
+				var p = bucket[i];
+				for (var ch = 0; ch < 3; ch++) {
+					if (p[ch] < min[ch]) min[ch] = p[ch];
+					if (p[ch] > max[ch]) max[ch] = p[ch];
+				}
+			}
+			var channel = 0;
+			var range = -1;
+			for (ch = 0; ch < 3; ch++) {
+				var r = max[ch] - min[ch];
+				if (r > range) { range = r; channel = ch; }
+			}
+			return { channel: channel, range: range };
+		}
+
+		function medianCut(samples, maxColors) {
+			var buckets = [samples];
+			while (buckets.length < maxColors) {
+				var bestIndex = -1;
+				var bestRange = -1;
+				for (var i = 0; i < buckets.length; i++) {
+					if (buckets[i].length < 2) continue;
+					var r = bucketRange(buckets[i]).range;
+					if (r > bestRange) { bestRange = r; bestIndex = i; }
+				}
+				if (bestIndex < 0 || bestRange === 0) break;
+				var info = bucketRange(buckets[bestIndex]);
+				var bucket = buckets[bestIndex];
+				bucket.sort(function (a, b) { return a[info.channel] - b[info.channel]; });
+				var mid = bucket.length >> 1;
+				buckets.splice(bestIndex, 1, bucket.slice(0, mid), bucket.slice(mid));
+			}
+			return buckets.map(function (bucket) {
+				var sum = [0, 0, 0];
+				bucket.forEach(function (p) { sum[0] += p[0]; sum[1] += p[1]; sum[2] += p[2]; });
+				var n = bucket.length || 1;
+				return [Math.round(sum[0] / n), Math.round(sum[1] / n), Math.round(sum[2] / n)];
+			});
+		}
+
+		function nearestPalette(r, g, b, palette) {
+			var bestIndex = 0;
+			var bestDist = Infinity;
+			for (var i = 0; i < palette.length; i++) {
+				var dr = r - palette[i][0];
+				var dg = g - palette[i][1];
+				var db = b - palette[i][2];
+				var dist = dr * dr + dg * dg + db * db;
+				if (dist < bestDist) { bestDist = dist; bestIndex = i; }
+			}
+			return bestIndex;
+		}
+
+		function quantizeIndices(data, width, height, palette, dither) {
+			var transparentIndex = palette.length;
+			var fullPalette = palette.concat([[0, 0, 0]]);
+			var indices = new Uint8Array(width * height);
+			var cache = {};
+			var curErr = new Float32Array((width + 2) * 3);
+			var nextErr = new Float32Array((width + 2) * 3);
+			for (var y = 0; y < height; y++) {
+				curErr.set(nextErr);
+				nextErr.fill(0);
+				for (var x = 0; x < width; x++) {
+					var pos = (y * width + x) * 4;
+					if (data[pos + 3] < 128) {
+						indices[y * width + x] = transparentIndex;
+						continue;
+					}
+					var eOff = (x + 1) * 3;
+					var r = Math.min(255, Math.max(0, data[pos] + curErr[eOff]));
+					var g = Math.min(255, Math.max(0, data[pos + 1] + curErr[eOff + 1]));
+					var b = Math.min(255, Math.max(0, data[pos + 2] + curErr[eOff + 2]));
+					var key = ((r >> 3) << 10) | ((g >> 3) << 5) | (b >> 3);
+					var idx = cache[key];
+					if (idx === undefined) {
+						idx = nearestPalette(r, g, b, palette);
+						cache[key] = idx;
+					}
+					indices[y * width + x] = idx;
+					if (dither && palette.length > 0) {
+						var er = r - palette[idx][0];
+						var eg = g - palette[idx][1];
+						var eb = b - palette[idx][2];
+						var right = eOff + 3;
+						curErr[right] += er * 7 / 16;
+						curErr[right + 1] += eg * 7 / 16;
+						curErr[right + 2] += eb * 7 / 16;
+						var nl = x === 0 ? 0 : eOff - 3;
+						var nm = eOff;
+						var nr = eOff + 3;
+						nextErr[nl] += er * 3 / 16;
+						nextErr[nl + 1] += eg * 3 / 16;
+						nextErr[nl + 2] += eb * 3 / 16;
+						nextErr[nm] += er * 5 / 16;
+						nextErr[nm + 1] += eg * 5 / 16;
+						nextErr[nm + 2] += eb * 5 / 16;
+						nextErr[nr] += er * 1 / 16;
+						nextErr[nr + 1] += eg * 1 / 16;
+						nextErr[nr + 2] += eb * 1 / 16;
+					}
+				}
+			}
+			var alphas = [];
+			for (i = 0; i < palette.length; i++) alphas.push(255);
+			alphas.push(0);
+			return { indices: indices, alphas: alphas };
+		}
+
+		var dropZone = document.getElementById('drop_zone');
+		var fileInput = document.getElementById('file_input');
+		var panel = document.getElementById('tool_panel');
+		var statusEl = document.getElementById('status');
+		var colorsSelect = document.getElementById('colors_select');
+		var ditherCb = document.getElementById('dither_cb');
+		var scaleSelect = document.getElementById('scale_select');
+		var originalSizeEl = document.getElementById('original_size');
+		var resultSizeEl = document.getElementById('result_size');
+		var savingsEl = document.getElementById('savings');
+		var previewImg = document.getElementById('preview_img');
+		var methodNote = document.getElementById('method_note');
+		var fileNameEl = document.getElementById('file_name');
+		var downloadBtn = document.getElementById('download_btn');
+		var resetBtn = document.getElementById('reset_btn');
+
+		var currentImg = null;
+		var originalBytes = 0;
+		var baseName = 'optimized';
+		var objectUrl = null;
+
+		function formatBytes(bytes) {
+			if (bytes < 1024) return bytes + ' B';
+			if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+			return (bytes / 1048576).toFixed(2) + ' MB';
+		}
+
+		function drawScaled(scale) {
+			var canvas = document.createElement('canvas');
+			canvas.width = Math.max(1, Math.round(currentImg.naturalWidth * scale));
+			canvas.height = Math.max(1, Math.round(currentImg.naturalHeight * scale));
+			canvas.getContext('2d').drawImage(currentImg, 0, 0, canvas.width, canvas.height);
+			return canvas;
+		}
+
+		function canvasToBlob(canvas) {
+			return new Promise(function (resolve) {
+				canvas.toBlob(function (blob) { resolve(blob); }, 'image/png');
+			});
+		}
+
+		async function optimize() {
+			if (!currentImg) return;
+			statusEl.style.display = 'block';
+
+			var scale = parseFloat(scaleSelect.value);
+			var canvas = drawScaled(scale);
+			var ctx = canvas.getContext('2d');
+			var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+			var maxColors = parseInt(colorsSelect.value, 10);
+			var blob = null;
+			var methodText = '';
+
+			if (maxColors > 0 && typeof CompressionStream !== 'undefined') {
+				await new Promise(function (resolve) { setTimeout(resolve, 30); });
+				var samples = gatherSamples(imageData.data, canvas.width, canvas.height, 150000);
+				if (samples.length > 1) {
+					var palette = medianCut(samples, maxColors);
+					var q = quantizeIndices(imageData.data, canvas.width, canvas.height, palette, ditherCb.checked);
+					try {
+						var pngBytes = await encodeIndexedPng(canvas.width, canvas.height, palette, q.alphas, q.indices);
+						blob = new Blob([pngBytes], { type: 'image/png' });
+						methodText = palette.length + '-color optimized palette' + (ditherCb.checked ? ' + dithering' : '');
+					} catch (err) {
+						blob = null;
+					}
+				}
+			}
+
+			if (!blob && maxColors > 0) {
+				methodText = typeof CompressionStream !== 'undefined' ? '' : 'color reduced (fallback encoder)';
+				var samples2 = gatherSamples(imageData.data, canvas.width, canvas.height, 150000);
+				var palette2 = medianCut(samples2, maxColors);
+				var mapped = quantizeIndices(imageData.data, canvas.width, canvas.height, palette2, false);
+				var outCanvas = document.createElement('canvas');
+				outCanvas.width = canvas.width;
+				outCanvas.height = canvas.height;
+				var outCtx = outCanvas.getContext('2d');
+				var od = outCtx.createImageData(canvas.width, canvas.height);
+				var transparentIndex = mapped.alphas.length - 1;
+				for (var i = 0; i < mapped.indices.length; i++) {
+					var pi = mapped.indices[i];
+					var dst = i * 4;
+					if (pi === transparentIndex) {
+						od.data[dst + 3] = 0;
+					} else {
+						od.data[dst] = palette2[pi][0];
+						od.data[dst + 1] = palette2[pi][1];
+						od.data[dst + 2] = palette2[pi][2];
+						od.data[dst + 3] = 255;
+					}
+				}
+				outCtx.putImageData(od, 0, 0);
+				blob = await canvasToBlob(outCanvas);
+			}
+
+			if (!blob) {
+				blob = await canvasToBlob(canvas);
+				if (!methodText) methodText = 're-encoded' + (scale < 1 ? ' \u00b7 resized to ' + Math.round(scale * 100) + '%' : '');
+			}
+
+			statusEl.style.display = 'none';
+
+			if (objectUrl) URL.revokeObjectURL(objectUrl);
+			objectUrl = URL.createObjectURL(blob);
+
+			previewImg.src = objectUrl;
+			downloadBtn.href = objectUrl;
+			downloadBtn.setAttribute('download', baseName + '.png');
+			resultSizeEl.textContent = formatBytes(blob.size);
+			savingsEl.textContent = Math.round((1 - blob.size / originalBytes) * 100) + '%';
+			methodNote.textContent = methodText;
+			panel.classList.add('visible');
+		}
+
+		function loadFile(file) {
+			if (!file || !/^image\//.test(file.type)) {
+				alert('Please choose an image file.');
+				return;
+			}
+			originalBytes = file.size;
+			baseName = (file.name.replace(/\.[^.]+$/, '') || 'image') + '-minips';
+			fileNameEl.textContent = file.name + ' (' + formatBytes(file.size) + ')';
+			originalSizeEl.textContent = formatBytes(file.size);
+
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				var img = new Image();
+				img.onload = function () {
+					currentImg = img;
+					optimize();
+				};
+				img.onerror = function () { alert('Could not read this image.'); };
+				img.src = e.target.result;
+			};
+			reader.readAsDataURL(file);
+		}
+
+		dropZone.addEventListener('click', function () { fileInput.click(); });
+		dropZone.addEventListener('keydown', function (e) {
+			if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInput.click(); }
+		});
+		fileInput.addEventListener('change', function () {
+			if (fileInput.files.length) loadFile(fileInput.files[0]);
+		});
+		['dragenter', 'dragover'].forEach(function (evt) {
+			dropZone.addEventListener(evt, function (e) { e.preventDefault(); dropZone.classList.add('dragover'); });
+		});
+		['dragleave', 'drop'].forEach(function (evt) {
+			dropZone.addEventListener(evt, function (e) { e.preventDefault(); dropZone.classList.remove('dragover'); });
+		});
+		dropZone.addEventListener('drop', function (e) {
+			if (e.dataTransfer.files.length) loadFile(e.dataTransfer.files[0]);
+		});
+
+		colorsSelect.addEventListener('change', function () { if (currentImg) optimize(); });
+		scaleSelect.addEventListener('change', function () { if (currentImg) optimize(); });
+
+		resetBtn.addEventListener('click', function () {
+			panel.classList.remove('visible');
+			currentImg = null;
+			fileInput.value = '';
+			fileInput.click();
+		});
+	})();
+	</script>
+</body>
+</html>

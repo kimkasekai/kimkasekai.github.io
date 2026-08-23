@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>Compress JPG Online Free - Reduce JPEG File Size | miniPhotoShop</title>
+	<meta name="description" content="Compress JPG images online for free. Reduce JPEG file size up to 90% with adjustable quality. No uploads - everything happens in your browser." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
+	<meta name="robots" content="index, follow" />
+	<meta name="author" content="kimkasekai" />
+	<link rel="canonical" href="https://miniphotoshop.site/compress-jpg" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://miniphotoshop.site/compress-jpg" />
+	<meta property="og:title" content="Compress JPG Online Free - Reduce JPEG File Size" />
+	<meta property="og:description" content="Reduce JPG file size up to 90% without uploading your images. 100% private, runs in your browser." />
+	<meta property="og:image" content="https://miniphotoshop.site/images/preview.jpg" />
+	<meta property="og:site_name" content="miniPhotoShop" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@kimkasekai" />
+	<meta name="twitter:title" content="Compress JPG Online Free - Reduce JPEG File Size" />
+	<meta name="twitter:description" content="Reduce JPG file size up to 90% without uploading your images. 100% private, runs in your browser." />
+	<meta name="twitter:image" content="https://miniphotoshop.site/images/preview.jpg" />
+	<meta name="theme-color" content="#1a1a2e" />
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/favicon.png">
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font-family: Arial, Helvetica, sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.8; }
+		.page-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+		.breadcrumb { padding: 10px 0; font-size: 14px; color: #888; }
+		.breadcrumb a { color: #4fc3f7; text-decoration: none; }
+		.breadcrumb a:hover { text-decoration: underline; }
+		.breadcrumb span { color: #ccc; }
+		.page-header { text-align: center; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+		.page-header h1 { font-size: 28px; color: #fff; margin-top: 10px; }
+		.page-header .logo-text { font-size: 36px; font-weight: bold; color: #4fc3f7; text-decoration: none; }
+		.page-header .logo-text:hover { color: #81d4fa; }
+		.page-header p.sub { color: #aaa; margin-top: 8px; font-size: 16px; }
+
+		.drop-zone {
+			border: 2px dashed #4fc3f7; border-radius: 12px; padding: 50px 20px;
+			text-align: center; cursor: pointer; transition: all 0.2s ease;
+			background: #16213e; margin-bottom: 20px;
+		}
+		.drop-zone:hover, .drop-zone.dragover { background: #1c2a4d; border-color: #81d4fa; }
+		.drop-zone .dz-icon { font-size: 42px; display: block; margin-bottom: 10px; }
+		.drop-zone .dz-main { font-size: 18px; color: #fff; font-weight: bold; }
+		.drop-zone .dz-hint { font-size: 14px; color: #888; margin-top: 6px; }
+		#file_input { display: none; }
+
+		.tool-panel { display: none; }
+		.tool-panel.visible { display: block; }
+		.result-grid { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
+		.result-card {
+			flex: 1; min-width: 220px; background: #16213e; border: 1px solid #333;
+			border-radius: 12px; padding: 20px; text-align: center;
+		}
+		.result-card h3 { color: #888; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+		.result-card .size-value { font-size: 26px; font-weight: bold; color: #fff; }
+		.result-card .size-value.savings { color: #4caf50; }
+		.preview-box { background: #16213e; border: 1px solid #333; border-radius: 12px; padding: 15px; margin-bottom: 20px; text-align: center; }
+		.preview-box img { max-width: 100%; max-height: 320px; border-radius: 8px; }
+
+		.quality-row { display: flex; align-items: center; gap: 15px; background: #16213e; border: 1px solid #333; border-radius: 12px; padding: 18px 20px; margin-bottom: 20px; }
+		.quality-row label { color: #ccc; white-space: nowrap; }
+		.quality-row input[type="range"] { flex: 1; accent-color: #4fc3f7; }
+		.quality-row .q-value { font-weight: bold; color: #4fc3f7; min-width: 48px; text-align: right; }
+		.q-presets { display: flex; gap: 8px; margin-top: 8px; justify-content: center; margin-bottom: 20px; }
+		.q-presets button {
+			background: #16213e; color: #ccc; border: 1px solid #333; border-radius: 6px;
+			padding: 6px 14px; cursor: pointer; font-size: 13px;
+		}
+		.q-presets button:hover, .q-presets button.active { border-color: #4fc3f7; color: #4fc3f7; }
+
+		.btn {
+			display: inline-block; background: #4fc3f7; color: #1a1a2e; font-weight: bold;
+			padding: 12px 28px; border-radius: 8px; text-decoration: none; border: none;
+			cursor: pointer; font-size: 16px;
+		}
+		.btn:hover { background: #81d4fa; }
+		.btn.secondary { background: transparent; color: #4fc3f7; border: 1px solid #4fc3f7; }
+		.btn.secondary:hover { background: rgba(79,195,247,0.1); }
+		.actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 10px; }
+		.file-name { text-align: center; color: #888; font-size: 13px; margin-bottom: 20px; word-break: break-all; }
+		.status { text-align: center; color: #888; font-size: 14px; padding: 10px 0; display: none; }
+
+		.content { padding: 20px 0; }
+		.content h2 { font-size: 22px; color: #4fc3f7; margin: 25px 0 12px 0; }
+		.content h3 { font-size: 17px; color: #fff; margin: 18px 0 8px 0; }
+		.content p { font-size: 16px; margin-bottom: 15px; color: #ccc; }
+		.content ul, .content ol { margin: 10px 0 15px 25px; }
+		.content li { margin-bottom: 8px; color: #ccc; }
+		.content strong { color: #fff; }
+		.content a { color: #4fc3f7; }
+		.faq-item { margin-bottom: 18px; }
+		.page-footer { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 20px; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
+		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
+		.page-footer a:hover { text-decoration: underline; }
+	</style>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-M4R4XJFQJE');
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebApplication",
+		"name": "JPG Compressor - miniPhotoShop",
+		"url": "https://miniphotoshop.site/compress-jpg",
+		"applicationCategory": "MultimediaApplication",
+		"operatingSystem": "Any (Web Browser)",
+		"description": "Free online JPG compressor. Reduce JPEG file size with adjustable quality directly in your browser - no uploads required.",
+		"offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+		"featureList": ["Adjustable compression quality", "Instant before/after size comparison", "100% client-side processing", "No watermarks", "Free to use"]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://miniphotoshop.site/"},
+			{"@type": "ListItem", "position": 2, "name": "Compress JPG", "item": "https://miniphotoshop.site/compress-jpg"}
+		]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{"@type": "Question", "name": "Is this JPG compressor really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it is completely free with no limits, no sign-up, and no watermarks."}},
+			{"@type": "Question", "name": "Are my photos uploaded to a server?", "acceptedAnswer": {"@type": "Answer", "text": "No. Compression happens entirely inside your browser using JavaScript. Your images never leave your device."}},
+			{"@type": "Question", "name": "How much can I compress a JPG?", "acceptedAnswer": {"@type": "Answer", "text": "Typically 50-90% size reduction at quality levels between 60-80%, with little visible difference."}},
+			{"@type": "Question", "name": "What quality setting should I use?", "acceptedAnswer": {"@type": "Answer", "text": "70-80% is recommended for web images. Use 85-95% for printing or archiving."}}
+		]
+	}
+	</script>
+	<meta name="google-adsense-account" content="ca-pub-8401253039767399">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8401253039767399" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="page-container">
+		<nav class="breadcrumb" aria-label="Breadcrumb">
+			<a href="/">Home</a> &rsaquo; <span>Compress JPG</span>
+		</nav>
+		<div class="page-header">
+			<a href="/" class="logo-link"><img src="images/logo-colors.png" alt="miniPhotoShop logo" width="40" height="40" /><span class="logo-text">miniPhotoShop</span></a>
+			<h1>Compress JPG Online</h1>
+			<p class="sub">Reduce JPEG file size up to 90%. Private, free, no uploads &mdash; everything runs in your browser.</p>
+		</div>
+
+		<div class="drop-zone" id="drop_zone" role="button" tabindex="0" aria-label="Choose or drop a JPG image">
+			<span class="dz-icon" aria-hidden="true">&#128444;</span>
+			<span class="dz-main">Drop your JPG here or click to browse</span>
+			<span class="dz-hint">Your file never leaves your device</span>
+		</div>
+		<input type="file" id="file_input" accept="image/jpeg,image/jpg,image/png,image/webp" />
+
+		<div class="status" id="status">Compressing&hellip;</div>
+
+		<div class="tool-panel" id="tool_panel">
+			<div class="quality-row">
+				<label for="quality_slider">Quality</label>
+				<input type="range" id="quality_slider" min="10" max="100" step="5" value="80" />
+				<span class="q-value" id="quality_value">80%</span>
+			</div>
+			<div class="q-presets" role="group" aria-label="Quality presets">
+				<button type="button" data-q="60">Small (60%)</button>
+				<button type="button" data-q="75">Balanced (75%)</button>
+				<button type="button" data-q="85">High (85%)</button>
+				<button type="button" data-q="95">Max (95%)</button>
+			</div>
+
+			<div class="result-grid">
+				<div class="result-card">
+					<h3>Original</h3>
+					<div class="size-value" id="original_size">&ndash;</div>
+				</div>
+				<div class="result-card">
+					<h3>Compressed</h3>
+					<div class="size-value" id="compressed_size">&ndash;</div>
+				</div>
+				<div class="result-card">
+					<h3>Savings</h3>
+					<div class="size-value savings" id="savings">&ndash;</div>
+				</div>
+			</div>
+
+			<div class="preview-box">
+				<img id="preview_img" alt="Compressed image preview" />
+			</div>
+
+			<p class="file-name" id="file_name"></p>
+			<div class="actions">
+				<a href="#" class="btn" id="download_btn" download>Download Compressed JPG</a>
+				<button type="button" class="btn secondary" id="reset_btn">Choose Another Image</button>
+			</div>
+		</div>
+
+		<div class="content">
+			<h2>How to compress a JPG</h2>
+			<ol>
+				<li><strong>Drop your image</strong> into the box above or click to browse your files.</li>
+				<li><strong>Adjust the quality slider</strong> until you are happy with the size vs. quality balance.</li>
+				<li><strong>Click Download</strong> to save the compressed JPG to your computer.</li>
+			</ol>
+
+			<h2>Why compress with miniPhotoShop?</h2>
+			<ul>
+				<li><strong>100% private</strong> &mdash; files are processed locally in your browser and never uploaded.</li>
+				<li><strong>Instant results</strong> &mdash; see the new file size and savings percentage in real time.</li>
+				<li><strong>No limits</strong> &mdash; compress as many images as you want, completely free.</li>
+				<li><strong>Works everywhere</strong> &mdash; Windows, Mac, Linux, Android, and iPhone.</li>
+			</ul>
+
+			<h2>Frequently Asked Questions</h2>
+			<div class="faq-item">
+				<h3>Is this JPG compressor really free?</h3>
+				<p>Yes. There are no limits, no sign-up, and no watermarks on your downloads.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Are my photos uploaded to a server?</h3>
+				<p>No. Compression happens entirely inside your browser using JavaScript. Your images never leave your device.</p>
+			</div>
+			<div class="faq-item">
+				<h3>How much can I compress a JPG?</h3>
+				<p>Most photos shrink by 50&ndash;90% at quality settings between 60 and 80, usually with no visible difference.</p>
+			</div>
+			<div class="faq-item">
+				<h3>What quality setting should I use?</h3>
+				<p>70&ndash;80% is ideal for websites and email. Use 85&ndash;95% if you plan to print the image or archive it.</p>
+			</div>
+
+			<h2>Need more than compression?</h2>
+			<p>Open the <a href="/">full miniPhotoShop editor</a> to crop, resize, add filters, remove backgrounds, and much more. You can also read our guides on <a href="/blog/optimize-images-for-web-loading-speed">optimizing images for web loading speed</a> and <a href="/blog/understanding-image-file-formats">understanding image file formats</a>.</p>
+		</div>
+	</div>
+
+	<footer class="page-footer">
+		<a href="/">Editor</a>
+		<a href="/blog">Blog</a>
+		<a href="/about">About Us</a>
+		<a href="/tos">TOS</a>
+		<a href="/privacy">Privacy Policy</a>
+	</footer>
+
+	<script>
+	(function () {
+		var dropZone = document.getElementById('drop_zone');
+		var fileInput = document.getElementById('file_input');
+		var status = document.getElementById('status');
+		var panel = document.getElementById('tool_panel');
+		var slider = document.getElementById('quality_slider');
+		var qValue = document.getElementById('quality_value');
+		var originalSizeEl = document.getElementById('original_size');
+		var compressedSizeEl = document.getElementById('compressed_size');
+		var savingsEl = document.getElementById('savings');
+		var previewImg = document.getElementById('preview_img');
+		var fileNameEl = document.getElementById('file_name');
+		var downloadBtn = document.getElementById('download_btn');
+		var resetBtn = document.getElementById('reset_btn');
+
+		var currentBitmap = null;
+		var currentName = '';
+		var currentOriginalBytes = 0;
+		var objectUrl = null;
+
+		function formatBytes(bytes) {
+			if (bytes < 1024) return bytes + ' B';
+			if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+			return (bytes / 1048576).toFixed(2) + ' MB';
+		}
+
+		function loadFile(file) {
+			if (!file || !/^image\//.test(file.type)) {
+				alert('Please choose an image file.');
+				return;
+			}
+			currentName = file.name.replace(/\.[^.]+$/, '') + '-compressed.jpg';
+			currentOriginalBytes = file.size;
+			fileNameEl.textContent = file.name + ' (' + formatBytes(file.size) + ')';
+			status.style.display = 'block';
+			panel.classList.remove('visible');
+
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				var img = new Image();
+				img.onload = function () {
+					currentBitmap = img;
+					compress(currentOriginalBytes);
+					status.style.display = 'none';
+				};
+				img.onerror = function () {
+					status.style.display = 'none';
+					alert('Could not read this image.');
+				};
+				img.src = e.target.result;
+			};
+			reader.readAsDataURL(file);
+		}
+
+		function compress(originalBytes) {
+			if (!currentBitmap) return;
+			var quality = parseInt(slider.value, 10) / 100;
+			qValue.textContent = slider.value + '%';
+
+			var canvas = document.createElement('canvas');
+			canvas.width = currentBitmap.naturalWidth;
+			canvas.height = currentBitmap.naturalHeight;
+			var ctx = canvas.getContext('2d');
+			ctx.fillStyle = '#ffffff';
+			ctx.fillRect(0, 0, canvas.width, canvas.height);
+			ctx.drawImage(currentBitmap, 0, 0);
+
+			canvas.toBlob(function (blob) {
+				if (!blob) return;
+				if (objectUrl) URL.revokeObjectURL(objectUrl);
+				objectUrl = URL.createObjectURL(blob);
+
+				previewImg.src = objectUrl;
+				downloadBtn.href = objectUrl;
+				downloadBtn.setAttribute('download', currentName);
+				compressedSizeEl.textContent = formatBytes(blob.size);
+				savingsEl.textContent = Math.max(0, Math.round((1 - blob.size / originalBytes) * 100)) + '%';
+				panel.classList.add('visible');
+			}, 'image/jpeg', quality);
+		}
+
+		dropZone.addEventListener('click', function () { fileInput.click(); });
+		dropZone.addEventListener('keydown', function (e) {
+			if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInput.click(); }
+		});
+		fileInput.addEventListener('change', function () {
+			if (fileInput.files.length) loadFile(fileInput.files[0]);
+		});
+		['dragenter', 'dragover'].forEach(function (evt) {
+			dropZone.addEventListener(evt, function (e) { e.preventDefault(); dropZone.classList.add('dragover'); });
+		});
+		['dragleave', 'drop'].forEach(function (evt) {
+			dropZone.addEventListener(evt, function (e) { e.preventDefault(); dropZone.classList.remove('dragover'); });
+		});
+		dropZone.addEventListener('drop', function (e) {
+			if (e.dataTransfer.files.length) loadFile(e.dataTransfer.files[0]);
+		});
+
+		var debounceTimer = null;
+		slider.addEventListener('input', function () {
+			qValue.textContent = slider.value + '%';
+			clearTimeout(debounceTimer);
+			debounceTimer = setTimeout(function () {
+				compress(currentOriginalBytes);
+			}, 200);
+		});
+
+		Array.prototype.forEach.call(document.querySelectorAll('.q-presets button'), function (btn) {
+			btn.addEventListener('click', function () {
+				slider.value = btn.getAttribute('data-q');
+				qValue.textContent = slider.value + '%';
+				compress(currentOriginalBytes);
+			});
+		});
+
+		resetBtn.addEventListener('click', function () {
+			panel.classList.remove('visible');
+			fileInput.value = '';
+			currentBitmap = null;
+			fileInput.click();
+		});
+	})();
+	</script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="id">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>Foto 3x4 Online Gratis - Buat Pas Foto Dari HP Tanpa Aplikasi | miniPhotoShop</title>
+	<meta name="description" content="Buat foto 3x4 online gratis langsung dari HP atau komputer. Pilih ukuran 3x4, 4x6, 4x3, paspor, atau visa Schengen. Hasil 300 DPI siap cetak, tanpa upload ke server." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
+	<meta name="robots" content="index, follow" />
+	<meta name="author" content="kimkasekai" />
+	<link rel="canonical" href="https://miniphotoshop.site/foto-3x4" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://miniphotoshop.site/foto-3x4" />
+	<meta property="og:title" content="Foto 3x4 Online Gratis - Buat Pas Foto Dari HP" />
+	<meta property="og:description" content="Ubah foto biasa menjadi pas foto 3x4 siap cetak dalam hitungan detik. Gratis, tanpa aplikasi, foto tidak diunggah ke server." />
+	<meta property="og:image" content="https://miniphotoshop.site/images/preview.jpg" />
+	<meta property="og:site_name" content="miniPhotoShop" />
+	<meta property="og:locale" content="id_ID" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@kimkasekai" />
+	<meta name="twitter:title" content="Foto 3x4 Online Gratis - Buat Pas Foto Dari HP" />
+	<meta name="twitter:description" content="Ubah foto biasa menjadi pas foto 3x4 siap cetak dalam hitungan detik. Gratis, tanpa aplikasi." />
+	<meta name="twitter:image" content="https://miniphotoshop.site/images/preview.jpg" />
+	<meta name="theme-color" content="#1a1a2e" />
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/favicon.png">
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font-family: Arial, Helvetica, sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.8; }
+		.page-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+		.breadcrumb { padding: 10px 0; font-size: 14px; color: #888; }
+		.breadcrumb a { color: #4fc3f7; text-decoration: none; }
+		.breadcrumb a:hover { text-decoration: underline; }
+		.breadcrumb span { color: #ccc; }
+		.page-header { text-align: center; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+		.page-header h1 { font-size: 28px; color: #fff; margin-top: 10px; }
+		.page-header .logo-text { font-size: 36px; font-weight: bold; color: #4fc3f7; text-decoration: none; }
+		.page-header .logo-text:hover { color: #81d4fa; }
+		.page-header p.sub { color: #aaa; margin-top: 8px; font-size: 16px; }
+
+		.drop-zone {
+			border: 2px dashed #4fc3f7; border-radius: 12px; padding: 50px 20px;
+			text-align: center; cursor: pointer; transition: all 0.2s ease;
+			background: #16213e; margin-bottom: 20px;
+		}
+		.drop-zone:hover, .drop-zone.dragover { background: #1c2a4d; border-color: #81d4fa; }
+		.drop-zone .dz-icon { font-size: 42px; display: block; margin-bottom: 10px; }
+		.drop-zone .dz-main { font-size: 18px; color: #fff; font-weight: bold; }
+		.drop-zone .dz-hint { font-size: 14px; color: #888; margin-top: 6px; }
+		#file_input { display: none; }
+
+		.editor-panel { display: none; }
+		.editor-panel.visible { display: block; }
+
+		.size-presets { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 20px; }
+		.size-presets button {
+			background: #16213e; color: #ccc; border: 1px solid #333; border-radius: 8px;
+			padding: 8px 16px; cursor: pointer; font-size: 14px;
+		}
+		.size-presets button.active { border-color: #4fc3f7; color: #4fc3f7; font-weight: bold; }
+
+		.canvas-area { text-align: center; margin-bottom: 15px; }
+		#crop_canvas {
+			max-width: min(340px, 90vw); height: auto; border-radius: 8px;
+			border: 1px solid #333; touch-action: none; cursor: grab; background: #fff;
+		}
+		.canvas-hint { color: #888; font-size: 13px; margin-top: 8px; }
+
+		.zoom-row { display: flex; align-items: center; gap: 15px; background: #16213e; border: 1px solid #333; border-radius: 12px; padding: 14px 20px; margin-bottom: 20px; }
+		.zoom-row label { color: #ccc; white-space: nowrap; }
+		.zoom-row input[type="range"] { flex: 1; accent-color: #4fc3f7; }
+		.zoom-row .z-value { font-weight: bold; color: #4fc3f7; min-width: 48px; text-align: right; }
+
+		.result-info { text-align: center; color: #ccc; font-size: 14px; margin-bottom: 18px; }
+		.result-info strong { color: #fff; }
+		.actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 10px; }
+		.btn {
+			display: inline-block; background: #4fc3f7; color: #1a1a2e; font-weight: bold;
+			padding: 12px 28px; border-radius: 8px; text-decoration: none; border: none;
+			cursor: pointer; font-size: 16px;
+		}
+		.btn:hover { background: #81d4fa; }
+		.btn.secondary { background: transparent; color: #4fc3f7; border: 1px solid #4fc3f7; }
+		.btn.secondary:hover { background: rgba(79,195,247,0.1); }
+
+		.content { padding: 20px 0; }
+		.content h2 { font-size: 22px; color: #4fc3f7; margin: 25px 0 12px 0; }
+		.content h3 { font-size: 17px; color: #fff; margin: 18px 0 8px 0; }
+		.content p { font-size: 16px; margin-bottom: 15px; color: #ccc; }
+		.content ul, .content ol { margin: 10px 0 15px 25px; }
+		.content li { margin-bottom: 8px; color: #ccc; }
+		.content strong { color: #fff; }
+		.content a { color: #4fc3f7; }
+		table.sizes { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
+		table.sizes th, table.sizes td { border: 1px solid #333; padding: 8px 12px; text-align: left; font-size: 14px; }
+		table.sizes th { background: #16213e; color: #fff; }
+		table.sizes td { color: #ccc; }
+		.faq-item { margin-bottom: 18px; }
+		.page-footer { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 20px; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
+		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
+		.page-footer a:hover { text-decoration: underline; }
+	</style>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-M4R4XJFQJE');
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebApplication",
+		"name": "Foto 3x4 Online - miniPhotoShop",
+		"url": "https://miniphotoshop.site/foto-3x4",
+		"applicationCategory": "MultimediaApplication",
+		"operatingSystem": "Any (Web Browser)",
+		"description": "Buat pas foto 3x4 online gratis dari HP. Ukuran 3x4, 4x6, 4x3, paspor 2x2 inci, dan visa Schengen. Hasil 300 DPI siap cetak.",
+		"offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+		"featureList": ["Ukuran 3x4, 4x6, 4x3, paspor, visa Schengen", "Hasil 300 DPI siap cetak", "Geser dan perbesar foto dengan mudah", "100% diproses di browser", "Gratis tanpa watermark"]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://miniphotoshop.site/"},
+			{"@type": "ListItem", "position": 2, "name": "Foto 3x4", "item": "https://miniphotoshop.site/foto-3x4"}
+		]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{"@type": "Question", "name": "Berapa ukuran foto 3x4 dalam piksel?", "acceptedAnswer": {"@type": "Answer", "text": "Foto 3x4 cm setara dengan 354 x 472 piksel pada resolusi 300 DPI, yang merupakan standar cetak yang tajam."}},
+			{"@type": "Question", "name": "Apakah hasilnya bisa langsung dicetak?", "acceptedAnswer": {"@type": "Answer", "text": "Ya. Hasil diekspor pada 300 DPI sehingga tajam saat dicetak dalam ukuran aslinya."}},
+			{"@type": "Question", "name": "Apakah foto saya diunggah ke server?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak. Seluruh proses berjalan di browser Anda. Foto tidak pernah meninggalkan perangkat."}},
+			{"@type": "Question", "name": "Apakah gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Ya, sepenuhnya gratis tanpa batas, tanpa daftar akun, dan tanpa watermark."}}
+		]
+	}
+	</script>
+	<meta name="google-adsense-account" content="ca-pub-8401253039767399">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8401253039767399" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="page-container">
+		<nav class="breadcrumb" aria-label="Breadcrumb">
+			<a href="/">Home</a> &rsaquo; <span>Foto 3x4</span>
+		</nav>
+		<div class="page-header">
+			<a href="/" class="logo-link"><img src="images/logo-colors.png" alt="miniPhotoShop logo" width="40" height="40" /><span class="logo-text">miniPhotoShop</span></a>
+			<h1>Buat Foto 3x4 Online</h1>
+			<p class="sub">Ubah foto biasa jadi pas foto siap cetak &mdash; dari HP atau komputer, gratis, tanpa aplikasi.</p>
+		</div>
+
+		<div class="drop-zone" id="drop_zone" role="button" tabindex="0" aria-label="Pilih atau jatuhkan foto di sini">
+			<span class="dz-icon" aria-hidden="true">&#129249;</span>
+			<span class="dz-main">Klik untuk pilih foto, atau tarik-lepas di sini</span>
+			<span class="dz-hint">Foto Anda tidak diunggah ke mana pun &mdash; 100% diproses di browser</span>
+		</div>
+		<input type="file" id="file_input" accept="image/*" />
+
+		<div class="editor-panel" id="editor_panel">
+			<div class="size-presets" role="group" aria-label="Pilih ukuran pas foto">
+				<button type="button" data-preset="p3x4" class="active">3 &times; 4 cm</button>
+				<button type="button" data-preset="p4x3">4 &times; 3 cm</button>
+				<button type="button" data-preset="p4x6">4 &times; 6 cm</button>
+				<button type="button" data-preset="p2x2">2 &times; 2 inci</button>
+				<button type="button" data-preset="p3545">35 &times; 45 mm</button>
+			</div>
+
+			<div class="canvas-area">
+				<canvas id="crop_canvas"></canvas>
+				<p class="canvas-hint">Geser foto untuk mengatur posisi &bull; gunakan slider untuk perbesar/perkecil</p>
+			</div>
+
+			<div class="zoom-row">
+				<label for="zoom_slider">Zoom</label>
+				<input type="range" id="zoom_slider" min="100" max="400" step="5" value="100" />
+				<span class="z-value" id="zoom_value">100%</span>
+			</div>
+
+			<p class="result-info">Output: <strong id="output_dims">&ndash;</strong> piksel (300 DPI, siap cetak)</p>
+
+			<div class="actions">
+				<a href="#" class="btn" id="download_btn" download>Download Foto</a>
+				<button type="button" class="btn secondary" id="reset_btn">Ganti Foto</button>
+			</div>
+		</div>
+
+		<div class="content">
+			<h2>Cara membuat pas foto 3x4 online</h2>
+			<ol>
+				<li><strong>Pilih foto</strong> &mdash; klik kotak di atas dan ambil selfie atau foto dari galeri.</li>
+				<li><strong>Atur posisi</strong> &mdash; geser fotonya agar kepala berada di tengah bingkai, perbesar bila perlu.</li>
+				<li><strong>Download</strong> &mdash; simpan hasilnya, lalu cetak di percetakan atau foto studio terdekat.</li>
+			</ol>
+
+			<h2>Ukuran pas foto standar</h2>
+			<table class="sizes">
+				<tr><th>Kebutuhan</th><th>Ukuran</th><th>Piksel (300 DPI)</th></tr>
+				<tr><td>Umum (sekolah, formulir, lamaran kerja)</td><td>3 &times; 4 cm</td><td>354 &times; 472</td></tr>
+				<tr><td>Lanskap (beberapa formulir instansi)</td><td>4 &times; 3 cm</td><td>472 &times; 354</td></tr>
+				<tr><td>Sertifikat, kartu pelajar</td><td>4 &times; 6 cm</td><td>472 &times; 709</td></tr>
+				<tr><td>Paspor Amerika Serikat</td><td>2 &times; 2 inci</td><td>600 &times; 600</td></tr>
+				<tr><td>Visa Schengen</td><td>35 &times; 45 mm</td><td>413 &times; 531</td></tr>
+			</table>
+
+			<h2>Tips pas foto yang baik</h2>
+			<ul>
+				<li>Gunakan latar polos dan pencahayaan merata.</li>
+				<li>Hadap kamera dengan ekspresi netral, mata terbuka.</li>
+				<li>Hindari topi atau aksesori yang menutupi wajah (kecuali alasan agama).</li>
+				<li>Pastikan wajah mengisi sekitar 60&ndash;70% bingkai.</li>
+				<li>Untuk dokumen resmi, selalu cek syarat warna latar dari instansi terkait &mdash; beberapa mewajibkan latar merah atau biru.</li>
+			</ul>
+
+			<h2>Pertanyaan Umum</h2>
+			<div class="faq-item">
+				<h3>Berapa ukuran foto 3x4 dalam piksel?</h3>
+				<p>Foto 3x4 cm sama dengan <strong>354 &times; 472 piksel</strong> pada 300 DPI &mdash; resolusi standar cetak yang tajam.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Apakah hasilnya bisa langsung dicetak?</h3>
+				<p>Ya. File diekspor pada 300 DPI sehingga tetap tajam saat dicetak sesuai ukuran aslinya.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Apakah foto saya aman?</h3>
+				<p>Aman. Semua proses terjadi di browser Anda sendiri &mdash; foto tidak pernah diunggah ke server mana pun.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Apakah perlu install aplikasi?</h3>
+				<p>Tidak. Cukup buka halaman ini lewat browser HP atau laptop, semuanya langsung jalan.</p>
+			</div>
+
+			<h2>Butuh edit lebih lanjut?</h2>
+			<p>Buka <a href="/">editor miniPhotoShop yang lengkap</a> untuk menghapus latar belakang, memperbaiki pencahayaan, atau menambahkan efek. Baca juga panduan <a href="/blog/how-to-create-professional-id-photos-at-home">membuat foto profesional di rumah</a> dan tips <a href="/blog/optimize-images-for-web-loading-speed">mengoptimalkan gambar untuk web</a>.</p>
+		</div>
+	</div>
+
+	<footer class="page-footer">
+		<a href="/">Editor</a>
+		<a href="/blog">Blog</a>
+		<a href="/about">About Us</a>
+		<a href="/tos">TOS</a>
+		<a href="/privacy">Privacy Policy</a>
+	</footer>
+
+	<script>
+	(function () {
+		var PRESETS = {
+			p3x4: { label: '3x4 cm', w: 354, h: 472, file: 'foto-3x4' },
+			p4x3: { label: '4x3 cm', w: 472, h: 354, file: 'foto-4x3' },
+			p4x6: { label: '4x6 cm', w: 472, h: 709, file: 'foto-4x6' },
+			p2x2: { label: '2x2 inci', w: 600, h: 600, file: 'foto-2x2inci' },
+			p3545: { label: '35x45 mm', w: 413, h: 531, file: 'foto-schengen' }
+		};
+
+		var dropZone = document.getElementById('drop_zone');
+		var fileInput = document.getElementById('file_input');
+		var panel = document.getElementById('editor_panel');
+		var canvas = document.getElementById('crop_canvas');
+		var ctx = canvas.getContext('2d');
+		var zoomSlider = document.getElementById('zoom_slider');
+		var zoomValue = document.getElementById('zoom_value');
+		var outputDims = document.getElementById('output_dims');
+		var downloadBtn = document.getElementById('download_btn');
+		var resetBtn = document.getElementById('reset_btn');
+
+		var img = null;
+		var presetKey = 'p3x4';
+		var offX = 0;
+		var offY = 0;
+
+		function getPreset() { return PRESETS[presetKey]; }
+
+		function coverScale() {
+			return Math.max(canvas.width / img.naturalWidth, canvas.height / img.naturalHeight);
+		}
+
+		function currentScale() {
+			return coverScale() * (parseInt(zoomSlider.value, 10) / 100);
+		}
+
+		function clampOffsets() {
+			var s = currentScale();
+			var dw = img.naturalWidth * s;
+			var dh = img.naturalHeight * s;
+			var mx = Math.max(0, (dw - canvas.width) / 2);
+			var my = Math.max(0, (dh - canvas.height) / 2);
+			if (offX > mx) offX = mx;
+			if (offX < -mx) offX = -mx;
+			if (offY > my) offY = my;
+			if (offY < -my) offY = -my;
+		}
+
+		function draw() {
+			if (!img) return;
+			clampOffsets();
+			var s = currentScale();
+			var dw = img.naturalWidth * s;
+			var dh = img.naturalHeight * s;
+			ctx.fillStyle = '#ffffff';
+			ctx.fillRect(0, 0, canvas.width, canvas.height);
+			ctx.drawImage(img, (canvas.width - dw) / 2 + offX, (canvas.height - dh) / 2 + offY, dw, dh);
+			zoomValue.textContent = zoomSlider.value + '%';
+		}
+
+		function applyPreset() {
+			var p = getPreset();
+			canvas.width = p.w;
+			canvas.height = p.h;
+			outputDims.textContent = p.w + ' x ' + p.h + ' (' + p.label + ')';
+			zoomSlider.value = 100;
+			draw();
+		}
+
+		function loadFile(file) {
+			if (!file || !/^image\//.test(file.type)) {
+				alert('Silakan pilih file gambar.');
+				return;
+			}
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				var image = new Image();
+				image.onload = function () {
+					img = image;
+					offX = 0;
+					offY = 0;
+					panel.classList.add('visible');
+					downloadBtn.setAttribute('download', getPreset().file + '.jpg');
+					applyPreset();
+					panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+				};
+				image.onerror = function () { alert('Gambar tidak dapat dibaca.'); };
+				image.src = e.target.result;
+			};
+			reader.readAsDataURL(file);
+		}
+
+		dropZone.addEventListener('click', function () { fileInput.click(); });
+		dropZone.addEventListener('keydown', function (e) {
+			if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInput.click(); }
+		});
+		fileInput.addEventListener('change', function () {
+			if (fileInput.files.length) loadFile(fileInput.files[0]);
+		});
+		['dragenter', 'dragover'].forEach(function (evt) {
+			dropZone.addEventListener(evt, function (e) { e.preventDefault(); dropZone.classList.add('dragover'); });
+		});
+		['dragleave', 'drop'].forEach(function (evt) {
+			dropZone.addEventListener(evt, function (e) { e.preventDefault(); dropZone.classList.remove('dragover'); });
+		});
+		dropZone.addEventListener('drop', function (e) {
+			if (e.dataTransfer.files.length) loadFile(e.dataTransfer.files[0]);
+		});
+
+		var dragging = false;
+		var lastX = 0;
+		var lastY = 0;
+		canvas.addEventListener('pointerdown', function (e) {
+			if (!img) return;
+			dragging = true;
+			lastX = e.clientX;
+			lastY = e.clientY;
+			canvas.setPointerCapture(e.pointerId);
+			canvas.style.cursor = 'grabbing';
+		});
+		canvas.addEventListener('pointermove', function (e) {
+			if (!dragging || !img) return;
+			var rect = canvas.getBoundingClientRect();
+			var factor = canvas.width / rect.width;
+			offX += (e.clientX - lastX) * factor;
+			offY += (e.clientY - lastY) * factor;
+			lastX = e.clientX;
+			lastY = e.clientY;
+			draw();
+		});
+		['pointerup', 'pointercancel'].forEach(function (evt) {
+			canvas.addEventListener(evt, function () {
+				dragging = false;
+				canvas.style.cursor = 'grab';
+			});
+		});
+
+		zoomSlider.addEventListener('input', draw);
+
+		Array.prototype.forEach.call(document.querySelectorAll('.size-presets button'), function (btn) {
+			btn.addEventListener('click', function () {
+				Array.prototype.forEach.call(document.querySelectorAll('.size-presets button'), function (b) { b.classList.remove('active'); });
+				btn.classList.add('active');
+				presetKey = btn.getAttribute('data-preset');
+				offX = 0;
+				offY = 0;
+				if (img) {
+					applyPreset();
+					downloadBtn.setAttribute('download', getPreset().file + '.jpg');
+				}
+			});
+		});
+
+		downloadBtn.addEventListener('click', function (e) {
+			e.preventDefault();
+			if (!img) return;
+			canvas.toBlob(function (blob) {
+				if (!blob) return;
+				var url = URL.createObjectURL(blob);
+				var a = document.createElement('a');
+				a.href = url;
+				a.download = getPreset().file + '.jpg';
+				document.body.appendChild(a);
+				a.click();
+				document.body.removeChild(a);
+				setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+			}, 'image/jpeg', 0.92);
+		});
+
+		resetBtn.addEventListener('click', function () {
+			panel.classList.remove('visible');
+			img = null;
+			fileInput.value = '';
+			fileInput.click();
+		});
+
+		applyPreset();
+	})();
+	</script>
+</body>
+</html>

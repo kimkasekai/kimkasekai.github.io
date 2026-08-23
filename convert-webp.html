@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>Convert JPG &amp; PNG to WebP Online Free | miniPhotoShop</title>
+	<meta name="description" content="Convert JPG, PNG, GIF and BMP to WebP online for free - or convert WebP back to JPG/PNG. Save 30-70% file size. Private browser-based conversion." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
+	<meta name="robots" content="index, follow" />
+	<meta name="author" content="kimkasekai" />
+	<link rel="canonical" href="https://miniphotoshop.site/convert-webp" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://miniphotoshop.site/convert-webp" />
+	<meta property="og:title" content="Convert JPG &amp; PNG to WebP Online Free" />
+	<meta property="og:description" content="Convert images to WebP or back to JPG/PNG. Free, private, no uploads." />
+	<meta property="og:image" content="https://miniphotoshop.site/images/preview.jpg" />
+	<meta property="og:site_name" content="miniPhotoShop" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@kimkasekai" />
+	<meta name="twitter:title" content="Convert JPG &amp; PNG to WebP Online Free" />
+	<meta name="twitter:description" content="Convert images to WebP or back to JPG/PNG. Free, private, no uploads." />
+	<meta name="twitter:image" content="https://miniphotoshop.site/images/preview.jpg" />
+	<meta name="theme-color" content="#1a1a2e" />
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/favicon.png">
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font-family: Arial, Helvetica, sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.8; }
+		.page-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+		.breadcrumb { padding: 10px 0; font-size: 14px; color: #888; }
+		.breadcrumb a { color: #4fc3f7; text-decoration: none; }
+		.breadcrumb a:hover { text-decoration: underline; }
+		.breadcrumb span { color: #ccc; }
+		.page-header { text-align: center; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+		.page-header h1 { font-size: 28px; color: #fff; margin-top: 10px; }
+		.page-header .logo-text { font-size: 36px; font-weight: bold; color: #4fc3f7; text-decoration: none; }
+		.page-header .logo-text:hover { color: #81d4fa; }
+		.page-header p.sub { color: #aaa; margin-top: 8px; font-size: 16px; }
+
+		.drop-zone {
+			border: 2px dashed #4fc3f7; border-radius: 12px; padding: 50px 20px;
+			text-align: center; cursor: pointer; transition: all 0.2s ease;
+			background: #16213e; margin-bottom: 20px;
+		}
+		.drop-zone:hover, .drop-zone.dragover { background: #1c2a4d; border-color: #81d4fa; }
+		.drop-zone .dz-icon { font-size: 42px; display: block; margin-bottom: 10px; }
+		.drop-zone .dz-main { font-size: 18px; color: #fff; font-weight: bold; }
+		.drop-zone .dz-hint { font-size: 14px; color: #888; margin-top: 6px; }
+		#file_input { display: none; }
+
+		.tool-panel { display: none; }
+		.tool-panel.visible { display: block; }
+		.controls-row {
+			display: flex; align-items: center; gap: 14px; flex-wrap: wrap; justify-content: center;
+			background: #16213e; border: 1px solid #333; border-radius: 12px; padding: 16px 20px; margin-bottom: 8px;
+		}
+		.controls-row label { color: #ccc; }
+		.controls-row select {
+			background: #0f1830; border: 1px solid #333; color: #fff;
+			border-radius: 6px; padding: 8px 10px; font-size: 15px;
+		}
+		.quality-row { display: flex; align-items: center; gap: 15px; background: #16213e; border: 1px solid #333; border-radius: 12px; padding: 14px 20px; margin-bottom: 20px; }
+		.quality-row label { color: #ccc; white-space: nowrap; }
+		.quality-row input[type="range"] { flex: 1; accent-color: #4fc3f7; }
+		.quality-row .q-value { font-weight: bold; color: #4fc3f7; min-width: 48px; text-align: right; }
+		.quality-row.hidden { display: none; }
+
+		.status { text-align: center; color: #4fc3f7; font-size: 14px; padding: 8px 0; display: none; }
+
+		.result-grid { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
+		.result-card {
+			flex: 1; min-width: 220px; background: #16213e; border: 1px solid #333;
+			border-radius: 12px; padding: 20px; text-align: center;
+		}
+		.result-card h3 { color: #888; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+		.result-card .size-value { font-size: 26px; font-weight: bold; color: #fff; }
+		.result-card .size-value.savings { color: #4caf50; }
+		.preview-box {
+			background: repeating-conic-gradient(#20264a 0% 25%, #16213e 0% 50%) 50% / 24px 24px;
+			border: 1px solid #333; border-radius: 12px; padding: 15px; margin-bottom: 18px; text-align: center;
+		}
+		.preview-box img { max-width: 100%; max-height: 320px; border-radius: 8px; }
+
+		.btn {
+			display: inline-block; background: #4fc3f7; color: #1a1a2e; font-weight: bold;
+			padding: 12px 28px; border-radius: 8px; text-decoration: none; border: none;
+			cursor: pointer; font-size: 16px;
+		}
+		.btn:hover { background: #81d4fa; }
+		.btn.secondary { background: transparent; color: #4fc3f7; border: 1px solid #4fc3f7; }
+		.btn.secondary:hover { background: rgba(79,195,247,0.1); }
+		.actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 10px; }
+		.file-name { text-align: center; color: #888; font-size: 13px; margin-bottom: 20px; word-break: break-all; }
+
+		.content { padding: 20px 0; }
+		.content h2 { font-size: 22px; color: #4fc3f7; margin: 25px 0 12px 0; }
+		.content h3 { font-size: 17px; color: #fff; margin: 18px 0 8px 0; }
+		.content p { font-size: 16px; margin-bottom: 15px; color: #ccc; }
+		.content ul, .content ol { margin: 10px 0 15px 25px; }
+		.content li { margin-bottom: 8px; color: #ccc; }
+		.content strong { color: #fff; }
+		.content a { color: #4fc3f7; }
+		table.formats { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
+		table.formats th, table.formats td { border: 1px solid #333; padding: 8px 12px; text-align: left; font-size: 14px; }
+		table.formats th { background: #16213e; color: #fff; }
+		table.formats td { color: #ccc; }
+		.faq-item { margin-bottom: 18px; }
+		.page-footer { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 20px; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
+		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
+		.page-footer a:hover { text-decoration: underline; }
+	</style>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-M4R4XJFQJE');
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebApplication",
+		"name": "WebP Converter - miniPhotoShop",
+		"url": "https://miniphotoshop.site/convert-webp",
+		"applicationCategory": "MultimediaApplication",
+		"operatingSystem": "Any (Web Browser)",
+		"description": "Free online image converter. Convert JPG and PNG to WebP to save 30-70% file size, or convert WebP back to JPG and PNG.",
+		"offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+		"featureList": ["Convert to WebP, JPG or PNG", "Adjustable quality", "Transparency support", "No uploads - runs in your browser", "Free without watermarks"]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://miniphotoshop.site/"},
+			{"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://miniphotoshop.site/tools"},
+			{"@type": "ListItem", "position": 3, "name": "WebP Converter", "item": "https://miniphotoshop.site/convert-webp"}
+		]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{"@type": "Question", "name": "Why should I convert images to WebP?", "acceptedAnswer": {"@type": "Answer", "text": "WebP files are typically 30-70% smaller than equivalent JPG or PNG files with the same visual quality, which makes websites load faster."}},
+			{"@type": "Question", "name": "Can I convert WebP back to JPG?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Just drop your WebP file and choose JPG as the output format."}},
+			{"@type": "Question", "name": "Does WebP support transparency?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, WebP supports transparency like PNG, at much smaller file sizes."}},
+			{"@type": "Question", "name": "Are my files uploaded to a server?", "acceptedAnswer": {"@type": "Answer", "text": "No. Conversion happens entirely inside your browser. Files never leave your device."}}
+		]
+	}
+	</script>
+	<meta name="google-adsense-account" content="ca-pub-8401253039767399">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8401253039767399" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="page-container">
+		<nav class="breadcrumb" aria-label="Breadcrumb">
+			<a href="/">Home</a> &rsaquo; <a href="/tools">Tools</a> &rsaquo; <span>WebP Converter</span>
+		</nav>
+		<div class="page-header">
+			<a href="/" class="logo-link"><img src="images/logo-colors.png" alt="miniPhotoShop logo" width="40" height="40" /><span class="logo-text">miniPhotoShop</span></a>
+			<h1>Image Converter &mdash; JPG / PNG / WebP</h1>
+			<p class="sub">Convert any image to WebP, JPG or PNG. Same quality, up to 70% smaller.</p>
+		</div>
+
+		<div class="drop-zone" id="drop_zone" role="button" tabindex="0" aria-label="Choose or drop an image">
+			<span class="dz-icon" aria-hidden="true">&#128260;</span>
+			<span class="dz-main">Drop your image here or click to browse</span>
+			<span class="dz-hint">JPG, PNG, WebP, GIF, BMP &mdash; never uploaded anywhere</span>
+		</div>
+		<input type="file" id="file_input" accept="image/*" />
+
+		<div class="tool-panel" id="tool_panel">
+			<div class="controls-row">
+				<label for="format_select">Convert to:</label>
+				<select id="format_select">
+					<option value="image/webp" selected>WebP (smallest)</option>
+					<option value="image/jpeg">JPG</option>
+					<option value="image/png">PNG (lossless)</option>
+				</select>
+			</div>
+			<div class="quality-row" id="quality_row">
+				<label for="quality_slider">Quality</label>
+				<input type="range" id="quality_slider" min="10" max="100" step="5" value="80" />
+				<span class="q-value" id="quality_value">80%</span>
+			</div>
+
+			<div class="status" id="status">Converting&hellip;</div>
+
+			<div class="result-grid">
+				<div class="result-card">
+					<h3>Original</h3>
+					<div class="size-value" id="original_size">&ndash;</div>
+				</div>
+				<div class="result-card">
+					<h3>Converted</h3>
+					<div class="size-value" id="result_size">&ndash;</div>
+				</div>
+				<div class="result-card">
+					<h3>Savings</h3>
+					<div class="size-value savings" id="savings">&ndash;</div>
+				</div>
+			</div>
+
+			<div class="preview-box">
+				<img id="preview_img" alt="Converted image preview" />
+			</div>
+
+			<p class="file-name" id="file_name"></p>
+			<div class="actions">
+				<a href="#" class="btn" id="download_btn" download>Download</a>
+				<button type="button" class="btn secondary" id="reset_btn">Choose Another Image</button>
+			</div>
+		</div>
+
+		<div class="content">
+			<h2>How to convert an image</h2>
+			<ol>
+				<li><strong>Drop your image</strong> &mdash; JPG, PNG, GIF, BMP or WebP all work.</li>
+				<li><strong>Pick the output format</strong> and quality level.</li>
+				<li><strong>Download</strong> the converted file.</li>
+			</ol>
+
+			<h2>Which format should I choose?</h2>
+			<table class="formats">
+				<tr><th>Format</th><th>Best for</th><th>Transparency</th></tr>
+				<tr><td><strong>WebP</strong></td><td>Websites, speed optimization</td><td>Yes</td></tr>
+				<tr><td><strong>JPG</strong></td><td>Photos, email attachments</td><td>No</td></tr>
+				<tr><td><strong>PNG</strong></td><td>Logos, screenshots needing pixel-perfect quality</td><td>Yes</td></tr>
+			</table>
+
+			<h2>Frequently Asked Questions</h2>
+			<div class="faq-item">
+				<h3>Why convert to WebP?</h3>
+				<p>WebP produces files <strong>30&ndash;70% smaller</strong> than JPG/PNG at the same visual quality &mdash; supported by every modern browser since 2020.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Can I convert WebP back to JPG?</h3>
+				<p>Yes &mdash; many programs still struggle with WebP, so just drop it here and pick JPG.</p>
+			</div>
+			<div class="faq-item">
+				<h3>What happens to transparency when converting to JPG?</h3>
+				<p>JPG cannot store transparency, so transparent areas are filled with white automatically.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Is my data safe?</h3>
+				<p>Fully safe &mdash; conversion runs locally in your browser, nothing is uploaded.</p>
+			</div>
+
+			<h2>More free image tools</h2>
+			<p>Visit our <a href="/tools">tools page</a>: <a href="/compress-jpg">compress JPG</a>, <a href="/compress-png">compress PNG</a>, <a href="/remove-background">remove background</a>, and more.</p>
+		</div>
+	</div>
+
+	<footer class="page-footer">
+		<a href="/">Editor</a>
+		<a href="/tools">Tools</a>
+		<a href="/blog">Blog</a>
+		<a href="/about">About Us</a>
+		<a href="/privacy">Privacy Policy</a>
+	</footer>
+
+	<script>
+	(function () {
+		var dropZone = document.getElementById('drop_zone');
+		var fileInput = document.getElementById('file_input');
+		var panel = document.getElementById('tool_panel');
+		var statusEl = document.getElementById('status');
+		var formatSelect = document.getElementById('format_select');
+		var qualityRow = document.getElementById('quality_row');
+		var qualitySlider = document.getElementById('quality_slider');
+		var qualityValue = document.getElementById('quality_value');
+		var originalSizeEl = document.getElementById('original_size');
+		var resultSizeEl = document.getElementById('result_size');
+		var savingsEl = document.getElementById('savings');
+		var previewImg = document.getElementById('preview_img');
+		var fileNameEl = document.getElementById('file_name');
+		var downloadBtn = document.getElementById('download_btn');
+		var resetBtn = document.getElementById('reset_btn');
+
+		var currentImg = null;
+		var originalBytes = 0;
+		var baseName = 'converted';
+		var objectUrl = null;
+
+		function formatBytes(bytes) {
+			if (bytes < 1024) return bytes + ' B';
+			if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+			return (bytes / 1048576).toFixed(2) + ' MB';
+		}
+
+		function extFor(format) {
+			if (format === 'image/webp') return '.webp';
+			if (format === 'image/jpeg') return '.jpg';
+			return '.png';
+		}
+
+		function canvasToBlob(canvas, format, quality) {
+			return new Promise(function (resolve) {
+				canvas.toBlob(function (blob) { resolve(blob); }, format, quality);
+			});
+		}
+
+		async function convert() {
+			if (!currentImg) return;
+			statusEl.style.display = 'block';
+
+			var format = formatSelect.value;
+			var isLossy = format !== 'image/png';
+			var quality = parseInt(qualitySlider.value, 10) / 100;
+
+			var canvas = document.createElement('canvas');
+			canvas.width = currentImg.naturalWidth;
+			canvas.height = currentImg.naturalHeight;
+			var ctx = canvas.getContext('2d');
+			if (format === 'image/jpeg') {
+				ctx.fillStyle = '#ffffff';
+				ctx.fillRect(0, 0, canvas.width, canvas.height);
+			}
+			ctx.drawImage(currentImg, 0, 0);
+
+			var blob = await canvasToBlob(canvas, format, isLossy ? quality : undefined);
+			if (!blob) blob = await canvasToBlob(canvas, 'image/png');
+			else if (format === 'image/webp' && blob.type !== 'image/webp') {
+				blob = await canvasToBlob(canvas, 'image/png');
+			}
+
+			statusEl.style.display = 'none';
+
+			if (objectUrl) URL.revokeObjectURL(objectUrl);
+			objectUrl = URL.createObjectURL(blob);
+
+			previewImg.src = objectUrl;
+			downloadBtn.href = objectUrl;
+			downloadBtn.setAttribute('download', baseName + extFor(blob.type === 'image/webp' ? 'image/webp' : blob.type));
+			resultSizeEl.textContent = formatBytes(blob.size);
+			savingsEl.textContent = Math.round((1 - blob.size / originalBytes) * 100) + '%';
+			panel.classList.add('visible');
+		}
+
+		function loadFile(file) {
+			if (!file || !/^image\//.test(file.type)) {
+				alert('Please choose an image file.');
+				return;
+			}
+			originalBytes = file.size;
+			baseName = file.name.replace(/\.[^.]+$/, '') || 'image';
+			fileNameEl.textContent = file.name + ' (' + formatBytes(file.size) + ')';
+			originalSizeEl.textContent = formatBytes(file.size);
+
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				var img = new Image();
+				img.onload = function () {
+					currentImg = img;
+					convert();
+				};
+				img.onerror = function () { alert('Could not read this image.'); };
+				img.src = e.target.result;
+			};
+			reader.readAsDataURL(file);
+		}
+
+		dropZone.addEventListener('click', function () { fileInput.click(); });
+		dropZone.addEventListener('keydown', function (e) {
+			if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInput.click(); }
+		});
+		fileInput.addEventListener('change', function () {
+			if (fileInput.files.length) loadFile(fileInput.files[0]);
+		});
+		['dragenter', 'dragover'].forEach(function (evt) {
+			dropZone.addEventListener(evt, function (e) { e.preventDefault(); dropZone.classList.add('dragover'); });
+		});
+		['dragleave', 'drop'].forEach(function (evt) {
+			dropZone.addEventListener(evt, function (e) { e.preventDefault(); dropZone.classList.remove('dragover'); });
+		});
+		dropZone.addEventListener('drop', function (e) {
+			if (e.dataTransfer.files.length) loadFile(e.dataTransfer.files[0]);
+		});
+
+		formatSelect.addEventListener('change', function () {
+			qualityRow.classList.toggle('hidden', formatSelect.value === 'image/png');
+			if (currentImg) convert();
+		});
+
+		var debounceTimer = null;
+		qualitySlider.addEventListener('input', function () {
+			qualityValue.textContent = qualitySlider.value + '%';
+			clearTimeout(debounceTimer);
+			debounceTimer = setTimeout(function () {
+				if (currentImg) convert();
+			}, 250);
+		});
+
+		resetBtn.addEventListener('click', function () {
+			panel.classList.remove('visible');
+			currentImg = null;
+			fileInput.value = '';
+			fileInput.click();
+		});
+
+		canvasToBlob((function () {
+			var c = document.createElement('canvas');
+			c.width = 1;
+			c.height = 1;
+			return c;
+		})(), 'image/webp').then(function (blob) {
+			if (!blob || blob.type !== 'image/webp') {
+				var option = formatSelect.querySelector('option[value="image/webp"]');
+				option.textContent = 'WebP (not supported in this browser)';
+				option.disabled = true;
+				formatSelect.value = 'image/jpeg';
+				qualityRow.classList.remove('hidden');
+			}
+		});
+	})();
+	</script>
+</body>
+</html>
