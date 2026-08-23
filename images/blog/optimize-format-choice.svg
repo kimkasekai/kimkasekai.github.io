@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#16213e"/>
+
+  <!-- Card 1: JPG (photograph) -->
+  <rect x="40" y="60" width="220" height="270" rx="12" fill="#1a1a2e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="62" y="82" width="176" height="176" rx="8" fill="#0d1b2a"/>
+  <circle cx="118" cy="136" r="15" fill="#4fc3f7" opacity="0.6"/>
+  <path d="M76 244 L128 172 L160 212 L186 184 L224 244 Z" fill="#81d4fa" opacity="0.35"/>
+  <rect x="62" y="274" width="120" height="14" rx="3" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="62" y="298" width="86" height="14" rx="3" fill="#4fc3f7" opacity="0.3"/>
+
+  <!-- arrow card1 -> card2 -->
+  <path d="M264 195 L284 195" stroke="#81d4fa" stroke-width="2" stroke-dasharray="8,4"/>
+  <polygon points="284,189 294,195 284,201" fill="#81d4fa"/>
+
+  <!-- Card 2: PNG (transparent sharp graphic) -->
+  <rect x="290" y="60" width="220" height="270" rx="12" fill="#1a1a2e" stroke="#81d4fa" stroke-width="2"/>
+  <rect x="312" y="82" width="176" height="176" rx="8" fill="#0d1b2a"/>
+  <rect x="312" y="82" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="396" y="82" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="354" y="124" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="438" y="124" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="312" y="166" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="396" y="166" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="354" y="208" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="438" y="208" width="42" height="42" fill="#1a1a2e"/>
+  <polygon points="402,108 372,178 396,178 386,232 428,162 404,162" fill="#4fc3f7" opacity="0.25" stroke="#81d4fa" stroke-width="2"/>
+  <rect x="312" y="274" width="176" height="14" rx="3" fill="#81d4fa" opacity="0.5"/>
+  <rect x="312" y="298" width="138" height="14" rx="3" fill="#81d4fa" opacity="0.3"/>
+
+  <!-- arrow card2 -> card3 -->
+  <path d="M514 195 L534 195" stroke="#81d4fa" stroke-width="2" stroke-dasharray="8,4"/>
+  <polygon points="534,189 544,195 534,201" fill="#81d4fa"/>
+
+  <!-- Card 3: WebP (hybrid) -->
+  <rect x="540" y="60" width="220" height="270" rx="12" fill="#1a1a2e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="562" y="82" width="176" height="176" rx="8" fill="#0d1b2a"/>
+  <rect x="562" y="82" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="604" y="124" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="562" y="166" width="42" height="42" fill="#1a1a2e"/>
+  <rect x="604" y="208" width="42" height="42" fill="#1a1a2e"/>
+  <path d="M646 82 L646 258" stroke="#4fc3f7" stroke-width="2" opacity="0.4"/>
+  <circle cx="690" cy="134" r="14" fill="#4fc3f7" opacity="0.55"/>
+  <path d="M654 244 L700 186 L722 214 L738 200 L738 244 Z" fill="#81d4fa" opacity="0.35"/>
+  <rect x="562" y="274" width="96" height="14" rx="3" fill="#81d4fa" opacity="0.5"/>
+  <rect x="562" y="298" width="64" height="14" rx="3" fill="#81d4fa" opacity="0.3"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#16213e"/>
+  <rect x="40" y="60" width="340" height="280" rx="12" fill="#1a1a2e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="70" y="110" width="100" height="100" fill="#0d1b2a" stroke="#81d4fa" stroke-width="2"/>
+  <path d="M90 110V210 M110 110V210 M130 110V210 M150 110V210 M70 130H170 M70 150H170 M70 170H170 M70 190H170" stroke="#4fc3f7" stroke-width="1" opacity="0.45"/>
+  <rect x="90" y="130" width="20" height="20" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="130" y="150" width="20" height="20" fill="#81d4fa" opacity="0.45"/>
+  <rect x="90" y="170" width="20" height="20" fill="#4fc3f7" opacity="0.35"/>
+  <path d="M186 160 L228 160" stroke="#81d4fa" stroke-width="3" stroke-dasharray="8,4"/>
+  <polygon points="224,153 236,160 224,167" fill="#81d4fa"/>
+  <rect x="252" y="135" width="50" height="50" rx="4" fill="#0d1b2a" stroke="#81d4fa" stroke-width="2"/>
+  <rect x="258" y="141" width="38" height="38" rx="3" fill="#4fc3f7" opacity="0.3"/>
+  <path d="M262 252 L272 262 L292 238" stroke="#81d4fa" stroke-width="4"/>
+  <rect x="420" y="60" width="340" height="280" rx="12" fill="#1a1a2e" stroke="#ef5350" stroke-width="2"/>
+  <rect x="452" y="135" width="50" height="50" rx="4" fill="#0d1b2a" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="452" y="135" width="25" height="25" fill="#4fc3f7" opacity="0.55"/>
+  <rect x="477" y="135" width="25" height="25" fill="#4fc3f7" opacity="0.3"/>
+  <rect x="452" y="160" width="25" height="25" fill="#81d4fa" opacity="0.4"/>
+  <rect x="477" y="160" width="25" height="25" fill="#4fc3f7" opacity="0.2"/>
+  <path d="M520 160 L562 160" stroke="#ef5350" stroke-width="3" stroke-dasharray="8,4"/>
+  <polygon points="558,153 570,160 558,167" fill="#ef5350"/>
+  <rect x="590" y="105" width="130" height="130" fill="#0d1b2a" stroke="#ef5350" stroke-width="2"/>
+  <path d="M616 105V235 M642 105V235 M668 105V235 M694 105V235 M590 131H720 M590 157H720 M590 183H720 M590 209H720" stroke="#ef5350" stroke-width="1.5" opacity="0.5"/>
+  <rect x="592" y="107" width="24" height="24" fill="#4fc3f7" opacity="0.35"/>
+  <rect x="618" y="159" width="24" height="24" fill="#4fc3f7" opacity="0.25"/>
+  <polygon points="655,276 695,276 675,244" stroke="#ef5350" stroke-width="2.5"/>
+  <path d="M675 255 V265" stroke="#ef5350" stroke-width="3"/>
+  <circle cx="675" cy="270" r="2" fill="#ef5350"/>
+</svg>

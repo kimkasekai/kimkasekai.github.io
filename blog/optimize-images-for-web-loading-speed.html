@@ -162,6 +162,79 @@
 				<li>Test the live page on a mobile connection, not just your desktop.</li>
 			</ol>
 
+			<h2>JPG vs PNG vs WebP: Which Format When?</h2>
+			<p>The format rules deserve a closer look, because choosing wrong costs speed before compression even begins. Keep this reference handy whenever you save:</p>
+			<figure class="blog-hero">
+				<img src="../images/blog/optimize-format-choice.svg" alt="Three comparison cards showing JPG for photos, PNG for transparent graphics with a checkerboard, and WebP as the compact hybrid" width="800" height="400" loading="lazy" />
+				<figcaption>JPG stays lean for photography, PNG pays extra for transparency, WebP blends the strengths of both.</figcaption>
+			</figure>
+			<table style="width:100%; border-collapse:collapse; margin:10px 0 15px;">
+				<tr>
+					<th style="border:1px solid #333; padding:8px; text-align:left;">Format</th>
+					<th style="border:1px solid #333; padding:8px; text-align:left;">Best for</th>
+					<th style="border:1px solid #333; padding:8px; text-align:left;">Transparency</th>
+					<th style="border:1px solid #333; padding:8px; text-align:left;">Typical savings</th>
+				</tr>
+				<tr>
+					<td style="border:1px solid #333; padding:8px;">JPG</td>
+					<td style="border:1px solid #333; padding:8px;">Photographs, gradients, complex scenes</td>
+					<td style="border:1px solid #333; padding:8px;">No</td>
+					<td style="border:1px solid #333; padding:8px;">Smallest practical choice for photos</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid #333; padding:8px;">PNG</td>
+					<td style="border:1px solid #333; padding:8px;">Logos, icons, screenshots, sharp graphics</td>
+					<td style="border:1px solid #333; padding:8px;">Yes</td>
+					<td style="border:1px solid #333; padding:8px;">Larger files, lossless at full quality</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid #333; padding:8px;">WebP</td>
+					<td style="border:1px solid #333; padding:8px;">Both photographs and flat graphics</td>
+					<td style="border:1px solid #333; padding:8px;">Yes</td>
+					<td style="border:1px solid #333; padding:8px;">Roughly 25&ndash;35% smaller than comparable JPG</td>
+				</tr>
+			</table>
+			<p>As a working rule, export photographs as WebP wherever your platform accepts it, reserve PNG for graphics that genuinely need transparency or pixel-perfect edges, and keep dependable JPG as the universal fallback. In miniPhotoShop you simply pick the format during export and watch the estimated file size react, so the decision stops being guesswork.</p>
+
+			<h2>Lossy vs Lossless Compression in Plain English</h2>
+			<p>Lossy compression permanently discards detail your eye is unlikely to miss, much like a friend summarizing a film instead of replaying it. Push too far and the summary starts losing plot: skies band, edges smudge, text fuzzes. Lossless compression instead repacks identical data more efficiently, like zipping a document; nothing degrades, yet photographs barely shrink because camera noise resists tidy packing.</p>
+			<p>This is why JPEG and WebP dominate photography, while PNG protects screenshots, diagrams and crisp text where even faint artifacts glare. The quality slider in the miniPhotoShop export panel exists precisely for this experiment: slide downward until artifacts surface, then step back one notch to safety.</p>
+			<figure class="blog-hero">
+				<img src="../images/blog/optimize-compression.svg" alt="A quality slider moving between a crisp heavyweight image on the left and a blocky over-compressed image on the right, with the balanced midpoint highlighted" width="800" height="400" loading="lazy" />
+				<figcaption>The sweet spot sits just above where visible artifacts begin.</figcaption>
+			</figure>
+
+			<h2>Resize Before You Compress: The Biggest Win</h2>
+			<p>Consider the arithmetic: a 4000-pixel-wide phone photo carries twelve million pixels, while an 800-pixel article column displays fewer than half a million. Ship the original untouched and over ninety percent of those bytes are dead weight no compressor can recover. Scaling first also makes every later step cheaper, because encoders finish faster and outputs land smaller.</p>
+			<p>Open the file in miniPhotoShop, type the width your layout truly renders at, and let the resampler do the work. Half a minute here routinely beats any optimization plugin installed afterwards.</p>
+
+			<h2>Beyond the File Itself: Lazy Loading and Responsive Delivery</h2>
+			<p>Two free browser features multiply everything above. Adding <code>loading="lazy"</code> to an image tag defers offscreen pictures until readers scroll near them, collapsing the initial download almost entirely on gallery-heavy pages. Responsive delivery goes further: supply several sizes of the same picture and the browser fetches whichever fits, so a phone on cellular data receives a fraction of the bytes a desktop monitor requests. Most modern publishing platforms generate those variants automatically once enabled, and hand-coded sites gain both behaviors with one extra attribute per image.</p>
+
+			<h2>A 60-Second Image Optimization Checklist</h2>
+			<p>Tape this beside your publish button:</p>
+			<ul>
+				<li>Measure the largest display size and resize to match it.</li>
+				<li>Choose WebP for photos; PNG only when transparency is essential.</li>
+				<li>Lower export quality until artifacts appear, then back off one notch.</li>
+				<li>Never save photographs as PNG just to be safe.</li>
+				<li>Switch on lazy loading for everything below the fold.</li>
+				<li>Preview the finished page throttled to a slow connection.</li>
+				<li>Revisit older hero images in miniPhotoShop whenever you redesign.</li>
+			</ul>
+
+			<h2>Frequently Asked Questions</h2>
+			<h3>Does switching to WebP hurt image quality?</h3>
+			<p>Not at sane settings. WebP generally matches JPEG visually while producing noticeably smaller files, and the difference vanishes at higher quality levels. Inspect the exported copy at full size before uploading and you will know immediately.</p>
+			<h3>What quality number should I pick when exporting?</h3>
+			<p>There is no magic constant, though 75 to 85 suits most photographs. Trust your eyes over the digit: reduce the slider until flaws emerge, then return to the last clean stop.</p>
+			<h3>Can existing PNG files be converted to WebP?</h3>
+			<p>Yes, and transparency survives the trip. Screenshots and flat graphics can even use lossless WebP, which preserves every pixel while still trimming a surprising amount of weight.</p>
+			<h3>How heavy should a page's images be overall?</h3>
+			<p>Target roughly one megabyte of imagery for ordinary articles. Hero banners may run larger, yet a well-resized photograph seldom needs more than a couple hundred kilobytes.</p>
+			<h3>Is special software required for any of this?</h3>
+			<p>No. A free browser editor such as miniPhotoShop handles resizing, format conversion and quality-controlled exports, while lazy loading ships built into every current browser.</p>
+
 			<p>Run every future upload through this list and your pages will load dramatically faster without sacrificing a single pixel of visible quality.</p>
 		</div>
 

@@ -140,6 +140,10 @@
 				<li><strong>Eraser brush:</strong> Zoom in and erase stubborn slivers along edges at 100% zoom or higher.</li>
 				<li><strong>Undo freely:</strong> Every editor has Ctrl+Z. Use it without guilt.</li>
 			</ul>
+			<figure class="blog-hero">
+				<img src="../images/blog/remove-bg-selection.svg" alt="Selection tools isolating a subject from a busy background in miniPhotoShop" width="800" height="400" loading="lazy" />
+				<figcaption>Lasso and magic wand selections cleaning up what automation missed</figcaption>
+			</figure>
 
 			<h2>Step 3: Tackle Hair and Fur Like a Pro</h2>
 			<p>Hair is the classic nightmare&mdash;thousands of tiny strands against a complex backdrop. Instead of trying to erase strand by strand:</p>
@@ -151,12 +155,60 @@
 				<li>If faint fringing remains, paint over it with a soft brush set to low opacity, sampling nearby hair color.</li>
 			</ol>
 			<p>Perfection isn't the goal&mdash;at normal viewing size, slightly soft hair edges look completely natural.</p>
+			<figure class="blog-hero">
+				<img src="../images/blog/remove-bg-hair.svg" alt="Feathered selection preserving fine hair strands instead of cutting them off" width="800" height="400" loading="lazy" />
+				<figcaption>A hard edge chops strands; a feathered one lets them breathe</figcaption>
+			</figure>
 
 			<h2>Step 4: Check Your Work</h2>
 			<p>Transparent areas are hard to judge against a white canvas. Temporarily place a bright, contrasting layer behind your subject (bright green works great). Every missed pixel and halo will jump out immediately. Fix what you see, then delete the test layer.</p>
+			<figure class="blog-hero">
+				<img src="../images/blog/remove-bg-check.svg" alt="Cutout inspected over a bright green test layer, then exported as a transparent PNG" width="800" height="400" loading="lazy" />
+				<figcaption>The green-layer test catches halos before you export</figcaption>
+			</figure>
 
 			<h2>Step 5: Export as PNG</h2>
 			<p>This step matters more than people think. Formats like JPG don't support transparency&mdash;your carefully removed background will come back as solid white. Always export as <strong>PNG</strong>, which preserves transparency perfectly. If you need a new background instead, simply add your replacement image on a layer beneath the cutout.</p>
+
+			<h2>When Automatic Removal Works&mdash;and When It Fails</h2>
+			<p>Automatic background removal deserves its reputation: for a studio portrait or a product on a clean table, it genuinely finishes in seconds. The tool looks for contrast and continuous edges, so whenever your subject is sharp, well lit, and clearly a different color from what's behind it, you can trust it.</p>
+			<p>Trouble starts when those assumptions break. Busy scenes confuse edge detection&mdash;tree branches threading through hair, chain-link fences, crowds. Similar colors are the other classic killer: blonde hair against a beige wall or a white shirt against an overcast sky gives the algorithm nothing to lock onto. Low light and motion blur make things worse by softening exactly the edges the tool needs. In those cases, don't fight the automatic result pixel by pixel. Run the automatic pass first to get 80% of the way there, then switch to the lasso, magic wand, and eraser for the last stretch. That combination is almost always faster than pure manual work.</p>
+
+			<h2>How to Choose Source Photos That Are Easy to Cut Out</h2>
+			<p>The fastest edit is the one you barely have to make, and that starts before you ever open the editor. When you can choose between photos, pick the one that will be easy to isolate:</p>
+			<ul>
+				<li><strong>Even lighting:</strong> Harsh shadows behind a subject read as part of the subject. Soft, diffused light keeps the silhouette clean.</li>
+				<li><strong>Tack-sharp edges:</strong> A crisp outline gives every tool something to grab. Blurry edges force guesswork and feathering.</li>
+				<li><strong>Strong color contrast:</strong> A dark subject on a light background (or vice versa) cuts cleanly; a subject wearing the same color as the wall does not.</li>
+				<li><strong>A simple backdrop:</strong> Plain walls, skies, and seamless paper beat cluttered rooms every time.</li>
+			</ul>
+			<p>If you're shooting the photo yourself, step two paces to the left so the subject isn't standing against a matching color. Ten seconds of repositioning saves ten minutes of erasing.</p>
+
+			<h2>Common Mistakes That Ruin a Background Removal</h2>
+			<p>Even a careful cutout can be undone by a handful of predictable errors. Watch for these:</p>
+			<ul>
+				<li><strong>Halo and fringing:</strong> A thin leftover border of the old background&mdash;often white or green&mdash;glows around your subject once it sits on a new background. Fix it by zooming in and erasing one or two pixels inward along the edge, or painting over the fringe with a soft brush sampled from the subject's own colors.</li>
+				<li><strong>Over-erasing:</strong> Dragging the eraser carelessly eats into shoulders, fingers, and hairlines. Work on a duplicated layer so mistakes never touch the original pixels.</li>
+				<li><strong>Skipping feathering:</strong> A selection with zero feather produces jagged staircase edges that scream "cut out." A 1&ndash;2 pixel feather smooths the transition invisibly.</li>
+				<li><strong>Exporting as JPG:</strong> JPG has no transparency channel. Your cutout will come back with a solid white box around it. Export as PNG instead&mdash;miniPhotoShop preserves the alpha channel perfectly.</li>
+				<li><strong>Judging at thumbnail size:</strong> Flaws hide until someone views the image large. Check at 100% zoom before you call it done.</li>
+			</ul>
+
+			<h2>Background Removal for E-Commerce Product Photos</h2>
+			<p>If you sell online, background removal isn't optional polish&mdash;it's usually a requirement. Major marketplaces expect product images on a pure white background, often specified as true white, with the product filling most of the frame. A cutout makes this trivial: remove the original background, place a solid white layer beneath your subject, and export as PNG or flatten to JPG at that point.</p>
+			<p>Consistency matters just as much as compliance. A catalog where every product floats at a different angle under different lighting looks amateur even if each image passes the rules. Cut everything out, then rebuild the scenes identically: same canvas size, same shadow direction, same margins. Speaking of shadows&mdash;decide on one approach and stick to it. Either no shadow at all, or a soft, subtle drop shadow applied uniformly, so products appear shot in the same "studio." Because miniPhotoShop runs entirely in your browser, you can process a whole batch of listings in one sitting without installing anything.</p>
+
+			<h2>Frequently Asked Questions</h2>
+			<h3>Does removing the background reduce my image quality?</h3>
+			<p>No. Cutting away pixels leaves the remaining ones untouched, and PNG is lossless. Quality only suffers if you resize aggressively afterward or repeatedly re-save as JPG.</p>
+			<h3>Why did my transparent image turn white after uploading somewhere?</h3>
+			<p>You almost certainly exported as JPG, which flattens transparency to white (or black). Re-export as PNG&mdash;if a site doesn't support transparency, it will show its own background behind your PNG, which is exactly what you want.</p>
+			<h3>I erased part of my subject by accident. Can I get it back?</h3>
+			<p>If you duplicated the layer first, just delete the damaged copy and start over on the original. Otherwise, Ctrl+Z rewinds recent steps, and working non-destructively from now on costs one click.</p>
+			<h3>What tolerance should I use with the magic wand?</h3>
+			<p>Start low, around 20&ndash;30, and increase only until the selection covers the patch you clicked without spilling into your subject. On gradients or noisy backgrounds, several small clicks beat one giant selection.</p>
+			<h3>Can I do all of this on a phone or tablet?</h3>
+			<p>Yes. miniPhotoShop works in any modern mobile browser, so the same tools&mdash;background removal, wand, feathering, PNG export&mdash;are available without installing an app.</p>
 
 			<h2>Final Tip</h2>
 			<p>The better your source photo, the easier everything becomes. Sharp focus, good lighting, and decent contrast between subject and background can turn a five-minute job into a thirty-second one. Now go give those product photos the clean, professional look they deserve.</p>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#16213e"/>
+  <rect x="50" y="70" width="300" height="250" rx="12" fill="#1a1a2e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="70" y="100" width="260" height="180" rx="4" fill="#0d1b2a"/>
+  <rect x="90" y="112" width="48" height="32" rx="4" fill="#1e3a5f"/>
+  <circle cx="292" cy="128" r="18" fill="#1e3a5f"/>
+  <rect x="80" y="228" width="55" height="36" rx="6" fill="#1e3a5f"/>
+  <path d="M255 244 L286 276 L224 276 Z" fill="#1e3a5f"/>
+  <circle cx="200" cy="165" r="24" fill="#4fc3f7" opacity="0.55"/>
+  <path d="M156 264 C160 216 178 196 200 196 C222 196 240 216 244 264 C230 258 215 254 200 254 C185 254 170 258 156 264 Z" fill="#4fc3f7" opacity="0.55"/>
+  <path d="M148 188 C138 156 162 126 200 124 C240 126 264 156 252 190 C260 212 246 234 226 246 C232 222 220 208 200 206 C180 208 168 222 174 246 C154 234 140 210 148 188 Z" stroke="#81d4fa" stroke-width="2" stroke-dasharray="6,4" fill="none"/>
+  <rect x="83" y="105" width="62" height="46" stroke="#81d4fa" stroke-width="2" stroke-dasharray="4,3" opacity="0.9"/>
+  <polygon points="152,158 166,172 157,173 162,184 156,185 151,174 144,179" fill="#81d4fa"/>
+  <rect x="70" y="296" width="90" height="8" rx="4" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="170" y="296" width="60" height="8" rx="4" fill="#4fc3f7" opacity="0.3"/>
+  <path d="M370 195 L430 195" stroke="#4fc3f7" stroke-width="3" stroke-dasharray="8,4"/>
+  <polygon points="425,190 435,195 425,200" fill="#4fc3f7"/>
+  <rect x="450" y="70" width="300" height="250" rx="12" fill="#1a1a2e" stroke="#81d4fa" stroke-width="2"/>
+  <g opacity="0.16">
+    <rect x="480" y="110" width="36" height="36" fill="#81d4fa"/>
+    <rect x="552" y="110" width="36" height="36" fill="#81d4fa"/>
+    <rect x="624" y="110" width="36" height="36" fill="#81d4fa"/>
+    <rect x="696" y="110" width="36" height="36" fill="#81d4fa"/>
+    <rect x="516" y="146" width="36" height="36" fill="#81d4fa"/>
+    <rect x="588" y="146" width="36" height="36" fill="#81d4fa"/>
+    <rect x="660" y="146" width="36" height="36" fill="#81d4fa"/>
+    <rect x="480" y="182" width="36" height="36" fill="#81d4fa"/>
+    <rect x="552" y="182" width="36" height="36" fill="#81d4fa"/>
+    <rect x="624" y="182" width="36" height="36" fill="#81d4fa"/>
+    <rect x="696" y="182" width="36" height="36" fill="#81d4fa"/>
+    <rect x="516" y="218" width="36" height="36" fill="#81d4fa"/>
+    <rect x="588" y="218" width="36" height="36" fill="#81d4fa"/>
+    <rect x="660" y="218" width="36" height="36" fill="#81d4fa"/>
+    <rect x="480" y="254" width="36" height="36" fill="#81d4fa"/>
+    <rect x="552" y="254" width="36" height="36" fill="#81d4fa"/>
+    <rect x="624" y="254" width="36" height="36" fill="#81d4fa"/>
+    <rect x="696" y="254" width="36" height="36" fill="#81d4fa"/>
+  </g>
+  <circle cx="600" cy="165" r="24" fill="#4fc3f7" opacity="0.65"/>
+  <path d="M556 264 C560 216 578 196 600 196 C622 196 640 216 644 264 C630 258 615 254 600 254 C585 254 570 258 556 264 Z" fill="#4fc3f7" opacity="0.65"/>
+  <rect x="478" y="98" width="264" height="194" stroke="#81d4fa" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+  <rect x="470" y="296" width="90" height="8" rx="4" fill="#81d4fa" opacity="0.5"/>
+  <rect x="570" y="296" width="60" height="8" rx="4" fill="#81d4fa" opacity="0.3"/>
+</svg>

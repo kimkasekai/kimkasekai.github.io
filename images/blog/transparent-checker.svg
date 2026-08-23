@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#16213e"/>
+  <rect x="180" y="40" width="440" height="320" rx="12" fill="#1a1a2e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="205" y="65" width="390" height="260" fill="#1a1a2e"/>
+  <rect x="205" y="65" width="65" height="65" fill="#26324e"/>
+  <rect x="335" y="65" width="65" height="65" fill="#26324e"/>
+  <rect x="465" y="65" width="65" height="65" fill="#26324e"/>
+  <rect x="270" y="130" width="65" height="65" fill="#26324e"/>
+  <rect x="400" y="130" width="65" height="65" fill="#26324e"/>
+  <rect x="530" y="130" width="65" height="65" fill="#26324e"/>
+  <rect x="205" y="195" width="65" height="65" fill="#26324e"/>
+  <rect x="335" y="195" width="65" height="65" fill="#26324e"/>
+  <rect x="465" y="195" width="65" height="65" fill="#26324e"/>
+  <rect x="270" y="260" width="65" height="65" fill="#26324e"/>
+  <rect x="400" y="260" width="65" height="65" fill="#26324e"/>
+  <rect x="530" y="260" width="65" height="65" fill="#26324e"/>
+  <circle cx="400" cy="176" r="34" fill="#4fc3f7" opacity="0.55"/>
+  <path d="M330 325 v-15 c0 -58 30 -92 70 -92 c40 0 70 34 70 92 v15 z" fill="#81d4fa" opacity="0.5"/>
+  <path d="M110 110 H180" stroke="#81d4fa" stroke-width="2" stroke-dasharray="8,4"/>
+  <polygon points="180,104 192,110 180,116" fill="#81d4fa"/>
+  <path d="M690 300 H620" stroke="#81d4fa" stroke-width="2" stroke-dasharray="8,4"/>
+  <polygon points="620,294 608,300 620,306" fill="#81d4fa"/>
+</svg>

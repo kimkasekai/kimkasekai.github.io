@@ -160,6 +160,63 @@
 				<li><strong>Compare before and after</strong> at full size â€” small flaws invisible up close become obvious once you zoom out.</li>
 			</ul>
 
+			<h2>Only Edit Photos You Own or Have Rights To</h2>
+			<p>One quick note before the hands-on part. Stripping a watermark from a stock image you found online is not a clever trick, it is copyright infringement, and agencies actively track and pursue it. This guide exists for something very different: restoration. Maybe you exported a flattened JPG years ago with your own studio logo baked in, or an old family scan came back stamped by the photo lab, and the clean original is long gone. If you shot the picture yourself, inherited it, or hold written permission to modify it, you are on solid ground. When in doubt, ask the rights holder first.</p>
+
+			<h2>Know Your Watermark Type First</h2>
+			<p>Not all marks behave the same way, and identifying yours takes thirty seconds that can save an hour of frustration. There are three broad categories you will encounter:</p>
+			<ul>
+				<li><strong>Simple text overlay</strong> &mdash; a name, date stamp, or username sitting as solid pixels on top of the photo. These respond well to direct selection and deletion.</li>
+				<li><strong>Semi-transparent logo</strong> &mdash; a faded emblem or signature blended into the scene. The underlying detail still shows through, so healing and cloning beat outright deletion here.</li>
+				<li><strong>Tiled repeating pattern</strong> &mdash; the grid-style protection large stock agencies spread across the entire frame. Erasing one tile reveals several more underneath, so these are practically impossible to clean and should not be attempted unless you hold the license to the image.</li>
+			</ul>
+			<p>Once you know which of the three you are facing, pick the matching method below.</p>
+			<figure class="blog-hero">
+				<img src="../images/blog/watermark-types.svg" alt="Three photo frames showing a diagonal text watermark, a corner logo watermark, and a tiled repeating pattern watermark" width="800" height="400" loading="lazy" />
+				<figcaption>The three common watermark styles: a diagonal text stamp, a corner logo, and a tiled agency pattern</figcaption>
+			</figure>
+
+			<h2>Method 1: Magic Wand for Solid Text Watermarks</h2>
+			<p>Solid text stamps sitting on smooth backgrounds are ideal candidates for the magic wand tool in <strong>miniPhotoShop</strong>:</p>
+			<ol>
+				<li>Duplicate your photo onto a new layer so the original stays untouched while you experiment.</li>
+				<li>Click directly on the watermark text with the magic wand; raise the tolerance slider if only fragments get picked up.</li>
+				<li>Holding shift, click any letters the first pass missed until the entire mark is inside the selection.</li>
+				<li>Delete the selection or fill it with nearby color, then deselect and inspect the area at full size.</li>
+			</ol>
+			<p>If edges look ragged, run a gentle eraser pass around them, or expand the selection by a pixel or two before deleting. Undo is always one keystroke away if a selection grabs more than it should.</p>
+			<figure class="blog-hero">
+				<img src="../images/blog/watermark-technique.svg" alt="Magic wand cursor selecting a solid text watermark inside a dashed selection outline, next to a tolerance settings panel" width="800" height="400" loading="lazy" />
+				<figcaption>The magic wand selecting a solid text watermark before removal</figcaption>
+			</figure>
+
+			<h2>Method 2: Clone and Heal for Complex Overlays</h2>
+			<p>When a logo crosses detailed textures such as fabric, foliage, or brickwork, deleting it simply leaves an obvious hole. Rebuild the area instead, patch by patch. Sample a clean piece of texture right beside the mark with the clone stamp, then paint over small sections no larger than a fingernail, re-sampling often so no pattern repeats visibly. Match the light direction too: a shadow that falls left to right everywhere else in the photo must continue through your patch, because the eye catches broken lighting instantly. For semi-transparent logos, finish with a soft healing-brush pass to blend brightness, and feather any remaining seams with a low-opacity eraser.</p>
+
+			<h2>Common Mistakes</h2>
+			<p>A few predictable slip-ups separate amateur repairs from invisible ones:</p>
+			<ul>
+				<li><strong>Visible blur smudges</strong> &mdash; blurring over a mark looks acceptable up close but reads as a smear on large screens or in print. Rebuild texture rather than smearing it.</li>
+				<li><strong>Repeated clone patterns</strong> &mdash; sampling one source point again and again creates a wallpaper effect that announces editing. Move your sample point constantly.</li>
+				<li><strong>Destroyed surrounding detail</strong> &mdash; over-eager brushing wipes out genuine grain, eyelashes, or brick lines. Work smaller than feels necessary and zoom out often to compare.</li>
+			</ul>
+			<figure class="blog-hero">
+				<img src="../images/blog/watermark-before-after.svg" alt="Two photo panels connected by an arrow: the left panel shows a photo covered by a diagonal watermark overlay, the right panel shows the same photo clean and restored" width="800" height="400" loading="lazy" />
+				<figcaption>Before and after: a marked-up photo restored to its clean original</figcaption>
+			</figure>
+
+			<h2>Frequently Asked Questions</h2>
+			<h3>Is removing a watermark from my own photo legal?</h3>
+			<p>Yes. Copyright follows ownership, so if the image belongs to you, you may edit it freely, including removing marks you or a photo lab added years ago. The line is crossed only when the picture belongs to someone else.</p>
+			<h3>What tolerance should I set for the magic wand?</h3>
+			<p>Start around 30. Raise it gradually if the wand misses parts of the text; lower it if it starts swallowing background pixels. High-contrast watermarks usually need much less than busy, noisy photos do.</p>
+			<h3>Why does my patched area look blurry after smart fill?</h3>
+			<p>Fill algorithms average whatever surrounds the selection, so detailed textures return smeared. Switch those regions to clone stamping, or reapply the fill with a tighter, feathered selection.</p>
+			<h3>Can tiled stock-agency watermarks be removed completely?</h3>
+			<p>Realistically, no. The overlapping grid destroys the underlying pixels across the whole frame, leaving nothing clean to restore, and attempting it on images you do not license is infringement anyway.</p>
+			<h3>Should I export the finished image as PNG or JPG?</h3>
+			<p>PNG keeps every repaired pixel lossless, which matters if you plan more editing later. A high-quality JPG is fine for sharing and keeps the file small; just avoid repeatedly re-saving it.</p>
+
 			<h2>Final Thoughts</h2>
 			<p>With selection tools, smart fill, cloning, and healing available in free online editors, removing a watermark from your own photos takes minutes rather than hours. Start with content-aware fill for simple cases, graduate to clone stamping for textured areas, and always keep the legal side in mind.</p>
 		</div>

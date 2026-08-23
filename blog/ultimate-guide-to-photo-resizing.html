@@ -168,6 +168,67 @@
 
 			<h2>Try It Yourself</h2>
 			<p>Open any photo in miniPhotoShop's Image Size dialog, switch between the resampling options, and zoom to 100% to compare. Once you've seen how each method treats edges, you'll never resize blindly again.</p>
+
+			<h2>Pixels, Print Size, and DPI Explained Simply</h2>
+			<p>Here's the trick most people miss: the exact same file can be a poster or a postage stamp. A 3000 &times; 3000 pixel image printed at 300 DPI comes out as a crisp 10 &times; 10 inch print. Spread those identical pixels at 150 DPI instead and you get a softer 20 &times; 20 inch poster. Nothing inside the file changed&mdash;only how tightly the printer packed the dots.</p>
+			<p>On screens, DPI is basically decoration. A 1920-pixel-wide photo looks the same on a phone as it does on a desktop monitor, because displays arrange pixels their own way. So reserve DPI for paper: set it in the export dialog when a print shop asks for it, and think purely in pixels for everything else.</p>
+
+			<h2>Aspect Ratio: Scale, Crop, or Stretch?</h2>
+			<p><strong>Aspect ratio</strong> is the relationship between width and height, and it decides whether a resize looks natural. True scaling shrinks or grows both sides equally, so the image keeps its shape. When a destination demands a different ratio&mdash;a square profile picture from a rectangular photo, for instance&mdash;you have two honest options: <strong>crop</strong> away the edges while keeping geometry true, or enlarge the canvas and fill the new space with a matching background.</p>
+			<p>The one thing you should never do is stretch. Dragging a single side flattens faces into funhouse mirrors, turns circles into ovals, and makes buildings look like they're melting.</p>
+			<figure class="blog-hero">
+				<img src="../images/blog/resize-aspect-ratio.svg" alt="Diagram comparing proportional scaling, cropping, and stretching of an original photo frame" width="800" height="400" loading="lazy" />
+				<figcaption>Scaling keeps the shape, cropping trims the edges, and stretching distorts everything&mdash;avoid it.</figcaption>
+			</figure>
+			<p>In miniPhotoShop, use the crop tool with a locked ratio to trim deliberately, keep "constrain proportions" ticked in Image &gt; Resize to scale safely, and reach for canvas size when you need padding rather than cropping.</p>
+
+			<h2>Downscaling vs Upscaling: Why One Is Safe and the Other Isn't</h2>
+			<p>Downscaling throws away detail you no longer need. The editor blends neighboring pixels together, so even aggressive reductions stay clean and believable. Upscaling is the opposite problem: the editor must invent pixels that were never captured, and every invention is a guess that eventually shows up as softness or blocky edges.</p>
+			<figure class="blog-hero">
+				<img src="../images/blog/resize-downscale-upscale.svg" alt="Illustration contrasting clean downscaling of many pixels with blurry blocky upscaling of few pixels" width="800" height="400" loading="lazy" />
+				<figcaption>Shrinking blends pixels smoothly; enlarging stretches a handful of pixels across far too much space.</figcaption>
+			</figure>
+			<p>The practical takeaway: capture or export larger than you need, and treat 100% as a ceiling rather than a starting point. If enlargement truly is unavoidable, do it once, gently, with bicubic resampling&mdash;then apply light sharpening afterwards.</p>
+
+			<h2>Cheat Sheet: Common Sizes for Social Platforms</h2>
+			<p>Social platforms re-compress whatever you upload, and a wrongly sized image effectively gets resized twice&mdash;once by you and once by them&mdash;piling softness on top of softness. Hand each platform its preferred dimensions and your file can be published untouched:</p>
+			<table style="width:100%; border-collapse:collapse; margin:10px 0 15px 0;">
+				<thead>
+					<tr>
+						<th style="text-align:left; color:#4fc3f7; border-bottom:1px solid #333; padding:8px;">Platform</th>
+						<th style="text-align:left; color:#4fc3f7; border-bottom:1px solid #333; padding:8px;">Recommended size</th>
+						<th style="text-align:left; color:#4fc3f7; border-bottom:1px solid #333; padding:8px;">Aspect ratio</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td style="padding:8px; border-bottom:1px solid #2a2a4a;">Instagram square post</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">1080 &times; 1080 px</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">1:1</td></tr>
+					<tr><td style="padding:8px; border-bottom:1px solid #2a2a4a;">Instagram story / Reels</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">1080 &times; 1920 px</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">9:16</td></tr>
+					<tr><td style="padding:8px; border-bottom:1px solid #2a2a4a;">Facebook post</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">1200 &times; 630 px</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">~1.91:1</td></tr>
+					<tr><td style="padding:8px; border-bottom:1px solid #2a2a4a;">X (Twitter) post</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">1600 &times; 900 px</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">16:9</td></tr>
+					<tr><td style="padding:8px; border-bottom:1px solid #2a2a4a;">YouTube thumbnail</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">1280 &times; 720 px</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">16:9</td></tr>
+					<tr><td style="padding:8px; border-bottom:1px solid #2a2a4a;">LinkedIn post</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">1200 &times; 1200 px</td><td style="padding:8px; border-bottom:1px solid #2a2a4a;">1:1</td></tr>
+				</tbody>
+			</table>
+			<figure class="blog-hero">
+				<img src="../images/blog/resize-social-sizes.svg" alt="Frames showing square, portrait story, and wide banner aspect ratios side by side" width="800" height="400" loading="lazy" />
+				<figcaption>Same photo, different destinations: square feeds, tall stories, and wide banners each want their own frame.</figcaption>
+			</figure>
+			<p>Export photographs as JPG at around 80% quality, and sharp graphics or screenshots as PNG&mdash;the miniPhotoShop export dialog offers both formats side by side.</p>
+
+			<h2>Resizing Many Photos at Once Without Losing Your Mind</h2>
+			<p>Batch resizing goes wrong when every image gets improvised decisions. Decide once&mdash;longest side, resampling method, output format&mdash;write the recipe down, then apply the identical steps to every file. Go from original straight to final size in one move, drop the results into a dated output folder with consistent names, and spot-check a few images at 100% zoom instead of inspecting all of them. Ten seconds of planning saves an hour of redoing.</p>
+
+			<h2>Frequently Asked Questions</h2>
+			<h3>Does resizing always reduce image quality?</h3>
+			<p>Moderate downscaling is visually lossless, while any upscaling trades sharpness for size. The real enemy is repeated resizing&mdash;always travel from the untouched original to the final size in a single step.</p>
+			<h3>What DPI should I use for web images?</h3>
+			<p>Effectively none. Screens ignore DPI and render pixel counts directly, so the famous "72 DPI for web" rule is just a leftover from early monitors.</p>
+			<h3>Can I restore original quality after resizing?</h3>
+			<p>No. Pixels discarded during downscaling are gone for good, and pixels invented during upscaling never carried real detail. This is exactly why your master files deserve protection.</p>
+			<h3>Should I export resized images as JPG or PNG?</h3>
+			<p>JPG at 75&ndash;85% quality for photographs, PNG for sharp edges, text, logos, and anything needing transparency. Matching format to content often halves the final file size.</p>
+			<h3>How far can I enlarge a photo before it looks bad?</h3>
+			<p>With bicubic resampling, stay within roughly 120&ndash;150%. Beyond that range softness becomes obvious at normal viewing distance&mdash;unless you're working with pixel art, where nearest neighbor at exact 2x or 3x steps keeps edges crisp.</p>
 		</div>
 
 		<div class="page-footer">

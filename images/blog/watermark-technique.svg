@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#16213e"/>
+  <rect x="50" y="50" width="430" height="300" rx="12" fill="#1a1a2e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="72" y="72" width="386" height="236" rx="4" fill="#0d1b2a"/>
+  <circle cx="150" cy="135" r="24" fill="#4fc3f7" opacity="0.35"/>
+  <path d="M72 270 L165 200 L235 250 L330 185 L458 265 L458 308 L72 308 Z" fill="#4fc3f7" opacity="0.22"/>
+  <rect x="180" y="218" width="180" height="34" rx="6" fill="#81d4fa" opacity="0.5"/>
+  <rect x="202" y="228" width="100" height="6" rx="3" fill="#0d1b2a" opacity="0.85"/>
+  <rect x="214" y="240" width="76" height="5" rx="2.5" fill="#0d1b2a" opacity="0.7"/>
+  <rect x="172" y="210" width="196" height="50" rx="8" stroke="#81d4fa" stroke-width="2" stroke-dasharray="8,4"/>
+  <g transform="rotate(35 530 165)">
+    <rect x="523" y="118" width="14" height="94" rx="7" fill="#81d4fa"/>
+    <polygon points="530,96 536,112 530,124 524,112" fill="#4fc3f7"/>
+  </g>
+  <path d="M574 92 L579 106 L593 111 L579 116 L574 130 L569 116 L555 111 L569 106 Z" fill="#4fc3f7" opacity="0.6"/>
+  <path d="M548 78 L551 86 L559 89 L551 92 L548 100 L545 92 L537 89 L545 86 Z" fill="#81d4fa" opacity="0.5"/>
+  <rect x="520" y="225" width="220" height="125" rx="12" fill="#1a1a2e" stroke="#81d4fa" stroke-width="2"/>
+  <rect x="542" y="262" width="176" height="6" rx="3" fill="#4fc3f7" opacity="0.3"/>
+  <circle cx="600" cy="265" r="9" fill="#4fc3f7"/>
+  <rect x="542" y="304" width="176" height="6" rx="3" fill="#4fc3f7" opacity="0.3"/>
+  <circle cx="668" cy="307" r="9" fill="#81d4fa"/>
+  <path d="M540 205 C500 212 450 216 396 224" stroke="#4fc3f7" stroke-width="2" stroke-dasharray="8,4"/>
+  <polygon points="384,226 398,218 396,230" fill="#4fc3f7"/>
+</svg>

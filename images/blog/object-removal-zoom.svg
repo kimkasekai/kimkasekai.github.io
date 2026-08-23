@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <clipPath id="loupe">
+      <circle cx="500" cy="185" r="105"/>
+    </clipPath>
+  </defs>
+  <rect width="800" height="400" fill="#16213e"/>
+  <rect x="70" y="70" width="360" height="260" rx="12" fill="#1a1a2e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="95" y="95" width="310" height="210" rx="4" fill="#0d1b2a"/>
+  <path d="M95 250 L200 170 L280 220 L405 140" stroke="#4fc3f7" stroke-width="3"/>
+  <ellipse cx="290" cy="205" rx="22" ry="10" fill="#81d4fa" opacity="0.4"/>
+  <circle cx="500" cy="185" r="105" fill="#0d1b2a" stroke="#81d4fa" stroke-width="3"/>
+  <g clip-path="url(#loupe)">
+    <line x1="380" y1="255" x2="620" y2="95" stroke="#4fc3f7" stroke-width="10"/>
+    <rect x="430" y="215" width="46" height="46" rx="4" fill="#81d4fa" opacity="0.25"/>
+    <rect x="480" y="182" width="46" height="46" rx="4" fill="#81d4fa" opacity="0.35"/>
+    <rect x="530" y="149" width="46" height="46" rx="4" fill="#81d4fa" opacity="0.25"/>
+    <ellipse cx="505" cy="212" rx="34" ry="16" fill="#81d4fa" opacity="0.3"/>
+  </g>
+  <line x1="500" y1="196" x2="500" y2="216" stroke="#4fc3f7" stroke-width="2"/>
+  <line x1="490" y1="206" x2="510" y2="206" stroke="#4fc3f7" stroke-width="2"/>
+  <line x1="574" y1="259" x2="650" y2="335" stroke="#81d4fa" stroke-width="14" stroke-linecap="round"/>
+  <path d="M340 60 L340 84 M328 72 L352 72" stroke="#4fc3f7" stroke-width="3"/>
+  <path d="M700 110 L700 134 M688 122 L712 122" stroke="#4fc3f7" stroke-width="3"/>
+  <path d="M660 320 L660 338 M651 329 L669 329" stroke="#81d4fa" stroke-width="3"/>
+</svg>

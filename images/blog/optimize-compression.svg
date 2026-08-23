@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#16213e"/>
+
+  <!-- quality slider -->
+  <rect x="140" y="44" width="520" height="10" rx="5" fill="#0d1b2a" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="142" y="46" width="258" height="6" rx="3" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="270" y="42" width="3" height="14" fill="#81d4fa" opacity="0.4"/>
+  <rect x="400" y="42" width="3" height="14" fill="#81d4fa" opacity="0.4"/>
+  <rect x="530" y="42" width="3" height="14" fill="#81d4fa" opacity="0.4"/>
+  <circle cx="400" cy="49" r="13" fill="#1a1a2e" stroke="#81d4fa" stroke-width="2"/>
+  <path d="M400 66 L400 96" stroke="#81d4fa" stroke-width="2" stroke-dasharray="8,4"/>
+  <polygon points="392,94 408,94 400,108" fill="#81d4fa"/>
+
+  <!-- left: crisp, heavy -->
+  <rect x="60" y="120" width="300" height="230" rx="12" fill="#1a1a2e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="82" y="142" width="256" height="150" rx="8" fill="#0d1b2a"/>
+  <circle cx="140" cy="192" r="18" fill="#4fc3f7" opacity="0.55"/>
+  <path d="M92 278 L168 196 L214 242 L246 210 L326 278 Z" fill="#81d4fa" opacity="0.35"/>
+  <rect x="82" y="306" width="230" height="12" rx="3" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="82" y="324" width="180" height="12" rx="3" fill="#4fc3f7" opacity="0.3"/>
+
+  <!-- arrows through the balance point -->
+  <path d="M364 235 L388 235" stroke="#81d4fa" stroke-width="2" stroke-dasharray="8,4"/>
+  <polygon points="388,229 398,235 388,241" fill="#81d4fa"/>
+  <path d="M412 235 L436 235" stroke="#81d4fa" stroke-width="2" stroke-dasharray="8,4"/>
+  <polygon points="436,229 446,235 436,241" fill="#81d4fa"/>
+
+  <!-- right: blocky, over-compressed -->
+  <rect x="440" y="120" width="300" height="230" rx="12" fill="#1a1a2e" stroke="#81d4fa" stroke-width="2"/>
+  <rect x="462" y="142" width="256" height="150" rx="8" fill="#0d1b2a"/>
+  <rect x="486" y="158" width="34" height="34" fill="#4fc3f7" opacity="0.5"/>
+  <path d="M474 278 L474 254 L498 254 L498 230 L522 230 L522 206 L546 206 L546 230 L570 230 L570 206 L594 206 L594 230 L618 230 L618 254 L642 254 L642 230 L666 230 L666 254 L690 254 L690 278 Z" fill="#81d4fa" opacity="0.3"/>
+  <rect x="462" y="176" width="256" height="8" fill="#4fc3f7" opacity="0.08"/>
+  <rect x="462" y="216" width="256" height="8" fill="#4fc3f7" opacity="0.06"/>
+  <rect x="462" y="306" width="130" height="12" rx="3" fill="#81d4fa" opacity="0.4"/>
+  <rect x="462" y="324" width="90" height="12" rx="3" fill="#81d4fa" opacity="0.25"/>
+</svg>
