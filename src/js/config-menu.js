@@ -551,6 +551,11 @@ const menuDefinition = [
 				target: 'effects/solarize.solarize'
 			},
 			{
+				name: 'Teal & Orange',
+				ellipsis: true,
+				target: 'effects/teal_orange.teal_orange'
+			},
+			{
 				name: 'Tilt Shift',
 				ellipsis: true,
 				target: 'effects/tilt_shift.tilt_shift'
