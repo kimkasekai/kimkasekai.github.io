@@ -5,7 +5,7 @@ Online image editor lets you create and edit images using HTML5 technologies. No
 minips operates directly in the browser. You can create images by pasting from the clipboard (ctrl+v) or uploading from the computer (_using menu or drag & drop_). Nothing will be sent to any server. Everything stays in your browser. 
 
 ## URL:
-**https://miniphotoshop.site/minips/**
+**https://miniphotoshop.site/**
 
 ## Preview:
 ![minips](https://raw.githubusercontent.com/kimkasekai/minips/master/images/preview.gif)
@@ -55,6 +55,3 @@ See [Wiki](https://github.com/kimkasekai/minips/wiki)
 
 ## License
 MIT License
-
-## Support
-Please use the GitHub issues for support, feature requests and bug reports, or contact us by sending an email to www.viliusl@gmail.com.
