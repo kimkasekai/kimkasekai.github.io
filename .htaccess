@@ -3,11 +3,19 @@ RewriteEngine On
 # Redirect vintage-photo without /tools/ prefix
 RewriteRule ^vintage-photo$ /tools/vintage-photo [L,R=301]
 
+# Redirect index to homepage root (prevents duplicate indexation of /index, /index.html, /home)
+RewriteRule ^(index|index\.html|home|home\.html)$ / [L,R=301]
+
 # Serve blog.html / tools.html even though blog/ and tools/ directories exist
 RewriteRule ^blog/?$ blog.html [L]
 RewriteRule ^tools/?$ tools.html [L]
 
-# Remove .html extension
+# Redirect .html to clean URL (prevents duplicate indexation)
+# Only fires when browser actually requests path/foo.html
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [L,R=301]
+
+# Serve .html file when clean URL is requested (foo -> foo.html)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
