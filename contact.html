@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
 	<title>Contact Us - miniPhotoShop | Free Online Image Editor</title>
-	<meta name="description" content="Contact miniPhotoShop for questions, suggestions, or feedback about our free online image editor." />
-	<meta name="keywords" content="contact miniPhotoShop, support, feedback, email, customer service" />
+	<meta name="description" content="Get in touch with the miniPhotoShop team. Contact us for questions, feedback, support, or business inquiries about our free online image editor." />
+	<meta name="keywords" content="contact miniPhotoShop, support, feedback, email, customer service, report a bug, feature request" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
 	<meta name="robots" content="index, follow" />
 	<meta name="author" content="kimkasekai" />
@@ -18,7 +18,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://miniphotoshop.site/contact" />
 	<meta property="og:title" content="Contact Us - miniPhotoShop" />
-	<meta property="og:description" content="Contact miniPhotoShop for questions, suggestions, or feedback." />
+	<meta property="og:description" content="Get in touch with the miniPhotoShop team for questions, feedback, or support." />
 	<meta property="og:image" content="https://miniphotoshop.site/images/preview.jpg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
@@ -30,7 +30,7 @@
 	<meta name="twitter:site" content="@kimkasekai" />
 	<meta name="twitter:creator" content="@kimkasekai" />
 	<meta name="twitter:title" content="Contact Us - miniPhotoShop" />
-	<meta name="twitter:description" content="Contact miniPhotoShop for questions or feedback." />
+	<meta name="twitter:description" content="Get in touch with the miniPhotoShop team." />
 	<meta name="twitter:image" content="https://miniphotoshop.site/images/preview.jpg" />
 	<meta name="twitter:image:alt" content="Contact Us - miniPhotoShop" />
 		<!-- Google Analytics -->
@@ -47,7 +47,12 @@
 		"@context": "https://schema.org",
 		"@type": "ContactPage",
 		"name": "Contact Us - miniPhotoShop",
-		"url": "https://miniphotoshop.site/contact"
+		"url": "https://miniphotoshop.site/contact",
+		"mainEntity": {
+			"@type": "Person",
+			"name": "kimkasekai",
+			"email": "kimkasekai@gmail.com"
+		}
 	}
 	</script>
 	<script type="application/ld+json">
@@ -69,12 +74,24 @@
 	.page-header .logo-link img { width: 40px; height: 40px; }
 	.page-header .logo-text { font-size: 36px; font-weight: bold; color: #4fc3f7; text-decoration: none; }
 	.page-header .logo-text:hover { color: #81d4fa; }
+	.page-header h1 { font-size: 32px; color: #fff; margin-top: 10px; }
 		.content { padding: 20px 0; }
-		.content h2 { font-size: 22px; color: #4fc3f7; margin: 25px 0 12px 0; }
+		.content h2 { font-size: 22px; color: #4fc3f7; margin: 30px 0 12px 0; }
 		.content p { font-size: 16px; margin-bottom: 15px; color: #ccc; }
+		.content ul { margin: 10px 0 15px 25px; }
+		.content li { margin-bottom: 8px; color: #ccc; }
+		.content strong { color: #fff; }
+		.content a { color: #4fc3f7; }
+		.content a:hover { text-decoration: underline; }
 		.contact-box { background: #16213e; padding: 30px; border-radius: 8px; margin: 20px 0; text-align: center; }
-		.contact-box a { color: #4fc3f7; text-decoration: none; font-size: 18px; }
+		.contact-box .email-label { color: #888; font-size: 14px; margin-bottom: 8px; }
+		.contact-box a { color: #4fc3f7; text-decoration: none; font-size: 18px; font-weight: bold; }
 		.contact-box a:hover { text-decoration: underline; }
+		.topic-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin: 15px 0; }
+		.topic-card { background: #16213e; border: 1px solid #333; border-radius: 8px; padding: 18px; }
+		.topic-card h3 { color: #fff; font-size: 16px; margin: 0 0 6px 0; }
+		.topic-card p { font-size: 14px; color: #aaa; margin: 0; line-height: 1.5; }
+		.highlight-box { background: #16213e; padding: 18px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #4fc3f7; }
 		.page-footer { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 20px; padding: 20px 0; border-top: 1px solid #333; margin-top: 30px; }
 		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
 		.page-footer a:hover { text-decoration: underline; }
@@ -98,20 +115,73 @@
 		</div>
 
 		<div class="content">
-			<h2>Get in Touch</h2>
 			<p>
-				Have a question, suggestion, or feedback? We would love to hear from you.
-				Feel free to reach out to us via email.
+				We would love to hear from you! Whether you have a question, feedback, feature request,
+				bug report, or a business inquiry, feel free to reach out. We read every message and try
+				to respond as quickly as possible.
 			</p>
 
+			<h2>Get in Touch</h2>
 			<div class="contact-box">
-				<p>Email us at:</p>
-				<br>
+				<p class="email-label">Email us at:</p>
 				<a href="mailto:kimkasekai@gmail.com">kimkasekai@gmail.com</a>
 			</div>
 
+			<h2>What You Can Contact Us About</h2>
+			<div class="topic-grid">
+				<div class="topic-card">
+					<h3>Bug Reports</h3>
+					<p>Found something broken or not working as expected? Let us know with details about your browser and device.</p>
+				</div>
+				<div class="topic-card">
+					<h3>Feature Requests</h3>
+					<p>Have an idea for a new tool or improvement? We actively consider user feedback for future updates.</p>
+				</div>
+				<div class="topic-card">
+					<h3>General Questions</h3>
+					<p>Not sure how to use a feature? Check our <a href="/blog">Blog</a> or email us directly.</p>
+				</div>
+				<div class="topic-card">
+					<h3>Business &amp; Partnerships</h3>
+					<p>Interested in collaborating, advertising, or other business inquiries? Reach out via email.</p>
+				</div>
+				<div class="topic-card">
+					<h3>Privacy Concerns</h3>
+					<p>Questions about your data or privacy? See our <a href="privacy">Privacy Policy</a> or email us.</p>
+				</div>
+				<div class="topic-card">
+					<h3>Content Removal</h3>
+					<p>Need to report an issue with third-party ads? Contact us or visit <a href="https://www.google.com/settings/ads" rel="noopener noreferrer" target="_blank">Google Ads Settings</a>.</p>
+				</div>
+			</div>
+
 			<h2>Response Time</h2>
-			<p>We aim to respond to all inquiries within 2-3 business days.</p>
+			<p>
+				We aim to respond to all inquiries within <strong>2-3 business days</strong>. During peak periods
+				it may take slightly longer, but we do our best to reply as soon as possible. If your matter is
+				urgent (security issue or legal concern), please indicate "URGENT" in your subject line.
+			</p>
+
+			<h2>Before You Write</h2>
+			<div class="highlight-box">
+				<p>
+					Many common questions are already answered in our help resources:
+				</p>
+				<ul>
+					<li><a href="/blog">Photo Editing Blog</a> &mdash; tutorials, guides, and tips</li>
+					<li><a href="/tools">All Tools</a> &mdash; overview of all available editing tools</li>
+					<li><a href="/about">About Us</a> &mdash; learn about miniPhotoShop's mission and features</li>
+					<li><a href="tos">Terms of Service</a> &mdash; rules for using the Service</li>
+					<li><a href="privacy">Privacy Policy</a> &mdash; how we handle data</li>
+				</ul>
+			</div>
+
+			<h2>Our Commitment</h2>
+			<p>
+				miniPhotoShop is built and maintained by a small, dedicated team. We are passionate about providing
+				the best free image editing experience possible, and your feedback is invaluable in helping us
+				improve. Thank you for taking the time to reach out &mdash; every message makes a difference.
+			</p>
 		</div>
 
 		<div class="page-footer">
@@ -119,6 +189,7 @@
 			<a href="about">About Us</a>
 			<a href="tos">TOS</a>
 			<a href="privacy">Privacy Policy</a>
+			<a href="contact">Contact</a>
 		</div>
 	</div>
 </body>

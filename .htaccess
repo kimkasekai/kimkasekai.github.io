@@ -1,5 +1,12 @@
 RewriteEngine On
 
+# Redirect vintage-photo without /tools/ prefix
+RewriteRule ^vintage-photo$ /tools/vintage-photo [L,R=301]
+
+# Serve blog.html / tools.html even though blog/ and tools/ directories exist
+RewriteRule ^blog/?$ blog.html [L]
+RewriteRule ^tools/?$ tools.html [L]
+
 # Remove .html extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
