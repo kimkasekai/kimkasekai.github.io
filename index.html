@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
 	<title>miniPhotoShop - Free Online Image Editor &amp; Photography Effects | Edit Photos in Browser</title>
-	<meta name="description" content="miniPhotoShop is a free online image editor using HTML5. Apply photography effects, add filters, edit and adjust your images, remove backgrounds, and more - all in your browser without installing anything." />
+	<meta name="description" content="miniPhotoShop is a free online image editor in your browser. Apply photography effects, filters, edit photos, remove backgrounds and more - no installation" />
 	<meta name="keywords" content="online image editor, free photo editor, html5 editor, miniPhotoShop, edit photos online, remove background, photography effects, photo effects, photo filters, layers, canvas editor, photoshop online, free image editing, browser photo editor" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
 	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -38,6 +38,21 @@
 	<meta name="theme-color" content="#1a1a2e" />
 	<meta name="application-name" content="miniPhotoShop" />
 	<link rel="alternate" hreflang="en" href="https://miniphotoshop.site/" />
+	<!-- Google Consent Mode: lock consent defaults before any ad/analytics tag loads -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied',
+			'functionality_storage': 'granted',
+			'personalization_storage': 'denied',
+			'security_storage': 'granted',
+			'wait_for_update': 500
+		});
+	</script>
 	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
 	<script>
@@ -45,6 +60,18 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-M4R4XJFQJE');
+		// Restore the visitor's saved consent choice on every page load
+		try {
+			var savedConsent = JSON.parse(localStorage.getItem('mps_consent'));
+			if (savedConsent && savedConsent.t) {
+				gtag('consent', 'update', {
+					'ad_storage': savedConsent.ad ? 'granted' : 'denied',
+					'ad_user_data': savedConsent.ad ? 'granted' : 'denied',
+					'ad_personalization': savedConsent.ad ? 'granted' : 'denied',
+					'analytics_storage': savedConsent.an ? 'granted' : 'denied'
+				});
+			}
+		} catch(e) {}
 	</script>
 	<!-- JSON-LD Structured Data -->
 	<script type="application/ld+json">
@@ -178,5 +205,150 @@
 		<a href="/privacy">Privacy Policy</a>
 		<a href="/contact">Contact</a>
 	</div>
+
+	<section class="seo-content" aria-label="About this free online photo editor">
+		<h1>Free Online Photo Editor in Your Browser</h1>
+		<p>miniPhotoShop is a free web-based image editor built with HTML5 and JavaScript. Everything runs locally on your device &mdash; your photos are never uploaded to a server. You can edit images, apply photography effects and filters, work with layers, remove backgrounds, resize and crop, add text overlays, and export the final result in JPG, PNG, or WebP format without installing any software.</p>
+
+		<h2>What can you do with the online image editor?</h2>
+		<ul>
+			<li>Resize and crop images to exact dimensions.</li>
+			<li>Apply photography effects, filters, and color corrections.</li>
+			<li>Remove backgrounds and create transparent images.</li>
+			<li>Use layers, masks, and blend modes for advanced editing.</li>
+			<li>Add text, shapes, and watermarks to protect your photos.</li>
+			<li>Compress JPG and PNG files, and convert images to WebP.</li>
+			<li>Restore and touch up your own personal photos.</li>
+		</ul>
+
+		<h2>How to edit a photo online</h2>
+		<ol>
+			<li>Open a photo with File &rarr; Open, or drag and drop an image onto the canvas.</li>
+			<li>Choose a tool from the left sidebar: brush, selection, text, effects, fill, and more.</li>
+			<li>Adjust your edits from the panels on the right, then preview the result.</li>
+			<li>Save with File &rarr; Save to download your image in JPG, PNG, or WebP.</li>
+		</ol>
+
+		<h2>Frequently asked questions</h2>
+		<p><strong>Is miniPhotoShop really free?</strong> Yes &mdash; no account is required, there are no usage limits, and we never add watermarks to your downloaded files.</p>
+		<p><strong>Are my photos uploaded to a server?</strong> No. All image processing happens in your browser using the HTML5 canvas API, so your pictures stay on your own device.</p>
+		<p><strong>Which file formats are supported?</strong> You can open popular formats such as JPG, PNG, GIF, WebP, SVG, and BMP, and export to JPG, PNG, or WebP.</p>
+	</section>
+
+	<div id="consent-banner" role="dialog" aria-label="Cookie settings">
+		<p>We use cookies and similar technologies to improve your experience, measure site traffic, and show relevant ads. You can accept or decline non-essential cookies below. See our <a href="/privacy">Privacy Policy</a> for details.</p>
+		<button id="consent-accept" type="button">Accept all</button>
+		<button id="consent-decline" type="button">Essential only</button>
+	</div>
+
+	<style>
+		.seo-content {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 40px 20px 20px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #cdd6e4;
+		}
+		.seo-content h1 {
+			color: #fff;
+			font-size: 26px;
+			margin: 0 0 10px;
+		}
+		.seo-content h2 {
+			color: #4fc3f7;
+			font-size: 21px;
+			margin: 30px 0 10px;
+		}
+		.seo-content p,
+		.seo-content li {
+			font-size: 15px;
+			line-height: 1.7;
+		}
+		.seo-content ul,
+		.seo-content ol {
+			margin: 0 0 10px 22px;
+			padding: 0;
+		}
+		#consent-banner {
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 99999;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			gap: 12px;
+			padding: 14px 20px;
+			background: #16213e;
+			color: #e8e8e8;
+			border-top: 2px solid #4fc3f7;
+			box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.55;
+		}
+		#consent-banner p {
+			margin: 0;
+			max-width: 720px;
+		}
+		#consent-banner a {
+			color: #4fc3f7;
+		}
+		#consent-banner button {
+			border: none;
+			cursor: pointer;
+			font-weight: bold;
+			padding: 8px 16px;
+			border-radius: 4px;
+			font-size: 14px;
+		}
+		#consent-accept {
+			background: #4fc3f7;
+			color: #0f1a2f;
+		}
+		#consent-decline {
+			background: transparent;
+			color: #e8e8e8;
+			border: 1px solid #4fc3f7;
+		}
+		@media (max-width: 640px) {
+			#consent-banner {
+				justify-content: flex-start;
+			}
+		}
+	</style>
+	<script>
+		(function () {
+			var banner = document.getElementById('consent-banner');
+			var acceptBtn = document.getElementById('consent-accept');
+			var declineBtn = document.getElementById('consent-decline');
+			if (!banner || !acceptBtn || !declineBtn) {
+				return;
+			}
+			try {
+				var saved = JSON.parse(localStorage.getItem('mps_consent'));
+				if (saved && saved.t) {
+					banner.parentNode.removeChild(banner);
+					return;
+				}
+			} catch (e) {}
+			function setConsent(ad, an) {
+				try {
+					localStorage.setItem('mps_consent', JSON.stringify({t: Date.now(), ad: ad, an: an}));
+				} catch (e) {}
+				gtag('consent', 'update', {
+					'ad_storage': ad ? 'granted' : 'denied',
+					'ad_user_data': ad ? 'granted' : 'denied',
+					'ad_personalization': ad ? 'granted' : 'denied',
+					'analytics_storage': an ? 'granted' : 'denied'
+				});
+				banner.parentNode.removeChild(banner);
+			}
+			acceptBtn.addEventListener('click', function () { setConsent(true, true); });
+			declineBtn.addEventListener('click', function () { setConsent(false, false); });
+		})();
+	</script>
 </body>
 </html>

@@ -33,13 +33,40 @@
 	<meta name="twitter:description" content="Learn about miniPhotoShop - a free online image editor using HTML5." />
 	<meta name="twitter:image" content="https://miniphotoshop.site/images/preview.jpg" />
 	<meta name="twitter:image:alt" content="About Us - miniPhotoShop" />
-		<!-- Google Analytics -->
+		<!-- Google Consent Mode: lock consent defaults before any ad/analytics tag loads -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied',
+			'functionality_storage': 'granted',
+			'personalization_storage': 'denied',
+			'security_storage': 'granted',
+			'wait_for_update': 500
+		});
+	</script>
+	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-M4R4XJFQJE');
+		// Restore the visitor's saved consent choice on every page load
+		try {
+			var savedConsent = JSON.parse(localStorage.getItem('mps_consent'));
+			if (savedConsent && savedConsent.t) {
+				gtag('consent', 'update', {
+					'ad_storage': savedConsent.ad ? 'granted' : 'denied',
+					'ad_user_data': savedConsent.ad ? 'granted' : 'denied',
+					'ad_personalization': savedConsent.ad ? 'granted' : 'denied',
+					'analytics_storage': savedConsent.an ? 'granted' : 'denied'
+				});
+			}
+		} catch(e) {}
 	</script>
 	<!-- JSON-LD -->
 	<script type="application/ld+json">
@@ -212,6 +239,12 @@
 				No images or data are uploaded or sent to any server. Everything stays on your device.
 				We do not collect personal information, and we do not require registration or login.
 				Read our full <a href="privacy">Privacy Policy</a> for details.
+			</p>
+
+			<h2>Trademark Notice</h2>
+			<p>
+				miniPhotoShop is an independent project and is <strong>not affiliated with, endorsed by, or sponsored in any way by
+				Adobe Inc.</strong> "Photoshop" is a registered trademark of Adobe Inc. Used only for descriptive purposes.
 			</p>
 
 			<h2>Contact</h2>

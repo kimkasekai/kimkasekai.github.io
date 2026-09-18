@@ -2,12 +2,11 @@
 	display: -ms-grid;
 	display: grid;
 	margin: 0;
-	position: fixed; /* dont change it, vh does not work on mobiles with bottom footer */
-	top: 30px;
+	position: relative;
+	top: 0;
 	right: 0;
 	left: 0;
-	bottom: 28px;
-	height: auto;
+	height: calc(100vh - 58px); /* leaves room for 30px top menu + 28px bottom footer */
 	overflow: hidden;
 
 	-ms-grid-rows: auto 1fr;
@@ -584,7 +583,7 @@ IMPORTANT: any new icon should also must be added on /service-worker.js + its ve
 		padding-top:50px;
 	}
 	.wrapper{
-		top: 50px;
+		height: calc(100vh - 78px); /* 50px mobile menu + 28px bottom footer */
 	}
 	.sidebar_left{
 		position: absolute;

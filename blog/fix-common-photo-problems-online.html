@@ -5,6 +5,7 @@
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
 	<title>7 Common Photo Problems and How to Fix Them Online for Free - miniPhotoShop</title>
 	<meta name="description" content="Step-by-step fixes for overexposed, underexposed, blurry, noisy photos plus color casts, red-eye, and crooked horizons using free online tools." />
+	<meta name="keywords" content="common, photo, problems, fix, them, free online photo editor, photo editing tools online" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
 	<meta name="robots" content="index, follow" />
 	<meta name="author" content="kimkasekai" />
@@ -61,13 +62,40 @@
 		.breadcrumb a { color: #4fc3f7; text-decoration: none; }
 		.breadcrumb a:hover { text-decoration: underline; }
 		.breadcrumb span { color: #ccc; }</style>
-		<!-- Google Analytics -->
+		<!-- Google Consent Mode: lock consent defaults before any ad/analytics tag loads -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied',
+			'functionality_storage': 'granted',
+			'personalization_storage': 'denied',
+			'security_storage': 'granted',
+			'wait_for_update': 500
+		});
+	</script>
+	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-M4R4XJFQJE');
+		// Restore the visitor's saved consent choice on every page load
+		try {
+			var savedConsent = JSON.parse(localStorage.getItem('mps_consent'));
+			if (savedConsent && savedConsent.t) {
+				gtag('consent', 'update', {
+					'ad_storage': savedConsent.ad ? 'granted' : 'denied',
+					'ad_user_data': savedConsent.ad ? 'granted' : 'denied',
+					'ad_personalization': savedConsent.ad ? 'granted' : 'denied',
+					'analytics_storage': savedConsent.an ? 'granted' : 'denied'
+				});
+			}
+		} catch(e) {}
 	</script>
 	<!-- JSON-LD -->
 	<script type="application/ld+json">

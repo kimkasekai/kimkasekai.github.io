@@ -4,7 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
 	<title>Free Online Image Tools &amp; Photography Effects - Compress, Convert, Vintage Filter | miniPhotoShop</title>
-	<meta name="description" content="Free browser-based image tools and photography effects: compress JPG and PNG, convert to WebP, remove backgrounds, apply a vintage photo effect, and create passport photos. No uploads, no sign-up." />
+	<meta name="description" content="Free browser-based image tools: compress JPG and PNG, convert to WebP, remove backgrounds, apply vintage effects, and create passport photos. No uploads" />
+	<meta name="keywords" content="image tools, compress jpg, compress png, convert webp, remove background, vintage photo effect, passport photo, photo editing tools online" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
 	<meta name="robots" content="index, follow" />
 	<meta name="author" content="kimkasekai" />
@@ -59,12 +60,40 @@
 		.page-footer a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-size: 14px; }
 		.page-footer a:hover { text-decoration: underline; }
 	</style>
+	<!-- Google Consent Mode: lock consent defaults before any ad/analytics tag loads -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied',
+			'functionality_storage': 'granted',
+			'personalization_storage': 'denied',
+			'security_storage': 'granted',
+			'wait_for_update': 500
+		});
+	</script>
+	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-M4R4XJFQJE');
+		// Restore the visitor's saved consent choice on every page load
+		try {
+			var savedConsent = JSON.parse(localStorage.getItem('mps_consent'));
+			if (savedConsent && savedConsent.t) {
+				gtag('consent', 'update', {
+					'ad_storage': savedConsent.ad ? 'granted' : 'denied',
+					'ad_user_data': savedConsent.ad ? 'granted' : 'denied',
+					'ad_personalization': savedConsent.ad ? 'granted' : 'denied',
+					'analytics_storage': savedConsent.an ? 'granted' : 'denied'
+				});
+			}
+		} catch(e) {}
 	</script>
 	<script type="application/ld+json">
 	{
@@ -192,7 +221,7 @@
 					</svg>
 				</span>
 				<h2>Foto 3x4 Online</h2>
-				<p>Buat pas foto siap cetak dari HP &mdash; 3x4, 4x6, paspor, visa. Gratis.</p>
+				<p>Make print-ready passport photos right from your phone &mdash; 3x4, 4x6, passport, visa. Free.</p>
 			</a>
 			<a href="/tools/vintage-photo" class="tool-card">
 				<span class="icon">
@@ -208,7 +237,7 @@
 					</svg>
 				</span>
 				<h2>Vintage Photo Effect</h2>
-				<p>Faded blacks, warm film tones, grain &amp; vignette untuk tampilan analog yang timeless.</p>
+				<p>Faded blacks, warm film tones, grain &amp; vignette for a timeless analog look.</p>
 			</a>
 			<a href="/merge-photos" class="tool-card">
 				<span class="icon">

@@ -33,13 +33,40 @@
 	<meta name="twitter:description" content="We respect your privacy. All image editing happens in your browser." />
 	<meta name="twitter:image" content="https://miniphotoshop.site/images/preview.jpg" />
 	<meta name="twitter:image:alt" content="Privacy Policy - miniPhotoShop" />
-		<!-- Google Analytics -->
+		<!-- Google Consent Mode: lock consent defaults before any ad/analytics tag loads -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied',
+			'functionality_storage': 'granted',
+			'personalization_storage': 'denied',
+			'security_storage': 'granted',
+			'wait_for_update': 500
+		});
+	</script>
+	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-M4R4XJFQJE');
+		// Restore the visitor's saved consent choice on every page load
+		try {
+			var savedConsent = JSON.parse(localStorage.getItem('mps_consent'));
+			if (savedConsent && savedConsent.t) {
+				gtag('consent', 'update', {
+					'ad_storage': savedConsent.ad ? 'granted' : 'denied',
+					'ad_user_data': savedConsent.ad ? 'granted' : 'denied',
+					'ad_personalization': savedConsent.ad ? 'granted' : 'denied',
+					'analytics_storage': savedConsent.an ? 'granted' : 'denied'
+				});
+			}
+		} catch(e) {}
 	</script>
 	<!-- JSON-LD -->
 	<script type="application/ld+json">
@@ -175,6 +202,14 @@
 				functionality of advertisements but will not affect the core image editor.
 			</p>
 
+			<h3>C. Consent and Google Consent Mode</h3>
+			<p>
+				When you first visit the site, a consent banner asks you to accept or decline non-essential
+				cookies before any non-essential ad or analytics tags load. Your choice is stored in your
+				browser's <code>localStorage</code> under <code>mps_consent</code>. We use
+				<a href="https://developers.google.com/tag-platform/security/concepts/consent-mode" rel="noopener noreferrer" target="_blank">Google Consent Mode</a>, which keeps essential functionality working while ad and analytics tags remain fully disabled until you accept. You can change your mind at any time by clearing your browser's site data or by contacting us.
+			</p>
+
 			<h2>4. Children's Privacy</h2>
 			<p>
 				miniPhotoShop does <strong>not knowingly collect</strong> any personal information from children
@@ -273,8 +308,9 @@
 			<p>
 				miniPhotoShop is operated from servers that may be located outside your country of residence.
 				Third-party services (Google Analytics, Google AdSense) process data on servers worldwide.
-				By using the Website, you consent to the transfer of information to countries that may have
-				different data protection rules than your country.
+				Where you have consented through our consent banner, data may be transferred to countries that
+				have different data protection rules than your country. If you do not consent, no non-essential
+				cookies or tags are activated.
 			</p>
 			<p>
 				Where required, Google relies on Standard Contractual Clauses (SCCs) or other appropriate data

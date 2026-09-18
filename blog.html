@@ -33,13 +33,40 @@
 	<meta name="twitter:description" content="Tutorials, tips, and guides for photo editing." />
 	<meta name="twitter:image" content="https://miniphotoshop.site/images/preview.jpg" />
 	<meta name="twitter:image:alt" content="Blog - miniPhotoShop" />
-		<!-- Google Analytics -->
+		<!-- Google Consent Mode: lock consent defaults before any ad/analytics tag loads -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied',
+			'functionality_storage': 'granted',
+			'personalization_storage': 'denied',
+			'security_storage': 'granted',
+			'wait_for_update': 500
+		});
+	</script>
+	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4R4XJFQJE"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-M4R4XJFQJE');
+		// Restore the visitor's saved consent choice on every page load
+		try {
+			var savedConsent = JSON.parse(localStorage.getItem('mps_consent'));
+			if (savedConsent && savedConsent.t) {
+				gtag('consent', 'update', {
+					'ad_storage': savedConsent.ad ? 'granted' : 'denied',
+					'ad_user_data': savedConsent.ad ? 'granted' : 'denied',
+					'ad_personalization': savedConsent.ad ? 'granted' : 'denied',
+					'analytics_storage': savedConsent.an ? 'granted' : 'denied'
+				});
+			}
+		} catch(e) {}
 	</script>
 	<!-- JSON-LD -->
 	<script type="application/ld+json">
@@ -195,13 +222,6 @@
 				<div class="date">July 20, 2026</div>
 				<div class="excerpt">A balanced comparison of browser-based and desktop photo editing, covering performance, features, and cost.</div>
 				<a href="/blog/online-vs-desktop-photo-editors" class="read-more">Read more &rarr;</a>
-			</div>
-
-			<div class="blog-card">
-				<h2><a href="/blog/how-to-remove-watermarks-from-photos">How to Remove Unwanted Watermarks From Photos Using Free Tools</a></h2>
-				<div class="date">July 17, 2026</div>
-				<div class="excerpt">Ethical considerations and practical techniques for cleaning up images with unwanted text overlays.</div>
-				<a href="/blog/how-to-remove-watermarks-from-photos" class="read-more">Read more &rarr;</a>
 			</div>
 
 			<div class="blog-card">
